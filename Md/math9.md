@@ -14,3 +14,13 @@
 设也$\{a_n\}$是一个数列，非空的集合
 $E = \{l\in R_\infty :a_n 中有子列a_{k_n} \rightarrow l,n\rightarrow \infty\}$  ,
 置 $a^*= sup E$ , $a_* = inf E$ ,它们分别被称为数列$\{a_n\}$的上极限和下极限
+
+### 积化和差
+
+$$sin\alpha cos\beta =\frac 1 2 [sin(\alpha +\beta )+sin(\alpha -\beta)]$$
+
+$$cos\alpha sin\beta =\frac 1 2 [sin(\alpha +\beta )-sin(\alpha -\beta)]$$
+
+$$cos\alpha cos\beta =\frac 1 2 [sin(\alpha +\beta )+sin(\alpha -\beta)]$$
+
+$$sin\alpha sin\beta =\frac 1 2 [sin(\alpha +\beta )-sin(\alpha -\beta)]$$
