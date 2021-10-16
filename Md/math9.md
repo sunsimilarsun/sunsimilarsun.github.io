@@ -1,5 +1,5 @@
 ### 极限
-对任何正数A , 都 存 在 $N\in N^*$,使得凡是 $n > N$ 时都有$a_n>A$ ,则称数列趋向于$+\infty$ 
+对任何正数A , 都存在 $N\in N^*$,使得凡是 $n > N$ 时都有$a_n>A$ ,则称数列趋向于$+\infty$ 
 记作 $lima_n = +\infty $ .
 
 ### 下确界
@@ -24,3 +24,7 @@ $$cos\alpha sin\beta =\frac 1 2 [sin(\alpha +\beta )-sin(\alpha -\beta)]$$
 $$cos\alpha cos\beta =\frac 1 2 [sin(\alpha +\beta )+sin(\alpha -\beta)]$$
 
 $$sin\alpha sin\beta =\frac 1 2 [sin(\alpha +\beta )-sin(\alpha -\beta)]$$
+
+|$\forall a,b\in N^*$|  |
+|--|--|
+|$a=b$|$b=a$|
