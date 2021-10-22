@@ -6,12 +6,5 @@
 - [希腊字母表](/Green.html)
 ## VS code
 - [VS code快捷键](/VScode.html)
-## JavaScript
-- [JS基本概念](/JS1.html)
-- [JS操作符](/JS2.html)
-- [JS基本语句](/JS3.html)
-- [JS数组用法](/JS4.html)
-- [Date用法](/JS5.html)
-- [JS字符串用法](/JS6.html)
-- [JS编程风格](/JS7.html)
-- [JS编程实践](/JS8.html)
+## 其他
+- [总结](https://www.icloud.com.cn/notes/0wF9zqokpn-VOFr5fgh4FpvVw)
