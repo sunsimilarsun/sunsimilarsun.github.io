@@ -9,5 +9,6 @@
 ## English
 - [词根词缀](/Md/English/22.html)
 ## Politics
+- [表格](/Md/Politics/表格.html)
 ## 其他
 - [总结](https://www.icloud.com.cn/notes/0wF9zqokpn-VOFr5fgh4FpvVw)
