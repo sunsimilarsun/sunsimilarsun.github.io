@@ -10,27 +10,30 @@
     <link rel="icon" type="image/x-icon" href="images/sun.png" >
     <link rel="shortcut icon" type="image/x-icon" href="images/sun.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/sun.png" > 
-    
-
-
+       
 </head>
 <body>
+
     <h1 style="text-align:center">
-        首页
+        SMS
     </h1>
+    <div style="text-align:center;" class="search clearfix">
+        <input type="text" style="font-size:25px;" size="28" name="q" id="Search" value="输入"  onfocus="if (value =='输入'){value =''}" onblur="if (value ==''){value='输入'}" >
+        <br>
+        <button class="search-by" type="submit" onclick="window.open('https://www.bilibili.com/video/BV1ZW411e7PF?p='+document.getElementById('Search').value)">数学分析</button>
+        <button class="search-by" type="submit" onclick="window.open('https://www.bilibili.com/video/BV19W411G7QU?p='+document.getElementById('Search').value)">高等代数</button>
+        <button class="search-bd" type="submit" onclick="window.open('https://www.baidu.com/s?wd='+document.getElementById('Search').value)">百度</button>
+        <button class="search-tb" type="submit" onclick="window.open('http://ai.taobao.com/search/index.htm?pid=mm_你的淘宝pid&amp;key='+document.getElementById('Search').value)">淘宝</button>
+        <button class="search-by" type="submit" onclick="window.open('http://cn.bing.com/search?q='+document.getElementById('Search').value)">必应</button>
+        <button class="search-by" type="submit" onclick="window.open('http://www.google.com/search?q='+document.getElementById('Search').value)">google</button>
+        <button class="search-by" type="submit" onclick="window.open('https://search.bilibili.com/all?keyword='+document.getElementById('Search').value)">BiliBili</button>
+        <button class="search-by" type="submit" onclick="window.open('https://www.zhihu.com/search?type=content&q='+document.getElementById('Search').value)">知乎</button>
+    </div>
+    
     <a href="https://sunsimilarsun.github.io/Note/Log.html">
         笔记目录
     </a>
-
-    
-
-
-    <form action="https://www.bilibili.com/video/BV1ZW411e7PF">
-        <input type="text" name="p"><input type="submit" value="数学分析">
-        </form>
-    <form action="https://www.bilibili.com/video/BV19W411G7QU">
-        <input type="text" name="p"><input type="submit" value="高等代数">
-        </form>
+    <br>
     <a href="https://www.icloud.com.cn/notes/0wF9zqokpn-VOFr5fgh4FpvVw">
         总结
     </a>        
