@@ -1,0 +1,1007 @@
+<!DOCTYPE html><html><head>
+      <title>&#x8BCD;&#x7EC4;</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\sunto\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.6.1\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h2 class="mume-header" id="2020-%E5%B9%B4">2020 &#x5E74;</h2>
+
+<p>side to side &#x5DE6;&#x53F3;&#x6765;&#x56DE;<br>
+perceive&#x2026;as ... &#x5C06;&#x2026;&#x2026;&#x7406;&#x89E3;&#x4E3A;&#xFF1B;&#x5C06;&#x2026;&#x2026;&#x89C6;&#x4E3A;&#xFF1B;&#x8BA4;&#x4E3A;<br>
+engage in &#x4ECE;&#x4E8B;&#xFF0C;&#x53C2;&#x52A0;<br>
+up one&apos;s game &#x505A;&#x51FA;&#x66F4;&#x591A;&#x52AA;&#x529B;&#xFF1B;&#x53D6;&#x5F97;&#x66F4;&#x597D;&#x8868;&#x73B0;<br>
+one way or another &#x7528;&#x67D0;&#x79CD;&#x65B9;&#x5F0F;<br>
+rip...off &#x6B3A;&#x8BC8;&#xFF1B;&#x6572;&#x2026;&#x2026;&#x7AF9;&#x6760;<br>
+at the expense of &#x4EE5;&#x2026;&#x2026;&#x4E3A;&#x4EE3;&#x4EF7;&#xFF1B;&#x5728;&#x727A;&#x7272;&#x2026;&#x2026;&#x7684;&#x60C5;&#x51B5;&#x4E0B;<br>
+build up &#x9010;&#x6B65;&#x52A0;&#x5927;&#xFF1B;&#x9010;&#x6B65;&#x589E;&#x5F3A;<br>
+hail ...as ... &#x8D5E;&#x626C;&#x2026;&#x2026;&#x4E3A;&#x2026;&#x2026;<br>
+roll out &#x6B63;&#x5F0F;&#x63A8;&#x51FA;&#xFF1B;&#x5F00;&#x5C55;<br>
+at best &#x6700;&#x4E50;&#x89C2;&#x5730;&#x770B;&#xFF0C;&#x5145;&#x5176;&#x91CF;&#xFF0C;&#x81F3;&#x591A;<br>
+far from it &#x5B8C;&#x5168;&#x76F8;&#x53CD;&#xFF1B;&#x7EDD;&#x975E;&#xFF1B;&#x8FDC;&#x975E;&#x5982;&#x6B64;<br>
+give or take &#x76F8;&#x5DEE;&#x4E0D;&#x5230;&#xFF1B;&#x51FA;&#x5165;&#x81F3;&#x591A;<br>
+hit the streets &#x5927;&#x91CF;&#x4E0A;&#x5E02;<br>
+take a chance &#x5192;&#x9669;<br>
+gig economy &#x96F6;&#x5DE5;&#x7ECF;&#x6D4E;<br>
+high street &#x5927;&#x8857;&#xFF0C;&#x5546;&#x4E1A;&#x8857;<br>
+a licence to print money &#x4E0D;&#x8D39;&#x52B2;&#x6323;&#x5927;&#x94B1;&#xFF1B;&#x4E00;&#x672C;&#x4E07;&#x5229;&#xFF1B;&#x6447;&#x94B1;&#x6811;<br>
+peer review &#x540C;&#x884C;&#x8BC4;&#x5BA1;<br>
+profit margin &#x5229;&#x6DA6;&#x7387;&#xFF1B;&#x5229;&#x6DA6;&#x5E45;&#x5EA6;<br>
+pass on &#x8F6C;&#x4EA4;&#xFF1B;&#x9012;&#x7ED9;&#xFF0C;&#x4F20;&#x7ED9;<br>
+work out &#x8BA1;&#x7B97;&#xFF1B;&#x8BA1;&#x7B97;&#x51FA;<br>
+level the playing field &#x521B;&#x9020;&#x4EBA;&#x4EBA;&#x673A;&#x4F1A;&#x5747;&#x7B49;&#x7684;&#x5C40;&#x9762;<br>
+House Speaker &#x4F17;&#x8BAE;&#x9662;&#x8BAE;&#x957F;<br>
+pro tempore &#x6682;&#x65F6;&#x7684;,&#x4E34;&#x65F6;&#x7684;<br>
+a case in point &#x660E;&#x8BC1;&#xFF1B;&#x6070;&#x5F53;&#x7684;&#x4F8B;&#x8BC1;<br>
+set aside &#x62E8;&#x51FA;&#xFF0C;&#x7559;&#x51FA;<br>
+frown on &#x4E0D;&#x8D5E;&#x6210;&#xFF1B;&#x4E0D;&#x540C;&#x610F;&#xFF1B;&#x4E0D;&#x8BB8;&#x53EF;<br>
+private sector &#x79C1;&#x8425;&#x90E8;&#x95E8;<br>
+refer to ... as ... &#x63D0;&#x5230;&#xFF1B;&#x8C08;&#x53CA;&#xFF1B;&#x8BF4;&#x8D77;<br>
+go into effect &#x751F;&#x6548;&#xFF1B;&#x5F00;&#x59CB;&#x5B9E;&#x65BD;<br>
+in turn &#x76F8;&#x5E94;&#x5730;&#xFF1B;&#x8F6C;&#x800C;<br>
+put in place &#x8BBE;&#x7ACB;&#xFF1B;&#x53D1;&#x8D77;&#xFF1B;&#x5236;&#x5B9A;<br>
+alphabet soup &#x5B57;&#x6BCD;&#x6C64;&#xFF0C;&#x5929;&#x4E66;<br>
+keep up with &#x4E0D;&#x843D;&#x540E;&#xFF1B;&#x8DDF;&#x4E0A;&#xFF1B;&#x5E76;&#x9A7E;&#x9F50;&#x9A71;<br>
+follow suit &#x8DDF;&#x7740;&#x67D0;&#x4EBA;&#x505A;&#xFF1B;&#x4EFF;&#x6548;&#x67D0;&#x4EBA;&#xFF1B;&#x7167;&#x7740;&#x505A;</p>
+<h2 class="mume-header" id="2019-%E5%B9%B4">2019 &#x5E74;</h2>
+
+<p>make up for &#x5F25;&#x8865;&#xFF1B;&#x8865;&#x507F;<br>
+hold ... together &#x4F7F;&#x4FDD;&#x6301;&#x56E2;&#x7ED3;<br>
+in ... light &#x4ECE;&#x2026;&#x2026;&#x7684;&#x89D2;&#x5EA6;<br>
+rein in &#x6291;&#x5236;&#xFF1B;&#x63A7;&#x5236;&#xFF1B;&#x7EA6;&#x675F;<br>
+vice versa &#x53CD;&#x8FC7;&#x6765;&#x4E5F;&#x4E00;&#x6837;&#xFF1B;&#x53CD;&#x4E4B;&#x4EA6;&#x7136;<br>
+substitute for &#x53D6;&#x4EE3;&#xFF0C;&#x4EE3;&#x66FF;<br>
+look at &#x7814;&#x7A76;<br>
+turn on &#x4F9D;&#x9760;&#xFF1B;&#x4F9D;&#x2026;&#x2026;&#x800C;&#x5B9A;&#xFF1B;&#x53D6;&#x51B3;&#x4E8E;<br>
+soak up &#x5438;&#x6536;&#xFF0C;&#x5438;&#x6389;<br>
+count on &#x4F9D;&#x8D56;&#xFF0C;&#x4F9D;&#x9760;&#xFF0C;&#x6307;&#x671B;<br>
+strike a balance &#x627E;&#x5230;&#x6298;&#x4E2D;&#x529E;&#x6CD5;&#xFF1B;&#x5E73;&#x8861;<br>
+fend off &#x62B5;&#x6321;&#xFF0C;&#x6321;&#x5F00;&#xFF0C;&#x907F;&#x5F00;<br>
+in the event of &#x5982;&#x679C;&#x53D1;&#x751F;&#xFF1B;&#x4E07;&#x4E00;<br>
+lock ...away &#x628A;&#x2026;&#x2026;&#x6536;&#x597D;&#x5E76;&#x9501;&#x8D77;&#x6765;<br>
+under way &#x5DF2;&#x7ECF;&#x5F00;&#x59CB;&#xFF1B;&#x5728;&#x8FDB;&#x884C;&#x4E2D;<br>
+all along &#x81EA;&#x59CB;&#x81F3;&#x7EC8;&#xFF0C;&#x4E00;&#x76F4;<br>
+in effect &#x5B9E;&#x9645;&#x4E0A;&#xFF1B;&#x4E8B;&#x5B9E;&#x4E0A;<br>
+a bunch of &#x5927;&#x91CF;&#xFF1B;&#x5927;&#x6279;<br>
+put sth. together &#x6574;&#x7406;&#x51FA;&#xFF0C;&#x62FC;&#x51D1;&#xFF0C;&#x51D1;&#x6210;<br>
+do one&apos;s bit &#x505A;&#x8D21;&#x732E;&#xFF0C;&#x5C3D;&#x529B;<br>
+hold ... to account &#x8FFD;&#x7A76;&#x2026;&#x2026;&#x7684;&#x8D23;&#x4EFB;<br>
+push for &#x52AA;&#x529B;&#x4E89;&#x53D6;;&#x529B;&#x529D;&#x2026;&#x2026;&#x505A;<br>
+write off &#x628A;&#x2026;&#x2026;&#x770B;&#x5F97;&#x65E0;&#x5173;&#x7D27;&#x8981;<br>
+put... into perspective &#x6B63;&#x786E;&#x5730;&#x770B;&#x5F85;<br>
+put sth. aside &#x7701;&#x4E0B;&#xFF0C;&#x50A8;&#x5B58;&#xFF1B;&#x7559;&#x51FA;<br>
+attention span &#x6CE8;&#x610F;&#x529B;&#x7684;&#x6301;&#x7EED;&#x65F6;&#x95F4;<br>
+at the expense of &#x4EE5;&#x2026;&#x2026;&#x4E3A;&#x4EE3;&#x4EF7;,&#x5728;&#x2026;&#x2026;&#x53D7;&#x635F;&#x7684;&#x60C5;&#x51B5;&#x4E0B;<br>
+performance bonus &#x7EE9;&#x6548;&#x5956;&#x91D1;<br>
+grade-point average &#x5E73;&#x5747;&#x5B66;&#x5206;&#x7EE9;&#x70B9;<br>
+do one&apos;s utmost &#x5C3D;&#x6700;&#x5927;&#x52AA;&#x529B;&#xFF1B;&#x7AED;&#x5C3D;&#x5168;&#x529B;<br>
+at the end of the day &#x6700;&#x7EC8;&#xFF1B;&#x5230;&#x5934;&#x6765;&#xFF1B;&#x4E0D;&#x7BA1;&#x600E;&#x4E48;&#x8BF4;<br>
+to come &#x672A;&#x6765;&#x7684;&#xFF1B;&#x5C06;&#x6765;&#x7684;<br>
+chief executive &#x603B;&#x7ECF;&#x7406;&#xFF0C;&#x603B;&#x88C1;<br>
+to put it another way &#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x6362;&#x8A00;&#x4E4B;<br>
+Frankenstein&apos;s monster &#x5371;&#x53CA;&#x5176;&#x521B;&#x9020;&#x8005;&#x7684;&#x4E8B;&#x7269;<br>
+be far removed from sth. &#x4E0E;&#x2026;&#x2026;&#x5927;&#x76F8;&#x5F84;&#x5EAD;&#xFF1B;&#x4E0E;&#x2026;&#x2026;&#x76F8;&#x8DDD;&#x751A;&#x8FDC;<br>
+an even playing field &#x6E90;&#x81EA;&#x77ED;&#x8BED; a level playing<br>
+field&#xFF0C;&#x610F;&#x4E3A;&#x201C;&#x516C;&#x5E73;&#x7ADE;&#x4E89;&#x7684;&#x73AF;&#x5883;&#x201D;</p>
+<h2 class="mume-header" id="2018-%E5%B9%B4">2018 &#x5E74;</h2>
+
+<p>as though &#x597D;&#x50CF;&#xFF0C;&#x4F3C;&#x4E4E;<br>
+open the door to sth. &#x4E3A;&#x2026;&#x2026;&#x6253;&#x5F00;&#x5927;&#x95E8;&#xFF1B;&#x4E3A;&#x2026;&#x2026;&#x521B;&#x9020;&#x673A;&#x4F1A;<br>
+turn sth. on its head &#x4F7F;&#x4EBA;&#x5B8C;&#x5168;&#x6539;&#x53D8;&#x601D;&#x8DEF;&#xFF1B;&#x4F7F;&#x4EBA;&#x4ECE;&#x53CD;&#x9762;&#x601D;&#x8003;<br>
+be staring sb. in the face &#x660E;&#x6446;&#x7740;&#xFF1B;&#x663E;&#x800C;&#x6613;&#x89C1;<br>
+pick up &#x589E;&#x52A0;&#xFF1B;&#x63D0;&#x9AD8;<br>
+stem from sth. &#x662F;&#x2026;&#x2026;&#x2026;&#x7684;&#x7ED3;&#x679C;&#xFF1B;&#x8D77;&#x6E90;&#x4E8E;&#xFF1B;&#x6839;&#x6E90;&#x662F;<br>
+around the clock &#x65E5;&#x591C;&#x4E0D;&#x505C;&#xFF1B;&#x591C;&#x4EE5;&#x7EE7;&#x65E5;<br>
+in part &#x90E8;&#x5206;&#x5730;&#xFF1B;&#x5728;&#x67D0;&#x79CD;&#x7A0B;&#x5EA6;&#x4E0A;<br>
+a long way to go &#x5F88;&#x957F;&#x7684;&#x8DEF;&#x8981;&#x8D70;&#xFF0C;&#x5F88;&#x591A;&#x5DE5;&#x4F5C;&#x8981;&#x505A;<br>
+trend line &#x8D8B;&#x52BF;&#x7EBF;<br>
+speed up &#x52A0;&#x901F;<br>
+go through &#x901A;&#x8FC7;&#xFF0C;&#x63A5;&#x53D7;&#xFF0C;&#x8FBE;&#x6210;<br>
+not so much .... but ... &#x4E0E;&#x5176;&#x8BF4;&#x662F;&#x2026;&#x2026;&#xFF0C;&#x8FD8;&#x4E0D;&#x5982;&#x8BF4;&#x662F;&#x2026;&#x2026;<br>
+to the disadvantage of &#x5BF9;&#x2026;&#x2026;&#x4E0D;&#x5229;&#xFF1B;&#x4F7F;&#x2026;&#x2026;&#x5904;&#x4E8E;&#x4E0D;&#x5229;&#x5730;&#x4F4D;<br>
+keep ... out of &#x4F7F;&#x4E0D;&#x8FDB;&#x5165;&#xFF1B;&#x9632;&#x6B62;&#x8FDB;&#x5165;&#xFF1B;&#x628A;&#x2026;&#x2026;&#x5173;&#x5728;&#x5916;&#x9762;<br>
+stick to sth. &#x7EE7;&#x7EED;&#x52AA;&#x529B;&#x505A;&#xFF0C;&#x575A;&#x6301;&#x5E72;<br>
+when it comes to sth. &#x5F53;&#x6D89;&#x53CA;&#x67D0;&#x4E8B;&#x65F6;<br>
+make the most of &#x5145;&#x5206;&#x5229;&#x7528;&#xFF1B;&#x5C3D;&#x60C5;&#x4EAB;&#x53D7;<br>
+presidential campaign &#x603B;&#x7EDF;&#x7ADE;&#x9009;<br>
+drive down &#x4F7F;&#x2026;&#x2026;&#x8FC5;&#x901F;&#x4E0B;&#x964D;<br>
+in the medium term &#x4E2D;&#x671F;&#x5185;<br>
+virtual reality &#x865A;&#x62DF;&#x73B0;&#x5B9E;<br>
+dream up &#x51ED;&#x7A7A;&#x60F3;&#x51FA;,&#x865A;&#x6784;&#x51FA;<br>
+safety net &#x4FDD;&#x969C;&#x63AA;&#x65BD;;&#x5B89;&#x5168;&#x7F51;<br>
+tax credit &#x7A0E;&#x989D;&#x62B5;&#x6263;<br>
+focus-group &#x7126;&#x70B9;&#x5C0F;&#x7EC4;<br>
+pass along &#x5C06;&#x4FE1;&#x606F;&#x4ECE;&#x4E00;&#x4E2A;&#x4EBA;&#x4F20;&#x9012;&#x7ED9;&#x53E6;&#x4E00;&#x4E2A;&#x4EBA;<br>
+made-up &#x4E0D;&#x771F;&#x5B9E;&#x7684;;&#x7F16;&#x9020;&#x7684;<br>
+lie in &#x5728;&#x4E8E;<br>
+artificial intelligence &#x4EBA;&#x5DE5;&#x667A;&#x80FD;<br>
+hand sth. over to sb.&#x628A;&#x2026;&#x2026;&#x6B63;&#x5F0F;&#x4EA4;&#x7ED9;&#x67D0;&#x4EBA;</p>
+<h2 class="mume-header" id="2017-%E5%B9%B4">2017 &#x5E74;</h2>
+
+<p>set off &#x51FA;&#x53D1;&#xFF1B;&#x52A8;&#x8EAB;&#xFF1B;&#x542F;&#x7A0B;<br>
+as to &#x5173;&#x4E8E;&#xFF0C;&#x81F3;&#x4E8E;<br>
+preside over &#x4E3B;&#x7BA1;&#x67D0;&#x5730;&#xFF0C;&#x638C;&#x7BA1;&#x5C40;&#x52BF;<br>
+squeeze sth. from sb. &#x5411;&#x2026;&#x2026;&#x52D2;&#x7D22;&#xFF1B;&#x903C;&#x8FEB;&#x2026;&#x2026;&#x7ED9;<br>
+suck <a href="http://sb.in">sb.in</a> &#x628A;&#x67D0;&#x4EBA;&#x5377;&#x5165;&#x67D0;&#x4E8B;<br>
+be born out of &#x56E0;&#x2026;&#x2026;&#x800C;&#x4EA7;&#x751F;<br>
+out of the way &#x7ED3;&#x675F;&#xFF1B;&#x5904;&#x7406;&#x5B8C;<br>
+in conjunction with &#x4E0E;&#x2026;&#x2026;&#x4E00;&#x8D77;<br>
+fall behind &#x843D;&#x540E;&#xFF1B;&#x843D;&#x5728;&#x2026;&#x2026;&#x540E;&#x9762;<br>
+finish line &#x7EC8;&#x70B9;&#x7EBF;<br>
+take sth. off &#x4F11;&#x5047;&#xFF1B;&#x4F11;&#x606F;<br>
+end up &#x6700;&#x540E;&#x5904;&#x4E8E;&#xFF1B;&#x6700;&#x540E;&#x6210;&#x4E3A;&#xFF1B;&#x4EE5;&#x2026;&#x2026;&#x544A;&#x7EC8;<br>
+make up &#x8865;&#x4E0A;&#xFF1B;&#x8865;&#x507F;&#xFF1B;&#x5F25;&#x8865;<br>
+figure out &#x5F04;&#x61C2;&#xFF1B;&#x5F04;&#x6E05;&#x695A;&#xFF1B;&#x5F04;&#x660E;&#x767D;<br>
+in effect &#x5B9E;&#x9645;&#x4E0A;&#xFF1B;&#x4E8B;&#x5B9E;&#x4E0A;<br>
+magnifying glass &#x653E;&#x5927;&#x955C;<br>
+at the expense of &#x5728;&#x727A;&#x7272;&#x2026;&#x7684;&#x60C5;&#x51B5;&#x4E0B;<br>
+tease sth. out &#x63A2;&#x8BA8;&#xFF1B;&#x6DF1;&#x5165;&#x7814;&#x7A76;;&#x68B3;&#x7406;&#x6E05;&#x695A;<br>
+get somewhere &#x6709;&#x8FDB;&#x5C55;<br>
+sticker shock &#x4EF7;&#x683C;&#x9707;&#x60CA;<br>
+price tag &#x4EF7;&#x683C;&#x6807;&#x7B7E;&#xFF1B;&#x6807;&#x4EF7;<br>
+look into &#x8C03;&#x67E5;&#xFF0C;&#x7814;&#x7A76;<br>
+be at issue &#x662F;&#x8BA8;&#x8BBA;&#x7684;&#x7126;&#x70B9;<br>
+be home to &#x662F;&#x2026;&#x2026;&#x7684;&#x6240;&#x5728;&#x5730;<br>
+refer to &#x6307;&#xFF0C;&#x8868;&#x793A;<br>
+be the envy of &#x6210;&#x4E3A;&#x2026;&#x2026;&#x7FA1;&#x6155;&#x7684;&#x5BF9;&#x8C61;<br>
+shed light on &#x4E3A;&#x2026;&#x2026;&#x63D0;&#x4F9B;&#x89E3;&#x91CA;;&#x4F7F;&#x2026;&#x2026;&#x8F83;&#x5BB9;&#x6613;&#x7406;&#x89E3;<br>
+contribute to &#x6709;&#x52A9;&#x4E8E;&#xFF1B;&#x4FC3;&#x6210;&#xFF0C;&#x4FC3;&#x4F7F;<br>
+hold one&apos;s nose &#x6342;&#x4F4F;&#x9F3B;&#x5B50;&#xFF08;&#x6B64;&#x5904;&#x5F15;&#x7533;&#x4E3A;&#x8BD5;&#x56FE;&#x65E0;&#x89C6;&#x4EE4;&#x4EBA;&#x53CD;&#x611F;&#x3001;&#x538C;&#x6076;&#x7684;&#x4E8B;&#x6216;&#x4E0D;&#x5408;&#x6CD5;&#x7684;&#x884C;&#x4E3A;&#xFF09;<br>
+in return for &#x4F5C;&#x4E3A;&#x5BF9;&#x2026;&#x2026;&#x7684;&#x56DE;&#x62A5;<br>
+act on sth. &#x6839;&#x636E; &#x5EFA;&#x8BAE;&#x3001;&#x4FE1;&#x606F;&#x7B49;&#x884C;&#x4E8B;<br>
+rest on &#x6709;&#x8D56;&#x4E8E;&#xFF1B;&#x53D6;&#x51B3;&#x4E8E;&#xFF1B;&#x4F9D;&#x8D56;<br>
+a step forward &#x8FDB;&#x6B65;&#xFF0C;&#x6539;&#x8FDB;</p>
+<h2 class="mume-header" id="2016-%E5%B9%B4">2016 &#x5E74;</h2>
+
+<p>catch up &#x8D76;&#x4E0A;&#xFF0C;&#x8FBE;&#x5230;<br>
+break down &#x5206;&#x89E3;<br>
+drive ... away &#x4F7F;&#x79BB;&#x53BB;&#xFF1B;&#x4F7F;&#x4E0D;&#x613F;&#x4E45;&#x7559;<br>
+gear ... to ... &#x4F7F;&#x4E0E;&#x2026;&#x2026;&#x76F8;&#x9002;&#x5E94;&#xFF1B;&#x4F7F;&#x9002;&#x5408;&#x4E8E;<br>
+drop out &#x9000;&#x5B66;&#xFF1B;&#x8F8D;&#x5B66;<br>
+think through &#x5145;&#x5206;&#x8003;&#x8651;&#xFF1B;&#x5168;&#x76D8;&#x8003;&#x8651;&#xFF1B;&#x60F3;&#x900F;<br>
+an army of &#x5927;&#x6279;&#xFF1B;&#x5927;&#x7FA4;<br>
+crack down on &#x7AED;&#x529B;&#x53D6;&#x7F14;&#xFF1B;&#x4E25;&#x5389;&#x6253;&#x51FB;&#xFF1B;&#x9547;&#x538B;<br>
+call for &#x53F7;&#x53EC;&#xFF0C;&#x547C;&#x5401;&#xFF1B;&#x8981;&#x6C42;<br>
+set aside &#x7701;&#x51FA;&#xFF1B;&#x7559;&#x51FA;<br>
+be in the driver&apos;s seat &#x62C5;&#x4EFB;&#x8D1F;&#x8D23;&#x4EBA;&#xFF1B;&#x5904;&#x4E8E;&#x7EDF;&#x9886;&#x5730;&#x4F4D;<br>
+go too far &#x8D70;&#x5F97;&#x592A;&#x8FDC;&#xFF1B;&#x505A;&#x5F97;&#x8FC7;&#x5206;<br>
+free up &#x4F7F;&#x53EF;&#x7528;<br>
+the last thing &#x6700;&#x8BA9;&#x4EBA;&#x60F3;&#x4E0D;&#x5230;&#x7684;&#x4E8B;&#xFF1B;&#x6700;&#x4E0D;&#x613F;&#x5E72;&#x7684;&#x4E8B;<br>
+road map &#x84DD;&#x56FE;&#xFF0C;&#x89C4;&#x5212;<br>
+Great Recession &#x5927;&#x8870;&#x9000;<br>
+look to &#x6CE8;&#x610F;&#xFF0C;&#x7559;&#x5FC3;<br>
+size zero &#x96F6;&#x53F7;<br>
+wasp-waist &#x8702;&#x8170;&#x7684;<br>
+peer pressure &#x540C;&#x8F88;&#x538B;&#x529B;&#xFF0C;&#x540C;&#x9F84;&#x4EBA;&#x4E4B;&#x95F4;&#x7684;&#x538B;&#x529B;<br>
+name-and-shame &#x516C;&#x5F00;&#x70B9;&#x540D;&#x6279;&#x8BC4;&#x7684;<br>
+green belt &#x7EFF;&#x5316;&#x5E26;<br>
+side with &#x652F;&#x6301;&#xFF1B;&#x548C;&#x2026;&#x2026;&#x7AD9;&#x5728;&#x4E00;&#x8D77;<br>
+strike terror into sb. &#x4F7F;&#x67D0;&#x4EBA;&#x6781;&#x5EA6;&#x6050;&#x60E7;<br>
+in place &#x51C6;&#x5907;&#x59A5;&#x5F53;&#x7684;&#xFF0C;&#x5B89;&#x6392;&#x6709;&#x5E8F;&#x7684;<br>
+high street &#x5927;&#x8857;&#xFF0C;&#x5546;&#x4E1A;&#x8857;<br>
+let rip &#x81EA;&#x7531;&#x81EA;&#x5728;&#x5730;&#x884C;&#x52A8;;&#x6063;&#x610F;<br>
+engage in &#x4ECE;&#x4E8B;&#xFF0C;&#x53C2;&#x52A0;<br>
+rule out &#x6392;&#x9664;&#xFF0C;&#x62D2;&#x7EDD;&#x8003;&#x8651;<br>
+account for &#x662F;&#x2026;&#x2026;&#x7684;&#x539F;&#x56E0;<br>
+on its own merits &#x6839;&#x636E;&#x67D0;&#x4E8B;&#x4EF6;&#x672C;&#x8EAB;&#x7684;&#x60C5;&#x51B5;<br>
+bank on &#x4F9D;&#x9760;&#xFF1B;&#x6307;&#x671B;<br>
+go about &#x7740;&#x624B;&#x505A;&#x67D0;&#x4E8B;&#xFF1B;&#x5F00;&#x59CB;&#x505A;&#x67D0;&#x4E8B;<br>
+make sense &#x662F;&#x660E;&#x667A;&#x7684;&#xFF0C;&#x662F;&#x5408;&#x4E4E;&#x60C5;&#x7406;&#x7684;</p>
+<h2 class="mume-header" id="2015-%E5%B9%B4">2015 &#x5E74;</h2>
+
+<p>contrary to &#x4E0E;&#x2026;&#x2026;&#x76F8;&#x53CD;&#xFF0C;&#x4E0E;&#x2026;&#x2026;&#x80CC;&#x9053;&#x800C;&#x9A70;&#xFF1B;&#x8FDD;&#x53CD;<br>
+conventional wisdom &#x5927;&#x591A;&#x6570;&#x4EBA;&#x7684;&#x770B;&#x6CD5;&#xFF1B;&#x666E;&#x904D;&#x4FE1;&#x5FF5;<br>
+hold true &#x540C;&#x6837;&#x9002;&#x7528;<br>
+kick back &#x653E;&#x677E;<br>
+home front &#x540E;&#x65B9;&#x6C11;&#x4F17;&#xFF0C;&#x5927;&#x540E;&#x65B9;<br>
+pretty much &#x51E0;&#x4E4E;&#xFF1B;&#x5DEE;&#x4E0D;&#x591A;<br>
+put in &#x82B1;&#x8D39;&#xFF0C;&#x8017;&#x8D39;&#xFF0C;&#x6295;&#x5165;<br>
+lay sth. out &#x5E03;&#x7F6E;&#xFF1B;&#x7B56;&#x5212;&#xFF1B;&#x5B89;&#x6392;<br>
+talk sb. into sth. &#x8BF4;&#x670D;&#x67D0;&#x4EBA;&#x505A;&#x67D0;&#x4E8B;<br>
+in that &#x56E0;&#x4E3A;&#xFF0C;&#x7531;&#x4E8E;<br>
+next to &#x51E0;&#x4E4E;&#xFF0C;&#x5DEE;&#x4E0D;&#x591A;<br>
+take advantage of &#x5229;&#x7528;<br>
+spin off &#x629B;&#x51FA;&#xFF0C;&#x7529;&#x51FA;<br>
+lean in &#x539F;&#x6307;&#x201C;&#x503E;&#x659C;&#x201D;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x4E60;&#x8BED;&#x4F7F;&#x7528;&#xFF0C;<br>
+&#x7528;&#x4E8E;&#x9F13;&#x52B1;&#x804C;&#x4E1A;&#x5973;&#x6027;&#x8FFD;&#x6C42;&#x804C;&#x4E1A;&#x53D1;&#x5C55;&#xFF0C;&#x8FDB;&#x5165;&#x9886;&#x5BFC;&#x5C42;&#xFF0C;<br>
+&#x610F;&#x4E3A;&#x201C;&#x5411;&#x524D;&#x4E00;&#x6B65;&#x201D;<br>
+life hack &#x751F;&#x6D3B;&#x9ED1;&#x5BA2;&#xFF0C;&#x6307;&#x5404;&#x79CD;&#x5728;&#x65E5;&#x5E38;&#x751F;&#x6D3B;&#x4E2D;&#x80FD;&#x89E3;&#x51B3;<br>
+&#x95EE;&#x9898;&#x3001;&#x7B80;&#x5316;&#x4EFB;&#x52A1;&#x3001;&#x524A;&#x5F31;&#x6CAE;&#x4E27;&#x611F;&#x7B49;&#x7684;&#x505A;&#x6CD5;&#x6216;&#x884C;&#x4E3A;<br>
+devote oneself to sth &#x732E;&#x8EAB;&#xFF1B;&#x81F4;&#x529B;&#xFF1B;&#x4E13;&#x5FC3;<br>
+buy into &#x5B8C;&#x5168;&#x76F8;&#x4FE1;<br>
+a long way to go &#x5F88;&#x957F;&#x7684;&#x8DEF;&#x8981;&#x8D70;&#xFF1B;&#x5F88;&#x591A;&#x5DE5;&#x4F5C;&#x8981;&#x505A;<br>
+make ends meet &#x4F7F;&#x6536;&#x652F;&#x76F8;&#x62B5;&#xFF1B;&#x52C9;&#x5F3A;&#x7EF4;&#x6301;&#x751F;&#x8BA1;<br>
+eat one&apos;s words &#x627F;&#x8BA4;&#x81EA;&#x5DF1;&#x8BF4;&#x9519;&#x4E86;&#x8BDD;<br>
+stand down &#x79BB;&#x804C;&#xFF1B;&#x9000;&#x804C;&#xFF1B;&#x4E0B;&#x53F0;<br>
+the writing is on the wall &#x5384;&#x8FD0;&#x4E34;&#x5934;&#x7684;&#x9884;&#x5146;&#xFF0C;&#x4E0D;&#x7965;<br>
+&#x4E4B;&#x5146;<br>
+rise above &#x514B;&#x670D;&#x969C;&#x788D;&#xFF1B;&#x8D85;&#x8D8A;&#x9650;&#x5236;&#xFF1B;&#x6218;&#x80DC;&#x56F0;&#x96BE;<br>
+head of state &#x56FD;&#x5BB6;&#x5143;&#x9996;<br>
+take steps to do sth. &#x91C7;&#x53D6;&#x63AA;&#x65BD;&#x505A;&#x67D0;&#x4E8B;<br>
+as is the case &#x8FD9;&#x662F;&#x5E38;&#x89C1;&#x7684;&#x60C5;&#x5F62;&#xFF1B;&#x60C5;&#x51B5;&#x5F80;&#x5F80;&#x5982;&#x6B64;<br>
+passenger car &#x5C0F;&#x5BA2;&#x8F66;<br>
+sort out &#x89E3;&#x51B3;&#xFF0C;&#x5904;&#x7406;<br>
+take a tough line &#x91C7;&#x53D6;&#x5F3A;&#x786C;&#x7684;&#x6001;&#x5EA6;<br>
+drive sth. home &#x628A;&#x2026;&#x2026;&#x8BB2;&#x900F;&#x5F7B;&#xFF1B;&#x9610;&#x660E;&#xFF1B;&#x4F7F;&#x5145;&#x5206;&#x7406;<br>
+&#x89E3;</p>
+<h2 class="mume-header" id="2014-%E5%B9%B4">2014 &#x5E74;</h2>
+
+<p>could do worse than do sth. &#x5012;&#x4E0D;&#x5982;&#x8BD5;&#x505A;&#x67D0;&#x4E8B;&#xFF1B;&#x505A;<br>
+&#x67D0;&#x4E8B;&#x5012;&#x4E0D;&#x5931;&#x53EF;&#x53D6;<br>
+creep in &#x9010;&#x6E10;&#x53D1;&#x751F;&#xFF1B;&#x4E0D;&#x77E5;&#x4E0D;&#x89C9;&#x5730;&#x51FA;&#x73B0;<br>
+wear off &#x9010;&#x6E10;&#x6D88;&#x5931;&#xFF1B;&#x6D88;&#x901D;<br>
+be packed with &#x6709;&#x5927;&#x91CF;&#x2026;&#x2026;&#x7684;;&#x2026;&#x2026;&#x6781;&#x591A;&#x7684;<br>
+wage slave &#x5DE5;&#x8D44;&#x5974;&#x96B6;&#xFF1B;&#x4F9D;&#x9760;&#x5DE5;&#x8D44;&#x751F;&#x5B58;&#x7684;&#x4EBA;<br>
+most bang for your buck &#x82B1;&#x6700;&#x5C0F;&#x7684;&#x4EE3;&#x4EF7;&#x83B7;&#x5F97;&#x6700;&#x5927;<br>
+&#x7684;&#x6536;&#x76CA;<br>
+be better off &#x66F4;&#x5E78;&#x798F;&#xFF0C;&#x66F4;&#x6EE1;&#x610F;<br>
+come away &#x505A;&#x67D0;&#x4E8B;&#x540E;&#x89C9;&#x5F97;<br>
+oceans of &#x8BB8;&#x591A;&#xFF0C;&#x4F17;&#x591A;&#xFF1B;&#x5927;&#x91CF;<br>
+hot stuff &#x5947;&#x624D;;&#x975E;&#x51E1;&#x7684;&#x4EBA;&#x7269;<br>
+think well of sb. &#x5BF9;&#x67D0;&#x4EBA;&#x8BC4;&#x4EF7;&#x9AD8;<br>
+make up for &#x5F25;&#x8865;&#xFF1B;&#x8865;&#x507F;<br>
+make sense &#x6709;&#x9053;&#x7406;;&#x6709;&#x610F;&#x4E49;;&#x8BB2;&#x5F97;&#x901A;<br>
+for good &#x6C38;&#x4E45;&#x5730;&#xFF0C;&#x6C38;&#x8FDC;&#x5730;<br>
+hail from &#x6765;&#x81EA;&#xFF1B;&#x51FA;&#x751F;&#x4E8E;<br>
+in the first place &#x7A76;&#x7ADF;&#xFF0C;&#x5230;&#x5E95;&#xFF0C;&#x5F53;&#x521D;<br>
+touch on &#x8C08;&#x53CA;&#xFF1B;&#x63D0;&#x53CA;<br>
+contribute to &#x6709;&#x52A9;&#x4E8E;&#xFF1B;&#x4FC3;&#x6210;&#xFF1B;&#x4FC3;&#x4F7F;<br>
+waiting list &#x7B49;&#x5019;&#x8005;&#x540D;&#x5355;<br>
+put...on one side &#x505C;&#x6B62;&#x8C08;&#x8BBA;&#xFF0C;&#x628A;&#x2026;&#x2026;&#x653E;&#x5230;&#x4E00;&#x8FB9;<br>
+be down to sb. &#x662F;&#x67D0;&#x4EBA;&#x7684;&#x8D23;&#x4EFB;&#xFF1B;&#x7531;&#x67D0;&#x4EBA;&#x8D1F;&#x8D23;<br>
+face up to sth. &#x6562;&#x4E8E;&#x9762;&#x5BF9;&#xFF1B;&#x52C7;&#x4E8E;&#x6B63;&#x89C6;<br>
+Chancellor of the Exchequer &#x8D22;&#x653F;&#x5927;&#x81E3;<br>
+complete with sth. &#x5305;&#x62EC;&#xFF0C;&#x542B;&#x6709;<br>
+the American Bar Association &#x7F8E;&#x56FD;&#x5F8B;&#x5E08;&#x534F;&#x4F1A;<br>
+the bar &#x5F8B;&#x5E08;&#x804C;&#x4E1A;&#xFF1B;&#x5F8B;&#x5E08;&#x754C;&#xFF0C;&#x6CD5;&#x5F8B;&#x754C;<br>
+on top of &#x9664;&#x2026;&#x2026;&#x4E4B;&#x5916;<br>
+law firm &#x5F8B;&#x5E08;&#x4E8B;&#x52A1;&#x6240;<br>
+a string of &#x4E00;&#x7CFB;&#x5217;&#xFF0C;&#x4E00;&#x8FDE;&#x4E32;<br>
+a handful of &#x5C11;&#x6570;&#xFF0C;&#x5C11;&#x91CF;<br>
+peer review &#x540C;&#x884C;&#x8BC4;&#x5BA1;<br>
+the status quo &#x73B0;&#x72B6;<br>
+in the making &#x5B8C;&#x6210;&#xFF0C;&#x5236;&#x9020;&#x6210;&#xFF0C;&#x5236;&#x4F5C;&#x6210;<br>
+deprive sth. of sth. &#x5265;&#x593A;&#xFF1B;&#x4F7F;&#x4E27;&#x5931;&#xFF1B;&#x4F7F;&#x4E0D;&#x80FD;&#x4EAB;&#x6709;<br>
+portray ...as ... &#x5C06;&#x2026;&#x2026;&#x63CF;&#x5199;&#x6210;&#xFF1B;&#x628A;&#x2026;&#x2026;&#x523B;&#x753B;&#x6210;<br>
+may well &#x5F88;&#x53EF;&#x80FD;<br>
+set back &#x4F7F;&#x63A8;&#x8FDF;&#xFF1B;&#x803D;&#x8BEF;</p>
+<h2 class="mume-header" id="2013-%E5%B9%B4">2013 &#x5E74;</h2>
+
+<p>stand out &#x51FA;&#x8272;&#xFF1B;&#x6770;&#x51FA;&#xFF1B;&#x66F4;&#x4E3A;&#x91CD;&#x8981;<br>
+for good &#x6C38;&#x8FDC;&#xFF1B;&#x6C38;&#x4E45;<br>
+bird of passage &#x5019;&#x9E1F;&#xFF1B;&#x6F02;&#x6CCA;&#x4E0D;&#x5B9A;&#x7684;&#x4EBA;<br>
+in the making &#x5728;&#x53D1;&#x5C55;&#x4E2D;&#xFF1B;&#x5728;&#x5F62;&#x6210;&#x4E2D;<br>
+kick sb. out &#x4F7F;&#x67D0;&#x4EBA;&#x79BB;&#x5F00;&#xFF1B;&#x5F00;&#x9664;&#xFF1B;&#x9010;&#x51FA;</p>
+<p>gray area &#x7070;&#x8272;&#x5730;&#x5E26;&#xFF0C;&#x7070;&#x8272;&#x533A;&#x57DF;<br>
+middle ground &#x4E2D;&#x95F4;&#x7ACB;&#x573A;&#xFF1B;&#x4E2D;&#x95F4;&#x89C2;&#x70B9;<br>
+rise above sth. &#x514B;&#x670D;&#x969C;&#x788D;&#xFF1B;&#x8D85;&#x8D8A;&#x9650;&#x5236;&#xFF1B;&#x6218;&#x80DC;&#x56F0;&#x96BE;<br>
+sign up &#x62A5;&#x540D;&#x53C2;&#x52A0;<br>
+take sth. up &#x63A5;&#x53D7;<br>
+break through &#x51B2;&#x7834;&#xFF1B;&#x7A81;&#x7834;<br>
+glass ceiling &#x65E0;&#x5F62;&#x9650;&#x5236;&#xFF0C;&#x65E0;&#x5F62;&#x9876;&#x969C;<br>
+counter to sth. &#x76F8;&#x53CD;&#x5730;&#xFF1B;&#x5BF9;&#x7ACB;&#x5730;<br>
+in place &#x51C6;&#x5907;&#x59A5;&#x5F53;&#x7684;&#xFF0C;&#x5B89;&#x6392;&#x6709;&#x5E8F;&#x7684;<br>
+descend to &#x964D;&#x4F4E;&#x8EAB;&#x4EFD;&#x53BB;&#x505A;&#xFF1B;&#x5815;&#x843D;&#x5230;<br>
+bargain bin &#x6253;&#x6298;&#x533A;&#xFF0C;&#x51CF;&#x4EF7;&#x533A;<br>
+at odds with &#x4E0E;&#x2026;&#x2026;&#x4E0D;&#x4E00;&#x81F4;&#xFF1B;&#x4E0E;&#x2026;&#x2026;&#x76F8;&#x77DB;&#x76FE;<br>
+give away &#x8D60;&#x9001;&#xFF1B;&#x6350;&#x8D60;<br>
+knock off &#x8FC5;&#x901F;&#x800C;&#x8F7B;&#x677E;&#x5730;&#x5B8C;&#x6210;<br>
+get cracking &#x7ACB;&#x5373;&#x7740;&#x624B;&#x505A;&#x67D0;&#x4E8B;&#xFF1B;&#x8D76;&#x5FEB;&#x505A;&#x67D0;&#x4E8B;<br>
+set off sth. &#x5F15;&#x53D1;&#xFF1B;&#x6FC0;&#x8D77;<br>
+human nature &#x4EBA;&#x6027;<br>
+stick with &#x7EE7;&#x7EED;&#x505A;&#xFF0C;&#x4E0D;&#x653E;&#x5F03;<br>
+switch on &#x6253;&#x5F00;<br>
+chief executive &#x603B;&#x7ECF;&#x7406;&#xFF0C;&#x603B;&#x88C1;<br>
+be worse off &#x53D8;&#x5F97;&#x66F4;&#x7CDF;<br>
+press on &#x575A;&#x5B9A;&#x5730;&#x7EE7;&#x7EED;<br>
+go it alone &#x72EC;&#x81EA;&#x5E72;;&#x5355;&#x5E72;<br>
+on ...count &#x5728;&#x2026;&#x2026;&#x65B9;&#x9762;<br>
+by no means &#x7EDD;&#x4E0D;&#xFF1B;&#x4E00;&#x70B9;&#x4E5F;&#x4E0D;<br>
+epidemic flu &#x6D41;&#x884C;&#x6027;&#x611F;&#x5192;<br>
+look forward to &#x76FC;&#x671B;&#xFF0C;&#x671F;&#x76FC;<br>
+look up &#x67E5;&#x9605;,&#x68C0;&#x7D22;<br>
+Homo sapiens &#x667A;&#x4EBA;<br>
+hold the key to &#x2026;&#x2026;&#x5BF9;&#x2026;&#x2026;&#x5F88;&#x5173;&#x952E;<br>
+Chief Justice &#x9996;&#x5E2D;&#x6CD5;&#x5B98;&#xFF1B;&#x7F8E;&#x56FD;&#x6700;&#x9AD8;&#x6CD5;&#x9662;&#x9996;&#x5E2D;&#x6CD5;&#x5B98;<br>
+fly too close to the sun &#x5F97;&#x610F;&#x5FD8;&#x5F62;&#xFF0C;&#x4E0D;&#x987E;&#x540E;&#x679C;<br>
+law enforcement &#x6267;&#x6CD5;<br>
+turn on &#x53D6;&#x51B3;&#x4E8E;,&#x4F9D;&#x2026;&#x2026;&#x800C;&#x5B9A;<br>
+to the letter &#x4E00;&#x4E1D;&#x4E0D;&#x82DF;&#x5730;&#xFF1B;&#x4E1D;&#x6BEB;&#x4E0D;&#x5DEE;&#x5730;<br>
+in effect &#x5B9E;&#x9645;&#x4E0A;&#xFF1B;&#x4E8B;&#x5B9E;&#x4E0A;<br>
+in essence &#x672C;&#x8D28;&#x4E0A;&#xFF1B;&#x5B9E;&#x8D28;&#x4E0A;<br>
+carry out &#x5C65;&#x884C;&#xFF1B;&#x5B9E;&#x65BD;&#xFF1B;&#x6267;&#x884C;&#xFF1B;&#x843D;&#x5B9E;</p>
+<h2 class="mume-header" id="2012-%E5%B9%B4">2012 &#x5E74;</h2>
+
+<p>report card &#x6210;&#x7EE9;&#x5355;<br>
+on hold &#x63A8;&#x8FDF;;&#x4E2D;&#x65AD;<br>
+come into one&apos;s own &#x5145;&#x5206;&#x53D1;&#x6325;&#x4F5C;&#x7528;&#xFF0C;&#x88AB;&#x5145;&#x5206;&#x4F7F;&#x7528;&#xFF1B;<br>
+&#x88AB;&#x5145;&#x5206;&#x8BA4;&#x53EF;<br>
+stepping stone &#x8FDB;&#x8EAB;&#x4E4B;&#x9636;&#xFF1B;&#x57AB;&#x811A;&#x77F3;&#xFF1B;&#x6572;&#x95E8;&#x7816;<br>
+to the core &#x5B8C;&#x5168;&#x5730;&#xFF1B;&#x5F7B;&#x5E95;&#x5730;<br>
+appeals court &#x4E0A;&#x8BC9;&#x6CD5;&#x9662;</p>
+<p>may yet do sth.&#x65E9;&#x665A;&#xFF0C;&#x603B;&#x6709;&#x4E00;&#x5929;<br>
+better off &#x6BD4;&#x4EE5;&#x524D;&#x597D;<br>
+for the most part &#x4E00;&#x822C;&#x5730;&#xFF0C;&#x901A;&#x5E38;<br>
+a host of &#x8BB8;&#x591A;&#xFF0C;&#x5927;&#x91CF;<br>
+set out to do &#x5F00;&#x59CB;&#x505A;&#x67D0;&#x4E8B;&#xFF0C;&#x7740;&#x624B;&#x8FDB;&#x884C;<br>
+fit in &#x88AB;&#x4ED6;&#x4EBA;&#x63A5;&#x53D7;&#xFF0C;&#x76F8;&#x5904;&#x878D;&#x6D3D;<br>
+take a page from &#x6548;&#x4EFF;&#xFF1B;&#x4EE5;&#x2026;&#x2026;&#x4E3A;&#x699C;&#x6837;<br>
+a body of &#x5927;&#x91CF;&#xFF1B;&#x5927;&#x6279;&#xFF1B;&#x5927;&#x5806;<br>
+abide by sth. &#x9075;&#x5B88;&#xFF0C;&#x9075;&#x5FAA;<br>
+be subject to sb.&#x53D7;&#x2026;&#x2026;&#x652F;&#x914D;&#x7684;&#xFF1B;&#x670D;&#x4ECE;&#x4E8E;&#x2026;&#x2026;&#x7684;<br>
+go along with sb.&#x8D5E;&#x540C;&#xFF1B;&#x652F;&#x6301;&#xFF1B;&#x548C;&#x67D0;&#x4EBA;&#x89C2;&#x70B9;&#x4E00;&#x81F4;<br>
+live by &#x6309;&#x7167;&#x67D0;&#x4FE1;&#x5FF5;&#x6216;&#x539F;&#x5219;&#x751F;&#x6D3B;<br>
+a string of &#x4E00;&#x7CFB;&#x5217;&#xFF1B;&#x4E00;&#x8FDE;&#x4E32;&#xFF1B;&#x4E00;&#x6279;<br>
+cooling tower &#x51B7;&#x5374;&#x5854;<br>
+keep one&apos;s word &#x5C65;&#x884C;&#x8BFA;&#x8A00;<br>
+beside the point &#x4E0D;&#x91CD;&#x8981;&#x7684;<br>
+stake out a claim &#x516C;&#x5F00;&#x5BA3;&#x5E03;&#x5BF9;&#x2026;&#x2026;&#x7684;&#x6240;&#x6709;&#x6743;<br>
+work one&apos;s way through &#x9010;&#x6B65;&#x8FBE;&#x5230;<br>
+be open to &#x5BB9;&#x6613;&#x53D7;&#x5230;&#x2026;&#x2026;&#x7684;<br>
+trade unionist &#x5DE5;&#x4F1A;&#x4E3B;&#x4E49;&#x8005;&#xFF1B;&#x5DE5;&#x4F1A;&#x4F1A;&#x5458;<br>
+civil servant &#x516C;&#x52A1;&#x5458;&#xFF0C;&#x6587;&#x804C;&#x4EBA;&#x5458;<br>
+the public sector &#x516C;&#x8425;&#x90E8;&#x95E8;&#xFF1B;&#x516C;&#x5171;&#x90E8;&#x95E8;<br>
+the private sector &#x79C1;&#x8425;&#x90E8;&#x95E8;<br>
+shut sth. down &#x5173;&#x95ED;&#xFF0C;&#x505C;&#x6B62;&#x8FD0;&#x8F6C;<br>
+keep an eye on &#x7559;&#x795E;&#xFF1B;&#x7559;&#x610F;<br>
+pay deal &#x85AA;&#x916C;&#x5F85;&#x9047;<br>
+charter school &#x7279;&#x8BB8;&#x5B66;&#x6821;<br>
+merit pay &#x7EE9;&#x6548;&#x85AA;&#x916C;<br>
+get rid of &#x8D76;&#x8D70;,&#x6253;&#x53D1;&#x8D70;,&#x6446;&#x8131;<br>
+clamp down &#x53D6;&#x7F14;&#xFF1B;&#x538B;&#x5236;&#xFF1B;&#x9547;&#x538B;&#xFF1B;&#x4E25;&#x5389;&#x6253;&#x51FB;<br>
+civil service &#x6587;&#x804C;&#x673A;&#x6784;,&#x884C;&#x653F;&#x90E8;&#x95E8;;&#x653F;&#x5E9C;&#x5DE5;&#x4F5C;&#x4EBA;&#x5458;&#xFF0C;<br>
+&#x516C;&#x52A1;&#x5458;<br>
+stay put &#x5446;&#x5728;&#x539F;&#x5730;;&#x7559;&#x5728;&#x539F;&#x6765;&#x7684;&#x4F4D;&#x7F6E;&#x3010;&#x516C;&#x4F17;&#x53F7;&#xFF1A;&#x4E0D;&#x6613;&#x5B66;<br>
+&#x957F;&#x3011;<br>
+high achiever &#x6210;&#x7EE9;&#x51FA;&#x4F17;&#x7684;&#x4EBA;<br>
+pay packet &#x5DE5;&#x8D44;&#x888B;&#xFF1B;&#x6240;&#x5F97;&#x5DE5;&#x8D44;</p>
+<h2 class="mume-header" id="2011-%E5%B9%B4">2011 &#x5E74;</h2>
+
+<p>be under fire &#x53D7;&#x5230;&#x4E25;&#x5389;&#x6279;&#x8BC4;&#xFF1B;&#x906D;&#x5230;&#x731B;&#x70C8;&#x6279;&#x5224;<br>
+proxy statement &#x80A1;&#x4E1C;&#x59D4;&#x6258;&#x4E66;<br>
+concentrate on sth. &#x96C6;&#x4E2D;&#x65F6;&#x95F4;&#x505A;&#x67D0;&#x4E8B;<br>
+trade up &#x5356;&#x6B21;&#x4E70;&#x597D;&#xFF1B;&#x5356;&#x6389;&#x539F;&#x6709;&#x7684;&#x4EE5;&#x4FBF;&#x4E70;&#x66F4;&#x8D35;&#x7684;&#x4E1C;<br>
+&#x897F;<br>
+have an easy time &#x6BEB;&#x65E0;&#x56F0;&#x96BE;<br>
+out of date &#x8FC7;&#x65F6;&#x7684;&#xFF0C;&#x65E0;&#x7528;&#x7684;<br>
+shrug off &#x6446;&#x8131;<br>
+all the same &#x4ECD;&#x7136;&#xFF0C;&#x4F9D;&#x7136;&#xFF0C;&#x7167;&#x6837;<br>
+push ... overboard &#x629B;&#x5F03;&#xFF1B;&#x6254;&#x6389;</p>
+<p>cut off &#x5207;&#x6389;&#xFF1B;&#x5272;&#x6389;&#xFF1B;&#x780D;&#x6389;&#xFF1B;&#x526A;&#x6389;<br>
+go off &#x79BB;&#x5F00;<br>
+line up &#x6392;&#x6210;&#x4E00;&#x884C;&#xFF1B;&#x7AD9;&#x961F;&#xFF1B;&#x6392;&#x961F;<br>
+when it comes to sth. &#x5F53;&#x6D89;&#x53CA;&#x67D0;&#x4E8B;&#x65F6;<br>
+derive from sth. &#x4ECE;&#x2026;&#x2026;&#x884D;&#x751F;&#x51FA;&#xFF1B;&#x8D77;&#x6E90;&#x4E8E;&#xFF1B;&#x6765;&#x81EA;<br>
+take sth. for granted &#x8BA4;&#x4E3A;&#x2026;&#x2026;&#x662F;&#x7406;&#x6240;&#x5F53;&#x7136;&#x7684;<br>
+make it &#x5E78;&#x514D;&#x4E8E;&#x96BE;&#xFF1B;&#x6E21;&#x8FC7;&#x96BE;&#x5173;<br>
+as well as &#x9664;&#x2026;&#x2026;&#x4E4B;&#x5916;&#x8FD8;<br>
+quick fix &#x5E94;&#x6025;&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#xFF0C;&#x6743;&#x5B9C;&#x4E4B;&#x8BA1;<br>
+write off &#x8BA4;&#x5B9A;&#x2026;&#x2026;&#x5931;&#x8D25;<br>
+strike sb. as sth. &#x7ED9;&#x67D0;&#x4EBA;&#x4EE5;&#x2026;&#x2026;&#x5370;&#x8C61;&#xFF1B;&#x8BA9;&#x67D0;&#x4EBA;&#x89C9;<br>
+&#x5F97;&#x2026;&#x2026;<br>
+for sb.&apos; part &#x5C31;......&#x800C;&#x8A00;<br>
+boot up &#x542F;&#x52A8;<br>
+bring about &#x5BFC;&#x81F4;,&#x5F15;&#x8D77;<br>
+line sth.up &#x51C6;&#x5907;&#xFF1B;&#x7EC4;&#x7EC7;&#xFF1B;&#x5B89;&#x6392;<br>
+reflect on &#x8BA4;&#x771F;&#x601D;&#x8003;&#xFF1B;&#x6C89;&#x601D;<br>
+get the nod &#x5F97;&#x5230;&#x8BB8;&#x53EF;<br>
+take hold &#x5F00;&#x59CB;&#x5B8C;&#x5168;&#x63A7;&#x5236;&#xFF1B;&#x53D8;&#x5F97;&#x5341;&#x5206;&#x5F3A;&#x5927;<br>
+stick with &#x7EE7;&#x7EED;&#x4EFB;&#x7528;<br>
+pick up &#x6539;&#x5584;<br>
+adhere to sth. &#x575A;&#x6301;&#xFF0C;&#x9075;&#x5B88;&#xFF0C;&#x9075;&#x5FAA;<br>
+stem from &#x6E90;&#x81EA;&#xFF1B;&#x8D77;&#x6E90;&#x4E8E;<br>
+lean on &#x4F9D;&#x9760;&#xFF0C;&#x4F9D;&#x8D56;<br>
+a piece of cake &#x5341;&#x5206;&#x8F7B;&#x677E;&#x7684;&#x4E8B;&#xFF0C;&#x5C0F;&#x83DC;&#x4E00;&#x789F;</p>
+<h2 class="mume-header" id="2010-%E5%B9%B4">2010 &#x5E74;</h2>
+
+<p>come down &#x4E0B;&#x964D;&#xFF0C;&#x964D;&#x4F4E;<br>
+auction house &#x62CD;&#x5356;&#x884C;<br>
+pay out &#x4ED8;&#x51FA;&#x5927;&#x7B14;&#x94B1;&#xFF0C;&#x652F;&#x4ED8;&#x5927;&#x7B14;&#x8D44;&#x91D1;<br>
+chief executive &#x603B;&#x7ECF;&#x7406;&#xFF0C;&#x603B;&#x88C1;<br>
+burst into &#x7A81;&#x7136;&#x7206;&#x53D1;<br>
+amount to &#x603B;&#x8BA1;;&#x5171;&#x8BA1;<br>
+first and foremost &#x9996;&#x5148;&#xFF1B;&#x9996;&#x8981;&#x7684;&#x662F;<br>
+in short &#x603B;&#x4E4B;&#xFF1B;&#x7B80;&#x8A00;&#x4E4B;<br>
+figure out &#x60F3;&#x51FA;&#xFF1B;&#x5F04;&#x660E;&#x767D;<br>
+turn to &#x5411;&#x2026;&#x2026;&#x6C42;&#x52A9;<br>
+air freshener &#x7A7A;&#x6C14;&#x6E05;&#x65B0;&#x5242;<br>
+on account of &#x7531;&#x4E8E;&#xFF0C;&#x56E0;&#x4E3A;<br>
+the letter of the law &#x6CD5;&#x5F8B;&#x7684;&#x51C6;&#x786E;&#x5B57;&#x9762;&#x610F;&#x4E49;<br>
+jury duty &#x966A;&#x5BA1;&#x4E49;&#x52A1;&#xFF1B;&#x53C2;&#x4E0E;&#x966A;&#x5BA1;&#x671F;<br>
+usher in &#x5F00;&#x521B;&#xFF1B;&#x5F00;&#x59CB;&#xFF1B;&#x5F00;&#x542F;<br>
+at random &#x968F;&#x610F;&#xFF1B;&#x968F;&#x673A;<br>
+consist of &#x7531;&#x2026;&#x2026;&#x7EC4;&#x6210;<br>
+be far removed from sth. &#x4E0E;&#x2026;&#x2026;&#x5927;&#x76F8;&#x5F84;&#x5EAD;&#xFF1B;<br>
+&#x4E0E;&#x2026;&#x2026;&#x76F8;&#x8DDD;&#x751A;&#x8FDC;<br>
+take ... for granted &#x60F3;&#x5F53;&#x7136;&#x5730;&#x8BA4;&#x4E3A;&#x2026;&#x2026;&#xFF0C;&#x8BA4;&#x4E3A;&#x2026;&#x2026;<br>
+&#x662F;&#x7406;&#x6240;&#x5F53;&#x7136;</p>
+<p>at length &#x8BE6;&#x5C3D;&#x5730;<br>
+keep one&apos;s end up &#x575A;&#x6301;&#xFF0C;&#x4E0D;&#x6CC4;&#x6C14;<br>
+have no use for &#x538C;&#x6076;&#xFF1B;&#x4E0D;&#x559C;&#x6B22;<br>
+scale back &#x7F29;&#x51CF;&#xFF0C;&#x7F29;&#x5C0F;<br>
+intellectual property &#x77E5;&#x8BC6;&#x4EA7;&#x6743;<br>
+Court of Appeals &#x4E0A;&#x8BC9;&#x6CD5;&#x9662;<br>
+beat sb. to the punch &#x5148;&#x53D1;&#x5236;&#x4EBA;&#xFF0C;&#x62A2;&#x5148;&#x505A;&#x67D0;&#x4E8B;<br>
+in the wake of &#x4F5C;&#x4E3A;&#x2026;&#x2026;&#x7684;&#x540E;&#x679C;;&#x968F;&#x2026;&#x2026;&#x4E4B;&#x540E;&#x800C;&#x6765;<br>
+tipping point &#x4E34;&#x754C;&#x70B9;&#xFF0C;&#x5F15;&#x7206;&#x70B9;&#xFF0C;&#x7206;&#x53D1;&#x70B9;&#x3010;&#x516C;&#x4F17;&#x53F7;&#xFF1A;&#x4E0D;<br>
+&#x6613;&#x5B66;&#x957F;&#x3011;<br>
+well connected &#x4E0E;&#x663E;&#x8D35;&#x4EBA;&#x7269;&#x6709;&#x4EA4;&#x60C5;&#x7684;&#xFF1B;&#x4E0E;&#x6709;&#x5F71;&#x54CD;<br>
+&#x4EBA;&#x58EB;&#x6709;&#x6765;&#x5F80;&#x7684;<br>
+stem from &#x6E90;&#x81EA;;&#x7531;&#x2026;&#x2026;&#x9020;&#x6210;<br>
+in turn &#x8F6E;&#x6D41;&#x5730;&#xFF0C;&#x4F9D;&#x6B21;&#x5730;<br>
+a mass of &#x5927;&#x91CF;&#xFF1B;&#x8BB8;&#x591A;<br>
+behind the scenes &#x79D8;&#x5BC6;&#x5730;&#xFF1B;&#x80CC;&#x5730;&#x91CC;&#xFF1B;&#x5728;&#x5E55;&#x540E;<br>
+take aim at &#x628A;&#x76EE;&#x6807;&#x5BF9;&#x51C6;&#x67D0;&#x4EBA;&#xFF1B;&#x628A;&#x6279;&#x8BC4;&#x7684;&#x77DB;&#x5934;&#x6307;&#x5411;<br>
+&#x67D0;&#x4EBA;<br>
+toxic assets &#x6709;&#x6BD2;&#x8D44;&#x4EA7;<br>
+rush through &#x4F7F;&#x5FEB;&#x901F;&#x901A;&#x8FC7;&#xFF1B;&#x5306;&#x5306;&#x5730;&#x5904;&#x7406;<br>
+income statement &#x635F;&#x76CA;&#x8868;&#xFF0C;&#x5229;&#x6DA6;&#x8868;<br>
+cry out against &#x5F3A;&#x70C8;&#x53CD;&#x5BF9;&#xFF1B;&#x8C34;&#x8D23;<br>
+on the wrong planet &#x6E90;&#x81EA;&#x77ED;&#x8BED; be on another<br>
+planet&#xFF0C;&#x5F62;&#x5BB9;&#x67D0;&#x4EBA;&#x7684;&#x60F3;&#x6CD5;&#x5B8C;&#x5168;&#x4E0D;&#x5207;&#x5B9E;&#x9645;<br>
+book value &#x8D26;&#x9762;&#x4EF7;&#x503C;&#xFF0C;&#x51C0;&#x503C;<br>
+buy up &#x5927;&#x91CF;&#x4E70;&#x8FDB;&#xFF1B;&#x5168;&#x6570;&#x4E70;&#x8FDB;<br>
+clean up &#x6E05;&#x7406;&#xFF1B;&#x6574;&#x987F;<br>
+give in to &#x8BA9;&#x6B65;&#xFF1B;&#x52C9;&#x5F3A;&#x540C;&#x610F;</p>
+<h2 class="mume-header" id="2009-%E5%B9%B4">2009 &#x5E74;</h2>
+
+<p>on auto-pilot &#x673A;&#x68B0;&#x5730;&#xFF0C;&#x4E60;&#x60EF;&#x6027;&#x5730;<br>
+train of thought &#x601D;&#x8DEF;&#xFF1B;&#x601D;&#x7EEA;<br>
+comfort zone &#x8212;&#x9002;&#x533A;&#xFF1B;&#x653E;&#x677E;&#x533A;<br>
+kill off &#x4F7F;&#x67D0;&#x4E8B;&#x7269;&#x505C;&#x6B62;&#xFF1B;&#x9664;&#x6389;&#xFF1B;&#x6392;&#x9664;<br>
+work through sth.&#x89E3;&#x51B3;&#x95EE;&#x9898;<br>
+come in &#x6709;&#x7528;&#xFF0C;&#x6D3E;&#x4E0A;&#x7528;&#x573A;<br>
+shell out &#x4ED8;&#x4E00;&#x5927;&#x7B14;&#x94B1;<br>
+track down &#x8FFD;&#x8E2A;&#x5230;&#xFF1B;&#x8FFD;&#x67E5;&#x5230;<br>
+pass down &#x628A;&#x2026;&#x2026;&#x4F20;&#x7ED9;&#x540E;&#x4EBA;&#xFF0C;&#x628A;&#x2026;&#x2026;&#x5F80;&#x4E0B;&#x4F20;<br>
+lump...together &#x628A;&#x2026;&#x2026;&#x6DF7;&#x5230;&#x4E00;&#x5757;&#x513F;&#xFF0C;&#x628A;&#x2026;&#x2026;&#x5408;&#x5E76;<br>
+&#x5728;&#x4E00;&#x8D77;<br>
+in turn &#x76F8;&#x5E94;&#x5730;&#xFF1B;&#x8F6C;&#x800C;<br>
+let alone &#x66F4;&#x4E0D;&#x7528;&#x8BF4;</p>
+<h2 class="mume-header" id="2008-%E5%B9%B4">2008 &#x5E74;</h2>
+
+<p>catch up to &#x8D76;&#x4E0A;<br>
+worn out &#x75B2;&#x60EB;&#x4E0D;&#x582A;&#xFF1B;&#x7CBE;&#x75B2;&#x529B;&#x7AED;<br>
+rest with sb. &#x662F;&#x67D0;&#x4EBA;&#x7684;&#x8D23;&#x4EFB;&#xFF1B;&#x7531;&#x67D0;&#x4EBA;&#x8D1F;&#x8D23;<br>
+more than &#x975E;&#x5E38;&#xFF0C;&#x6781;&#x5176;<br>
+get in the way &#x59A8;&#x788D;&#xFF1B;&#x963B;&#x788D;&#xFF1B;&#x6321;&#x9053;<br>
+by and large &#x5927;&#x4F53;&#x4E0A;&#xFF1B;&#x603B;&#x7684;&#x6765;&#x8BF4;<br>
+from the bottom up &#x4ECE;&#x6700;&#x5E95;&#x5C42;&#x505A;&#x8D77;&#xFF1B;&#x4ECE;&#x5934;&#x5B66;&#x8D77;<br>
+Founding Fathers &#x5F00;&#x56FD;&#x5143;&#x52CB;<br>
+part with &#x653E;&#x5F03;&#xFF0C;&#x4EA4;&#x51FA;<br>
+the Constitution &#x5BAA;&#x6CD5;</p>
+<h2 class="mume-header" id="2007-%E5%B9%B4">2007 &#x5E74;</h2>
+
+<p>account for &#x662F;&#x2026;&#x2026;&#x7684;&#x89E3;&#x91CA;<br>
+be coupled with &#x4E0E;&#x2026;&#x2026;&#x7ED3;&#x5408;<br>
+take to &#x5F00;&#x59CB;&#x4ECE;&#x4E8B;;&#x5F62;&#x6210;&#x2026;&#x2026;&#x7684;&#x4E60;&#x60EF;<br>
+high achiever &#x6210;&#x7EE9;&#x51FA;&#x4F17;&#x7684;&#x4EBA;<br>
+average Joe &#x666E;&#x901A;&#x4EBA;</p>
+<h2 class="mume-header" id="mental-age-%E6%99%BA%E5%8A%9B%E5%B9%B4%E9%BE%84%E5%BF%83%E7%90%86%E5%B9%B4%E9%BE%84">mental age &#x667A;&#x529B;&#x5E74;&#x9F84;;&#x5FC3;&#x7406;&#x5E74;&#x9F84;</h2>
+
+<h2 class="mume-header" id="chronological-age-%E6%8C%89%E6%97%B6%E9%97%B4%E8%AE%A1%E7%AE%97%E7%9A%84%E5%B9%B4%E9%BE%84%E5%AE%9E%E9%99%85%E5%B9%B4%E9%BE%84">chronological age &#x6309;&#x65F6;&#x95F4;&#x8BA1;&#x7B97;&#x7684;&#x5E74;&#x9F84;&#xFF0C;&#x5B9E;&#x9645;&#x5E74;&#x9F84;</h2>
+
+<p>count on &#x671F;&#x671B;,&#x6307;&#x671B;<br>
+fair play &#x6309;&#x89C4;&#x5219;&#x6BD4;&#x8D5B;;&#x516C;&#x5E73;&#x529E;&#x4E8B;<br>
+pink slip &#x89E3;&#x96C7;&#x901A;&#x77E5;&#x5355;<br>
+look at &#x601D;&#x8003;;&#x8003;&#x8651;;&#x7814;&#x7A76;<br>
+side effect &#x610F;&#x5916;&#x7684;&#x8FDE;&#x5E26;&#x540E;&#x679C;<br>
+lay sb. off &#x89E3;&#x96C7;&#x67D0;&#x4EBA;&#xFF0C;&#x89E3;&#x8058;&#x67D0;&#x4EBA;<br>
+safety net &#x4FDD;&#x969C;&#x63AA;&#x65BD;;&#x5B89;&#x5168;&#x7F51;<br>
+make up &#x8865;&#x4E0A;&#xFF1B;&#x4F5C;&#x51FA;&#x8865;&#x507F;<br>
+interest rate &#x5229;&#x7387;<br>
+heads will roll &#x6709;&#x4E9B;&#x4EBA;&#x5C06;&#x4E3A;&#x67D0;&#x4E8B;&#x53D7;&#x5230;&#x60E9;&#x7F5A;<br>
+put right &#x7EA0;&#x6B63;&#xFF1B;&#x6539;&#x6B63;&#xFF1B;&#x6062;&#x590D;&#x79E9;&#x5E8F;<br>
+on behalf of &#x4EE3;&#x8868;&#x67D0;&#x4EBA;<br>
+fall into sb&apos;s hands &#x53D7;&#x5236;&#x4E8E;&#x67D0;&#x4EBA;&#xFF1B;&#x88AB;&#x67D0;&#x4EBA;<br>
+state of affairs &#x4E8B;&#x6001;&#xFF1B;&#x60C5;&#x51B5;&#xFF1B;&#x5F62;&#x52BF;<br>
+go astray &#x4E22;&#x5931;&#xFF1B;&#x88AB;&#x76D7;<br>
+do the rounds &#x5230;&#x5404;&#x5904;&#x53BB;&#xFF0C;&#x5DE1;&#x56DE;</p>
+<h2 class="mume-header" id="2006-%E5%B9%B4">2006 &#x5E74;</h2>
+
+<p>in spite of &#x4E0D;&#x7BA1;&#xFF1B;&#x5C3D;&#x7BA1;<br>
+department store &#x767E;&#x8D27;&#x5546;&#x5E97;&#xFF1B;&#x767E;&#x8D27;&#x516C;&#x53F8;<br>
+cater to &#x6EE1;&#x8DB3;&#x9700;&#x8981;&#xFF1B;&#x8FCE;&#x5408;<br>
+regardless of &#x4E0D;&#x7BA1;&#xFF1B;&#x4E0D;&#x987E;&#xFF1B;&#x4E0D;&#x7406;&#x4F1A;<br>
+awaken sb. to &#xFF08;&#x4F7F;&#xFF09;&#x5BDF;&#x89C9;&#x5230;&#xFF0C;&#x610F;&#x8BC6;&#x5230;&#xFF0C;&#x9192;&#x609F;&#x5230;<br>
+fit into &#x4E0E;&#x2026;&#x76F8;&#x5904;&#x878D;&#x6D3D;&#xFF1B;&#x9002;&#x5E94;<br>
+prior to &#x5728;&#x67D0;&#x4E8B;&#x4E4B;&#x524D;&#xFF0C;&#x5148;&#x4E8E;&#x67D0;&#x4E8B;<br>
+live off &#x9760;&#x2026;&#x800C;&#x6D3B;&#xFF1B;&#x4F9D;&#x8D56;&#x2026;&#x751F;&#x6D3B;<br>
+take in &#x53BB;&#x89C2;&#x770B;&#xFF1B;&#x53BB;&#x53C2;&#x89C2;<br>
+on the side &#x5728;&#x6B63;&#x4E8B;&#x4E4B;&#x5916;<br>
+cocktail lounge &#x9152;&#x5427;&#x95F4;&#xFF0C;&#x4F11;&#x606F;&#x5BA4;<br>
+in a row &#x63A5;&#x8FDE;&#x5730;&#xFF1B;&#x8FDE;&#x7EED;&#x5730;<br>
+bed down &#x7761;&#x89C9;<br>
+box office &#x552E;&#x7968;&#x5904;<br>
+be easy game &#x5BB9;&#x6613;&#x4E0A;&#x5F53;&#xFF1B;&#x6613;&#x53D7;&#x9A97;<br>
+after all &#x522B;&#x5FD8;&#x4E86;&#xFF0C;&#x5230;&#x5E95;<br>
+heart attack &#x5FC3;&#x810F;&#x75C5;&#x53D1;&#x4F5C;<br>
+live with sth. &#x63A5;&#x53D7;&#xFF0C;&#x5BB9;&#x5FCD;</p>
+<h2 class="mume-header" id="2005-%E5%B9%B4">2005 &#x5E74;</h2>
+
+<p>abundantly clear &#x5341;&#x5206;&#x6E05;&#x695A;&#xFF1B;&#x975E;&#x5E38;&#x660E;&#x767D;<br>
+stem from &#x662F;&#x2026;&#x7684;&#x7ED3;&#x679C;&#xFF1B;&#x8D77;&#x6E90;&#x4E8E;&#xFF1B;&#x6839;&#x6E90;&#x662F;<br>
+as yet &#x76F4;&#x5230;&#x73B0;&#x5728;<br>
+be out to do sth &#x8BD5;&#x56FE;&#x505A;&#x67D0;&#x4E8B;<br>
+awaken sb. to &#x5BDF;&#x89C9;&#x5230;&#xFF0C;&#x610F;&#x8BC6;&#x5230;&#xFF0C;&#x9192;&#x609F;&#x5230;<br>
+take out an insurance policy &#x6295;&#x4FDD;&#xFF0C;&#x6B64;&#x5904;&#x5F15;&#x7533;&#x4E3A;<br>
+&#x201C;&#x91C7;&#x53D6;&#x9632;&#x8303;&#x63AA;&#x65BD;&#x201D;<br>
+insurance policy &#x4FDD;&#x9669;&#x5355;<br>
+power plant &#x53D1;&#x7535;&#x5382;&#xFF1B;&#x53D1;&#x7535;&#x7AD9;<br>
+work through &#x5904;&#x7406;&#x590D;&#x6742;&#x7684;&#x95EE;&#x9898;<br>
+be occupied with &#x88AB;&#x2026;&#x5360;&#x636E;<br>
+as the end of the day &#x6700;&#x7EC8;&#xFF1B;&#x5230;&#x5934;&#x6765;&#xFF1B;&#x4E0D;&#x7BA1;&#x600E;&#x4E48;&#x8BF4;<br>
+well regarded &#x6DF1;&#x53D7;&#x597D;&#x8BC4;&#x7684;</p>
+<h1 class="mume-header" id="%E5%AE%8C%E5%9E%8B">&#x5B8C;&#x578B;</h1>
+
+<p>in addition &#x53E6;&#x5916;<br>
+in addition to &#x9664;...&#x4E4B;&#x5916;<br>
+in the air &#x5728;&#x6D41;&#x884C;&#x4E2D;;&#x5728;&#x4F20;&#x64AD;&#x4E2D;<br>
+on (the/an) average &#x5E73;&#x5747;;&#x4E00;&#x822C;&#x6765;&#x8BF4;<br>
+on the basis of &#x6839;&#x636E;;&#x5728;...&#x7684;&#x57FA;&#x7840;&#x4E0A;<br>
+at (the)best &#x5145;&#x5176;&#x91CF;;&#x81F3;&#x591A;<br>
+for the better &#x597D;&#x8F6C;;&#x6539;&#x5584;<br>
+on board &#x5728;&#x8239;(&#x8F66;&#x3001;&#x98DE;&#x673A;)&#x4E0A;<br>
+out of breath &#x5598;&#x4E0D;&#x8FC7;&#x6C14;&#x6765;<br>
+on business &#x56E0;&#x516C;;&#x56E0;&#x4E8B;<br>
+in any case &#x65E0;&#x8BBA;&#x5982;&#x4F55;;&#x603B;&#x4E4B;<br>
+in case &#x5047;&#x5982;;&#x4EE5;&#x9632;(&#x4E07;&#x4E00;&#xFF09;&#x514D;&#x5F97;<br>
+in no case &#x51B3;&#x4E0D;<br>
+by chance &#x5076;&#x7136;;&#x78B0;&#x5DE7;<br>
+in charge (of)&#x8D1F;&#x8D23;;&#x4E3B;&#x7BA1;<br>
+round the clock &#x663C;&#x591C;&#x4E0D;&#x505C;&#x5730;<br>
+in common &#x5171;&#x7528;;&#x5171;&#x6709;;&#x5171;&#x540C;<br>
+hand in hand &#x624B;&#x62C9;&#x624B;;&#x643A;&#x624B;<br>
+in hand &#x638C;&#x63E1;&#x4E2D;;&#x5728;&#x63A7;&#x5236;&#x4E2D;<br>
+on hand &#x5728;&#x624B;&#x8FB9;;&#x4E34;&#x8FD1;<br>
+on one hand ...&#x4E00;&#x65B9;&#x9762;..<br>
+on the other hand &#x53E6;&#x4E00;&#x65B9;&#x9762;..<br>
+at heart &#x5728;&#x5185;&#x5FC3;;&#x5B9E;&#x8D28;&#x4E0A;<br>
+by heart &#x7262;&#x8BB0;;&#x51ED;&#x8BB0;&#x5FC6;<br>
+at home &#x5728;&#x5BB6;;&#x81EA;&#x5728;&#xFF0C;&#x81EA;&#x5982;<br>
+in honor of &#x4EE5;&#x7EAA;&#x5FF5;;&#x5411;...&#x8868;&#x793A;&#x656C;&#x610F;<br>
+on one&apos;s honor &#x4EE5;&#x540D;&#x8A89;&#x62C5;&#x4FDD;<br>
+in a hurry &#x5306;&#x5FD9;&#x5730;;&#x7ACB;&#x5373;<br>
+for instance &#x4F8B;&#x5982;;&#x4E3E;&#x4F8B;&#x8BF4;<br>
+at intervals &#x4E0D;&#x65F6;;&#x65F6;&#x65F6;<br>
+at last &#x6700;&#x7EC8;;&#x7EC8;&#x4E8E;<br>
+at least &#x81F3;&#x5C11;;&#x6700;&#x4F4E;&#x9650;&#x5EA6;<br>
+in the least&#x2014;&#x70B9;;&#x4E1D;&#x6BEB;<br>
+at length &#x7EC8;&#x4E8E;&#xFF0C;&#x6700;&#x540E;;&#x8BE6;&#x7EC6;&#x5730;<br>
+in the light of &#x6309;&#x7167;;&#x6839;&#x636E;<br>
+on condition that &#x5728;&#x2026;&#x2026;&#x6761;&#x4EF6;&#x4E0B;<br>
+in confidence &#x4FE1;&#x4EFB;<br>
+in connection with/to &#x5173;&#x4E8E;<br>
+in consequence &#x56E0;&#x6B64;;&#x7ED3;&#x679C;<br>
+in consequence of &#x7531;&#x4E8E;&#x2026;&#x2026;&#x7684;&#x7F18;&#x6545;<br>
+on the contrary &#x53CD;&#x4E4B;;&#x6B63;&#x76F8;&#x53CD;<br>
+in contrast with/to &#x4E0E;&#x2026;&#x2026;&#x6210;&#x5BF9;&#x7167;<br>
+out of control &#x5931;&#x53BB;&#x63A7;&#x5236;<br>
+under control &#x88AB;&#x63A7;&#x5236;&#x4F4F;<br>
+at all costs &#x4E0D;&#x60DC;&#x4EFB;&#x4F55;&#x4EE3;&#x4EF7;<br>
+at the cost of &#x4EE5;&#x2026;&#x4E3A;&#x4EE3;&#x4EF7;<br>
+in conclusion &#x6700;&#x540E;;&#x603B;&#x4E4B;<br>
+for the moment &#x73B0;&#x5728;;&#x6682;&#x65F6;<br>
+in a moment &#x7ACB;&#x523B;;&#x9A6C;&#x4E0A;<br>
+in nature &#x672C;&#x8D28;&#x4E0A;<br>
+on occasion &#x6709;&#x65F6;;&#x4E0D;&#x65F6;<br>
+in order &#x79E9;&#x5E8F;&#x4E95;&#x7136;;&#x6574;&#x9F50;<br>
+in group to &#x4EE5;&#x4FBF;;&#x4E3A;&#x4E86;<br>
+in group that &#x4EE5;&#x4FBF;<br>
+out of order &#x53D1;&#x751F;&#x6545;&#x969C;;&#x5931;&#x8C03;<br>
+on one&apos;s own &#x72EC;&#x81EA;&#x5730;;&#x72EC;&#x7ACB;&#x5730;<br>
+in line with &#x4E0E;..&#x4E00;&#x81F4;;&#x6309;&#x7167;<br>
+at a loss &#x56F0;&#x60D1;;&#x4E0D;&#x77E5;&#x6240;&#x63AA;<br>
+as a matter of fact &#x5176;&#x5B9E;;&#x4E8B;&#x5B9E;&#x4E0A;<br>
+by all means &#x65E0;&#x8BBA;&#x5982;&#x4F55;;&#x5FC5;&#x5B9A;<br>
+by means of &#x501F;&#x52A9;&#x4E8E;;&#x7528;<br>
+by no means &#x51B3;&#x4E0D;<br>
+in memory of &#x7EAA;&#x5FF5;<br>
+at the mercy of &#x5728;...&#x652F;&#x914D;&#x4E0B;<br>
+by mistake &#x9519;&#x8BEF;&#x5730;<br>
+at the moment &#x73B0;&#x5728;;&#x6B64;&#x523B;<br>
+for a moment &#x7247;&#x523B;;&#x4E00;&#x4F1A;&#x513F;<br>
+in line &#x6210;&#x4E00;&#x76F4;&#x7EBF;;&#x6392;&#x6210;&#x4E00;&#x884C;<br>
+in particular &#x7279;&#x522B;&#x5730;;&#x5C24;&#x5176;;&#x8BE6;&#x7EC6;&#x5730;<br>
+in the past &#x5728;&#x8FC7;&#x53BB;;&#x4EE5;&#x5F80;<br>
+in person &#x4EB2;&#x81EA;<br>
+in place &#x5728;&#x9002;&#x5F53;&#x7684;&#x4F4D;&#x7F6E;<br>
+in place of &#x4EE3;&#x66FF;<br>
+in the first place &#x8D77;&#x521D;;&#x9996;&#x5148;<br>
+in the last place &#x6700;&#x540E;<br>
+out of place &#x4E0D;&#x5F97;&#x5176;&#x6240;&#x7684;;&#x4E0D;&#x9002;&#x5F53;&#x7684;<br>
+on the point &#x5373;&#x5C06;...&#x7684;&#x65F6;&#x5019;<br>
+to the point &#x5207;&#x4E2D;&#x8981;&#x5BB3;;&#x5207;&#x9898;<br>
+in practice &#x5728;&#x5B9E;&#x9645;&#x4E2D;;&#x5B9E;&#x9645;&#x4E0A;<br>
+out of practice &#x4E45;&#x4E0D;&#x7EC3;&#x4E60;;&#x8352;&#x758F;<br>
+at present &#x76EE;&#x524D;;&#x73B0;&#x5728;<br>
+for the present &#x76EE;&#x524D;;&#x6682;&#x65F6;<br>
+in proportion to &#x4E0E;...&#x6210;&#x6BD4;&#x4F8B;&#x7684;<br>
+in public &#x516C;&#x5F00;&#x5730;;&#x5F53;&#x4F17;<br>
+for (the) purpose of &#x4E3A;&#x4E86;<br>
+on purpose &#x6545;&#x610F;;&#x6709;&#x610F;<br>
+with the purpose of &#x4E3A;&#x4E86;<br>
+in question &#x6B63;&#x5728;&#x8003;&#x8651;<br>
+at random &#x968F;&#x610F;&#x5730;;&#x4EFB;&#x610F;&#x5730;<br>
+at any rate &#x65E0;&#x8BBA;&#x5982;&#x4F55;;&#x81F3;&#x5C11;<br>
+by reason of &#x7531;&#x4E8E;<br>
+as regards &#x5173;&#x4E8E;;&#x81F3;&#x4E8E;<br>
+with/in regard to &#x5BF9;&#x4E8E;;&#x5C31;..&#x800C;&#x8BBA;<br>
+in/with relation to &#x5173;&#x7CFB;&#x5230;<br>
+With respect to &#x5173;&#x4E8E;<br>
+As a result &#x7ED3;&#x679C;;&#x56E0;&#x6B64;<br>
+As a result of &#x7531;&#x4E8E;...&#x7684;&#x7ED3;&#x679C;<br>
+ln return &#x4F5C;&#x4E3A;&#x62A5;&#x7B54;;&#x4F5C;&#x4E3A;&#x56DE;&#x62A5;<br>
+on the road &#x5728;&#x65C5;&#x9014;&#x4E2D;<br>
+as a rule &#x89C4;&#x7AE0;&#xFF0C;&#x89C4;&#x5219;;&#x901A;&#x5E38;&#xFF0C;&#x7167;&#x4F8B;<br>
+in the long run &#x6700;&#x7EC8;;&#x4ECE;&#x957F;&#x8FDC;&#x89C2;&#x70B9;&#x770B;<br>
+for the sake of &#x4E3A;&#x4E86;...&#x8D77;&#x89C1;<br>
+on sale &#x51FA;&#x552E;;&#x8D31;&#x5356;<br>
+on a large scale &#x5927;&#x89C4;&#x6A21;&#x5730;<br>
+on a small scale &#x5C0F;&#x89C4;&#x6A21;&#x5730;<br>
+in secret &#x79D8;&#x5BC6;&#x5730;&#xFF0C;&#x79C1;&#x4E0B;&#x5730;<br>
+in a sense &#x4ECE;&#x67D0;&#x79CD;&#x610F;&#x4E49;&#x4E0A;&#x8BF4;<br>
+in shape &#x5904;&#x4E8E;&#x826F;&#x597D;&#x72B6;&#x6001;<br>
+on the side &#x4F5C;&#x4E3A;&#x517C;&#x804C;;&#x989D;&#x5916;<br>
+at first sight &#x4E4D;&#x4E00;&#x770B;;&#x521D;&#x770B;&#x8D77;&#x6765;<br>
+in sight &#x88AB;&#x770B;&#x5230;;&#x5728;&#x671B;<br>
+out of sight &#x770B;&#x4E0D;&#x89C1;;&#x5728;&#x89C6;&#x91CE;&#x4E4B;&#x5916;<br>
+in spite of &#x4E0D;&#x7BA1;&#xFF0C;&#x4E0D;&#x987E;;&#x5C3D;&#x7BA1;&#xFF0C;&#x867D;&#x7136;<br>
+on the spot &#x5F53;&#x573A;;&#x5728;&#x73B0;&#x573A;<br>
+in step &#x540C;&#x6B65;;&#x5408;&#x62CD;<br>
+out of step &#x6B65;&#x8C03;&#x4E0D;&#x4E00;&#x81F4;;&#x4E0D;&#x534F;&#x8C03;<br>
+in stock &#x73B0;&#x6709;;&#x5907;&#x6709;<br>
+in sum &#x603B;&#x800C;&#x8A00;&#x4E4B;<br>
+in tears &#x6D41;&#x7740;&#x6CEA;;&#x54ED;<br>
+in terms of &#x4F9D;&#x636E;&#xFF0C;&#x6309;&#x7167;;&#x7528;...&#x63AA;&#x8F9E;<br>
+for one thing &#x9996;&#x5148;;&#x4E00;&#x5219;<br>
+on the second thoughts &#x7ECF;&#x91CD;&#x65B0;&#x8003;&#x8651;;&#x4E00;&#x8F6C;&#x5FF5;<br>
+at a time &#x6BCF;&#x6B21;;&#x4E00;&#x6B21;<br>
+at no time &#x4ECE;&#x4E0D;;&#x7EDD;&#x4E0D;<br>
+at one time &#x540C;&#x65F6;;&#x66FE;&#x7ECF;<br>
+take advantage of &#x5229;&#x7528;<br>
+make allowances for &#x8003;&#x8651;;&#x4F53;&#x8C05;<br>
+leave...alone &#x542C;&#x5176;&#x81EA;&#x7136;;&#x4E0D;&#x8981;&#x53BB;&#x7BA1;<br>
+one another &#x4E92;&#x76F8;<br>
+apart from &#x9664;&#x53BB;<br>
+no less than &#x4E0D;&#x5C11;&#x4E8E;;&#x548C;.&#x2026;&#x4E00;&#x6837;<br>
+let down &#x653E;&#x4E0B;;&#x964D;&#x4F4E;;&#x4F7F;&#x5931;&#x671B;<br>
+let go &#x653E;&#x5F00;;&#x677E;&#x624B;<br>
+let in &#x8BA9;...&#x8FDB;&#x5165;<br>
+let off &#x5F00;&#x67AA;;&#x514D;&#x9664;<br>
+let out &#x653E;&#x6389;;&#x53D1;&#x51FA;<br>
+lie in &#x5728;&#x4E8E;<br>
+cast light on/upon &#x4F7F;&#x660E;&#x767D;;&#x9610;&#x660E;<br>
+live on/by &#x9760;...&#x751F;&#x6D3B;<br>
+make up one&apos;s mind &#x4E0B;&#x51B3;&#x5FC3;<br>
+live through &#x5EA6;&#x8FC7;;&#x7ECF;&#x53D7;&#x8FC7;<br>
+live up to &#x505A;&#x5230;;&#x4E0D;&#x8F9C;&#x8D1F;<br>
+as long as/so long as &#x53EA;&#x8981;;&#x5982;&#x679C;<br>
+before long &#x4E0D;&#x4E45;&#x4EE5;&#x540E;<br>
+break away &#x8131;&#x79BB;;&#x9003;&#x8DD1;<br>
+break down &#x635F;&#x574F;;&#x5206;&#x89E3;<br>
+break in &#x5F3A;&#x884C;&#x8FDB;&#x5165;;&#x6253;&#x65AD;<br>
+break into &#x95EF;&#x5165;<br>
+break off &#x65AD;&#x7EDD;;&#x7ED3;&#x675F;<br>
+look forward to &#x76FC;&#x671B;;&#x671F;&#x5F85;<br>
+look into &#x8C03;&#x67E5;;&#x89C2;&#x5BDF;<br>
+look on &#x65C1;&#x89C2;;&#x89C2;&#x770B;<br>
+look out &#x7559;&#x795E;;&#x8B66;&#x60D5;<br>
+look over &#x68C0;&#x67E5;;&#x8C03;&#x67E5;<br>
+look through &#x4ED4;&#x7EC6;&#x67E5;&#x770B;;&#x6E29;&#x4E60;<br>
+look up to &#x5C0A;&#x656C;;&#x656C;&#x4EF0;<br>
+make for &#x8D70;&#x5411;.&#x6709;&#x5229;&#x4E8E;<br>
+make up for &#x8865;&#x507F;;&#x5F25;&#x8865;<br>
+keep in mind &#x8BB0;&#x4F4F;<br>
+have in mind &#x8BB0;&#x4F4F;;&#x8003;&#x8651;&#x5230;<br>
+never mind &#x4E0D;&#x8981;&#x7D27;;&#x6CA1;&#x5173;&#x7CFB;<br>
+by mistake &#x9519;&#x8BEF;&#x7684;<br>
+mix up &#x6DF7;&#x5408;;&#x6DF7;&#x6DC6;<br>
+bring out &#x4F7F;&#x51FA;&#x73B0;;&#x516C;&#x5E03;<br>
+bring to &#x4F7F;&#x6062;&#x590D;&#x77E5;&#x89C1;<br>
+bring up &#x6559;&#x80B2;;&#x4F7F;&#x6210;&#x957F;<br>
+bring about &#x5E26;&#x6765;;&#x9020;&#x6210;<br>
+bring down &#x6253;&#x5230;;&#x632B;&#x4F24;<br>
+bring forth &#x4EA7;&#x751F;;&#x63D0;&#x51FA;<br>
+bring forwardl &#x63D0;&#x51FA;<br>
+burn out &#x70E7;&#x6389;<br>
+burn up &#x70E7;&#x5B8C;;&#x70E7;&#x5C3D;<br>
+call for &#x9080;&#x8BF7;;&#x8981;&#x6C42;;&#x9700;&#x8981;<br>
+call forth &#x5524;&#x8D77;;&#x5F15;&#x8D77;<br>
+call off &#x653E;&#x5F03;;&#x53D6;&#x6D88;<br>
+call up &#x53EC;&#x96C6;;&#x52A8;&#x5458;<br>
+call on/upon &#x8BBF;&#x95EE;;&#x62DC;&#x8BBF;<br>
+care for &#x7167;&#x987E;;&#x5173;&#x5FC3;<br>
+take care &#x5C0F;&#x5FC3;;&#x5F53;&#x5FC3;<br>
+take care of &#x7167;&#x987E;;&#x7167;&#x6599;;&#x8D1F;&#x8D23;<br>
+carry off &#x593A;&#x53BB;<br>
+carry on &#x7EE7;&#x7EED;&#x4E0B;&#x53BB;;&#x575A;&#x6301;&#x4E0B;&#x53BB;<br>
+more and more &#x8D8A;&#x6765;&#x8D8A;&#x591A;<br>
+more or less &#x6216;&#x591A;&#x6216;&#x5C11;;&#x51E0;&#x4E4E;<br>
+no more &#x4E0D;&#x518D;<br>
+no more than &#x4E0D;&#x8FC7;;&#x4EC5;&#x4EC5;<br>
+neither...nor &#x65E2;&#x4E0D;...&#x4E5F;&#x4E0D;<br>
+nothing but &#x53EA;&#x6709;;&#x4EC5;&#x4EC5;<br>
+every now and then &#x6709;&#x65F6;;&#x5076;&#x5C14;<br>
+just now &#x521A;&#x624D;;&#x4E00;&#x4F1A;&#x4EE5;&#x524D;<br>
+just and then &#x65F6;&#x800C;;&#x4E0D;&#x65F6;<br>
+just now &#x521A;&#x624D;;&#x4E00;&#x4F1A;&#x4EE5;&#x524D;<br>
+just and then &#x65F6;&#x800C;;&#x4E0D;&#x65F6;<br>
+just that &#x65E2;&#x7136;;&#x7531;&#x4E8E;<br>
+once for all &#x4E00;&#x52B3;&#x6C38;&#x9038;<br>
+Come/go onto opration &#x5F00;&#x59CB;&#x8FD0;&#x8F6C;<br>
+put/bring into operation &#x4F7F;&#x8FD0;&#x8F6C;<br>
+catch up with &#x8FFD;&#x4E0A;;&#x8D76;&#x4E0A;<br>
+check in &#x529E;&#x7406;&#x767B;&#x673A;&#x624B;&#x7EED;<br>
+check out &#x7ED3;&#x8D26;&#x540E;&#x79BB;&#x5F00;<br>
+check upon &#x6821;&#x5BF9;;&#x68C0;&#x67E5;</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
