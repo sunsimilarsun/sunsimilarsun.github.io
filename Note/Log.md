@@ -9,7 +9,7 @@
 - [词组](English/词组.html)
 - [作文](English/作文.html)
 ## Politics
-- [表格](/Politics/表格.html)
+- [表格](Politics/表格.html)
 ## Math
 - [Greek](Math/Greek.html)
 - [基本概念](Math/基本概念.html)
