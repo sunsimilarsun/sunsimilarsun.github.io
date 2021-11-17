@@ -1,0 +1,1258 @@
+<!DOCTYPE html><html><head>
+      <title>&#x4F5C;&#x6587;</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\sunto\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.6.1\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <p>&#x7B2C;&#x4E00;&#x8282;<br>
+&#x5C0F;&#x4F5C;&#x6587;&#xFF1A;&#x5EFA;&#x8BAE;&#x4FE1;<br>
+PART ONE<br>
+Directions:<br>
+Some international students are coming to your<br>
+university. Write them an email in the name of the Students&apos;<br>
+Union to</p>
+<ol>
+<li>extend your welcome and</li>
+<li>provide some suggestions for their campus life here.</li>
+</ol>
+<p>&#x7B2C;&#x4E00;&#x6BB5;&#xFF1A;&#x81EA;&#x6211;&#x4ECB;&#x7ECD;+&#x5199;&#x4F5C;&#x76EE;&#x7684;<br>
+&#x4EB2;&#x7231;&#x7684;&#x670B;&#x53CB;&#x4EEC;&#xFF1A;<br>
+&#x6211;&#x8C28;&#x4EE3;&#x8868;&#x5317;&#x4EAC;&#x5916;&#x56FD;&#x8BED;&#x5927;&#x5B66;&#x5B66;&#x751F;&#x4F1A;&#xFF0C;&#x5411;&#x6765;&#x6211;&#x6821;&#x5B66;&#x4E60;&#x7684;&#x7559;&#x5B66;&#x751F;&#x8868;&#x793A;&#x8877;&#x5FC3;&#x7684;&#x6B22;&#x8FCE;&#x3002;<br>
+Dear Friends,<br>
+On behalf of the Students&#x2019; Union of Beijing Foreign Studies University, I<br>
+would like to extend our heartfelt welcome to all the overseas students who will<br>
+study in our university.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x4E3B;&#x9898;&#x53E5;&#xFF1A;&#x5EFA;&#x8BAE;&#x4FE1;&#x4E07;&#x80FD;&#x53E5;&#x578B;<br>
+&#x6211;&#x5F88;&#x8363;&#x5E78;&#x80FD;&#x7ED9;&#x4F60;&#x4EEC;&#x63D0;&#x4E00;&#x4E9B;&#x5B9E;&#x7528;&#x7684;&#x5EFA;&#x8BAE;&#x3002;<br>
+It is my great pleasure to offer you several practical suggestions.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x5206;&#x8BBA;&#x70B9;&#x4E00;<br>
+&#x9996;&#x5148;&#xFF0C;&#x8FD9;&#x6240;&#x77E5;&#x540D;&#x5B66;&#x5E9C;&#x7684;&#x751F;&#x6D3B;&#x4E5F;&#x8BB8;&#x5E76;&#x4E0D;&#x50CF;&#x4F60;&#x4EEC;&#x6240;&#x8BBE;&#x60F3;&#x7684;&#x90A3;&#x4E48;&#x8F7B;&#x677E;&#x3002;<br>
+In the first place, life in this prestigious university is perhaps not as easy as you have<br>
+expected.<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x5206;&#x8BBA;&#x70B9;&#x4E00;<br>
+&#x4F60;&#x4EEC;&#x53EF;&#x80FD;&#x4F1A;&#x9762;&#x4E34;&#x6BCF;&#x65E5;&#x7684;&#x8BFE;&#x7A0B;&#x3001;&#x5927;&#x91CF;&#x7684;&#x4F5C;&#x4E1A;&#x548C;&#x9891;&#x7E41;&#x7684;&#x8003;&#x8BD5;&#x3002;<br>
+You may be tightly bound by daily classes, abundant homework and frequent exams.<br>
+&#x7B2C;&#x56DB;&#x53E5;&#xFF1A;&#x5206;&#x8BBA;&#x70B9;&#x4E00;<br>
+&#x56E0;&#x6B64;&#xFF0C;&#x505A;&#x597D;&#x51C6;&#x5907;&#x8FCE;&#x63A5;&#x8FD9;&#x91CC;&#x7684;&#x7E41;&#x5FD9;&#x751F;&#x6D3B;&#x5427;&#x3002;<br>
+Thus, be prepared for the hectic life here.<br>
+&#x7B2C;&#x4E94;&#x53E5;&#xFF1A;&#x5206;&#x8BBA;&#x70B9;&#x4E8C;<br>
+&#x5176;&#x6B21;&#xFF0C;&#x5C3D;&#x7BA1;&#x6709;&#x4EE5;&#x4E0A;&#x8D1F;&#x62C5;&#xFF0C;&#x8FD0;&#x52A8;&#x4F1A;&#x3001;&#x6F14;&#x8BB2;&#x6BD4;&#x8D5B;&#x4EE5;&#x53CA;&#x8054;&#x8C0A;&#x4F1A;&#x7B49;&#x5404;&#x79CD;&#x5404;&#x6837;&#x7684;&#x8BFE;&#x5916;&#x6D3B;&#x52A8;&#x4ECD;&#x4F1A;&#x63D0;&#x4F9B;&#x5927;&#x91CF;&#x7ED3;&#x4EA4;&#x670B;<br>
+&#x53CB;&#x7684;&#x673A;&#x4F1A;&#x3002;<br>
+In the second place, in spite of all those burdens, various extracurricular activities such<br>
+as sports meets, speech contests and social gatherings will still provide ample<br>
+opportunities to make friends.<br>
+&#x7B2C;&#x516D;&#x53E5;&#xFF1A;&#x5206;&#x8BBA;&#x70B9;&#x4E8C;<br>
+&#x6240;&#x4EE5;&#xFF0C;&#x5C3D;&#x60C5;&#x4EAB;&#x53D7;&#x8FD9;&#x6240;&#x8457;&#x540D;&#x5927;&#x5B66;&#x91CC;&#x7684;&#x751F;&#x6D3B;&#x5427;&#x3002;<br>
+So, enjoy your life in this esteemed institute!<br>
+&#x7B2C;&#x4E09;&#x6BB5;&#xFF1A;&#x5C0F;&#x7ED3;<br>
+&#x603B;&#x4E4B;&#xFF0C;&#x5C3D;&#x7BA1;&#x6709;&#x5F88;&#x591A;&#x538B;&#x529B;&#xFF0C;&#x4F46;&#x4F60;&#x5728;&#x8FD9;&#x6240;&#x6821;&#x56ED;&#x91CC;&#x5EA6;&#x8FC7;&#x7684;&#x65F6;&#x5149;&#x5C06;&#x610F;&#x4E49;&#x975E;&#x51E1;&#xFF0C;&#x5E76;&#x4E3A;&#x4F60;&#x7684;&#x6574;&#x4E2A;&#x4EBA;&#x751F;&#x589E;<br>
+&#x6DFB;&#x5149;&#x5F69;&#x3002;&#x5E0C;&#x671B;&#x4F60;&#x4EEC;&#x559C;&#x6B22;&#x8FD9;&#x91CC;&#xFF01;<br>
+&#x60A8;&#x771F;&#x8BDA;&#x7684;&#xFF0C;<br>
+&#x674E;&#x660E;<br>
+All in all, although there is a lot of pressure, the time you spend on our campus will<br>
+be worthwhile and enhance your whole life. Hope you like it here! (148 words)<br>
+Yours sincerely,<br>
+Li Ming<br>
+&#x5927;&#x4F5C;&#x6587;&#xFF1A;&#x4EBA;&#x751F;&#x54F2;&#x7406;<br>
+PART TWO<br>
+Directions:<br>
+Write an essay of 160-200 words based on the following drawing.<br>
+In your essay, you should</p>
+<ol>
+<li>describe the drawing briefly,</li>
+<li>explain its intended meaning, and then</li>
+<li>support your view with an example/examples.</li>
+</ol>
+<p>2012&#x5E74;&#x82F1;&#x8BED;&#xFF08;&#x4E00;&#xFF09;&#xFF1A;<br>
+2019&#x5E74;&#x82F1;&#x8BED;&#xFF08;&#x4E00;&#xFF09;&#xFF1A;<br>
+2021&#x5E74;&#x82F1;&#x8BED;&#xFF08;&#x4E00;&#xFF09;&#xFF1A;<br>
+&#x7B2C;&#x4E00;&#x6BB5;&#xFF1A;&#x56FE;&#x753B;&#x63CF;&#x8FF0;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x8FD9;&#x5E45;&#x6F2B;&#x753B;&#x751F;&#x52A8;&#x63CF;&#x8FF0;&#x4E86;&#x8DB3;&#x7403;&#x573A;&#x4E0A;&#x7684;&#x4E00;&#x540D;&#x524D;&#x950B;&#x6B63;&#x51C6;&#x5907;&#x5C06;&#x7403;&#x5C04;&#x5165;<br>
+&#x5B88;&#x95E8;&#x5458;&#x628A;&#x5B88;&#x7684;&#x7403;&#x95E8;&#x3002;&#xFF08;&#x603B;&#x4F53;&#x63CF;&#x8FF0;&#xFF09;<br>
+It is symbolically illustrated in the cartoon that a striker is<br>
+preparing to shoot at the goal defended by a goalkeeper on a<br>
+football field.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x5728;&#x5B88;&#x95E8;&#x5458;&#x770B;&#x6765;&#xFF0C;&#x6BD4;&#x8D77;&#x5B9E;&#x9645;&#x7684;&#x8EAB;&#x6750;&#x81EA;&#x5DF1;&#x6E3A;&#x5C0F;&#x5F88;&#x591A;&#xFF0C;&#x4EE5;&#x81F3;&#x4E8E;&#x5B88;<br>
+&#x95E8;&#x53D8;&#x6210;&#x4E00;&#x9879;&#x4E0D;&#x53EF;&#x80FD;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#x3002;&#xFF08;&#x7EC6;&#x8282;&#x63CF;&#x8FF0;&#xFF1A;&#x5B88;&#x95E8;&#x5458;&#xFF09;<br>
+In the goalkeeper&#x2019;s mind, he is so much smaller than he<br>
+actually is that guarding the goal becomes an impossible<br>
+mission.<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x4E0E;&#x6B64;&#x540C;&#x65F6;&#xFF0C;&#x5728;&#x90A3;&#x540D;&#x524D;&#x950B;&#x773C;&#x91CC;&#xFF0C;&#x8FD9;&#x4F4D;&#x5DE8;&#x4EBA;&#x5B88;&#x95E8;&#x5458;&#x51E0;&#x4E4E;&#x5360;&#x636E;&#x4E86;<br>
+&#x6574;&#x4E2A;&#x7403;&#x95E8;&#x3002;&#xFF08;&#x7EC6;&#x8282;&#x63CF;&#x8FF0;&#xFF1A;&#x5C04;&#x624B;&#xFF09;<br>
+At the same time, the giant guard seems to fill up the whole<br>
+goal in the attacking player&#x2019;s mind.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x610F;&#x4E49;&#x9610;&#x91CA;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x4E3B;&#x9898;&#x53E5;&#xFF08;&#x56FE;&#x753B;&#x8C61;&#x5F81;&#x5BD3;&#x610F;/&#x5168;&#x6587;&#x4E2D;&#x5FC3;&#x601D;&#x60F3;&#xFF09;&#xFF1A;<br>
+&#x8FD9;&#x5E45;&#x6F2B;&#x753B;&#x7684;&#x76EE;&#x7684;&#x662F;&#x544A;&#x8BC9;&#x6211;&#x4EEC;&#x5728;&#x770B;&#x4F3C;&#x4E0D;&#x53EF;&#x514B;&#x670D;&#x7684;&#x6311;&#x6218;&#x4E0E;&#x56F0;&#x5883;&#x9762;&#x524D;&#xFF0C;&#x6700;<br>
+&#x91CD;&#x8981;&#x7684;&#x662F;&#x62E5;&#x6709;&#x81EA;&#x4FE1;&#x3002;<br>
+The purpose of the drawing is to show us that in the face of<br>
+seemingly insurmountable challenges or predicaments,<br>
+possessing self-confidence is of the utmost significance.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x53CD;&#x9762;&#x8BBA;&#x8BC1;<br>
+&#x65E0;&#x8BBA;&#x4E00;&#x4E2A;&#x4EBA;&#x5728;&#x5B66;&#x6821;&#x6216;&#x5DE5;&#x4F5C;&#x4E2D;&#x66FE;&#x7ECF;&#x5982;&#x4F55;&#x6210;&#x529F;&#xFF0C;&#x603B;&#x6709;&#x4E00;&#x5929;&#x4ED6;&#x6216;&#x5979;&#x4F1A;&#x906D;&#x9047;<br>
+&#x96BE;&#x9898;&#x3002;<br>
+Regardless of how much success one has had in school or at<br>
+work, there are bound to be times when he or she will<br>
+encounter problems.<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x6B63;&#x9762;&#x8BBA;&#x8BC1;<br>
+&#x5173;&#x952E;&#x65F6;&#x523B;&#xFF0C;&#x6B63;&#x662F;&#x4ED6;&#x5BF9;&#x56F0;&#x96BE;&#x548C;&#x4EBA;&#x751F;&#x7684;&#x81EA;&#x4FE1;&#x51B3;&#x5B9A;&#x4ED6;&#x80FD;&#x5426;&#x53CD;&#x8D25;&#x4E3A;&#x80DC;&#x3002;<br>
+It is at these critical times that one&#x2019;s self-confidence,<br>
+toward difficulty and toward life in general, plays a crucial<br>
+role in determining whether he or she can turn failure into<br>
+victory.<br>
+&#x7B2C;&#x4E09;&#x6BB5;&#xFF1A;&#x4E3E;&#x4F8B;&#x8BBA;&#x8BC1;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x4E3B;&#x9898;&#x53E5;<br>
+&#x6CA1;&#x6709;&#x4EC0;&#x4E48;&#x6BD4;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x66F4;&#x6709;&#x8BF4;&#x670D;&#x529B;&#x3002;<br>
+I can think of no better illustration than the following one.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x4E3E;&#x4F8B;<br>
+&#x6D77;&#x4F26;&#xB7;&#x51EF;&#x52D2;&#x5929;&#x751F;&#x804B;&#x4E14;&#x5931;&#x660E;&#xFF0C;&#x6CA1;&#x4EC0;&#x4E48;&#x53EF;&#x4EE5;&#x8BA9;&#x5979;&#x81EA;&#x4FE1;&#x3002;<br>
+Helen Keller was deaf and blind, certainly nothing to give her<br>
+self-confidence.<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x4E3E;&#x4F8B;<br>
+&#x4F46;&#x5979;&#x4E0D;&#x65AD;&#x514B;&#x670D;&#x591A;&#x79CD;&#x969C;&#x788D;&#xFF0C;&#x6700;&#x7EC8;&#x6210;&#x4E3A;&#x4E00;&#x540D;&#x4F5C;&#x5BB6;&#x548C;&#x6559;&#x5E08;&#xFF0C;&#x6210;&#x4E3A;&#x4E16;&#x4EBA;&#x7684;&#x6977;<br>
+&#x6A21;&#x3002;<br>
+Nevertheless, she went on to conquer her multiple handicaps<br>
+to finally become a writer and lecturer, and an inspiration to<br>
+all.<br>
+&#x7B2C;&#x56DB;&#x53E5;&#xFF1A;&#x5C0F;&#x7ED3;<br>
+&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x6E05;&#x695A;&#x8BC1;&#x660E;&#x4E86;&#x65E0;&#x8BBA;&#x9762;&#x4E34;&#x4F55;&#x79CD;&#x4EFB;&#x52A1;&#xFF0C;&#x6211;&#x4EEC;&#x51B3;&#x4E0D;&#x80FD;&#x9AD8;&#x4F30;&#x56F0;&#x96BE;&#x6216;&#x4F4E;<br>
+&#x4F30;&#x81EA;&#x5DF1;&#x7684;&#x80FD;&#x529B;&#x3002;<br>
+This case effectively illustrates that no matter what tasks we<br>
+are confronted with, we should never overestimate the<br>
+difficulties or underestimate our abilities. (216 words)<br>
+&#x7B2C;&#x4E8C;&#x8282;<br>
+01 &#x5C0F;&#x4F5C;&#x6587;&#xFF1A;&#x7231;&#x5FC3;&#x4FE1;<br>
+02 &#x5927;&#x4F5C;&#x6587;&#xFF1A;&#x4EBA;&#x751F;&#x54F2;&#x7406;<br>
+CONTENTS<br>
+&#x5C0F;&#x4F5C;&#x6587;&#xFF1A;&#x7231;&#x5FC3;&#x4FE1;<br>
+PART ONE<br>
+&#x5C0F;&#x4F5C;&#x6587;&#xFF1A;2010-2021&#x5E74;&#x82F1;&#x8BED;&#xFF08;&#x4E00;&#xFF09;&#x5C0F;&#x4F5C;&#x6587;&#x5927;&#x7EB2;&#x6837;&#x9898;<br>
+Directions:<br>
+You want to contribute to Project Hope by offering<br>
+financial aid to a child in a remote area. Write a letter to the<br>
+department concerned, asking them to help find a candidate. You should specify what kind of child you want to help and<br>
+how you will carry out your plan.<br>
+&#x7B2C;&#x4E00;&#x6BB5;&#xFF1A;&#x6539;&#x5199;&#x63D0;&#x7EB2;&#x4E00;<br>
+&#x5C0A;&#x656C;&#x7684;&#x5148;&#x751F;&#x6216;&#x5973;&#x58EB;&#xFF1A;<br>
+&#x5E0C;&#x671B;&#x5DE5;&#x7A0B;&#x8FD9;&#x9879;&#x9AD8;&#x5C1A;&#x7684;&#x4E8B;&#x4E1A;&#x611F;&#x52A8;&#x4E86;&#x6211;&#xFF0C;&#x540C;&#x65F6;&#x8FD9;&#x9879;&#x5DE5;&#x7A0B;&#x8FC4;&#x4ECA;&#x6240;&#x53D6;&#x5F97;&#x7684;&#x6210;&#x5C31;&#x4E5F;&#x9F13;&#x821E;&#x4E86;&#x6211;&#x3002;&#x56E0;&#x6B64;&#xFF0C;<br>
+&#x6211;&#x60F3;&#x901A;&#x8FC7;&#x7ED9;&#x8D35;&#x7701;&#x504F;&#x8FDC;&#x5730;&#x533A;&#x7684;&#x4E00;&#x4E2A;&#x5B69;&#x5B50;&#x63D0;&#x4F9B;&#x7ECF;&#x6D4E;&#x5E2E;&#x52A9;&#xFF0C;&#x6765;&#x4E3A;&#x5E0C;&#x671B;&#x5DE5;&#x7A0B;&#x8D21;&#x732E;&#x6211;&#x7684;&#x5FAE;&#x8584;&#x4E4B;&#x529B;&#x3002;<br>
+Dear Sir or Madam,<br>
+Moved by the noble cause of Project Hope and encouraged by what has been achieved so<br>
+far, I would like to contribute my bit to the project by offering financial aid to a child in a<br>
+remote area of your province.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x6539;&#x5199;&#x63D0;&#x7EB2;&#x4E8C;<br>
+&#x5982;&#x679C;&#x60A8;&#x80FD;&#x5E2E;&#x52A9;&#x6211;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x521A;&#x5F00;&#x59CB;&#x4E0A;&#x5B66;&#x4F46;&#x5BB6;&#x5EAD;&#x65E0;&#x6CD5;&#x4E3A;&#x5176;&#x8D1F;&#x62C5;&#x5B66;&#x8D39;&#x7684;&#x5C0F;&#x5973;&#x5B69;&#xFF0C;&#x6211;&#x5C06;&#x4E0D;&#x80DC;&#x611F;&#x6FC0;&#x3002;<br>
+I would be very grateful if you could help me seek out a girl who has just started schooling but<br>
+whose family cannot afford her education.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x6539;&#x5199;&#x63D0;&#x7EB2;&#x4E09;<br>
+&#x672C;&#x4EBA;&#x8BA1;&#x5212;&#x6309;&#x5E74;&#x5EA6;&#x652F;&#x4ED8;&#x5979;&#x7684;&#x5B66;&#x8D39;&#x76F4;&#x81F3;&#x5979;&#x4E2D;&#x5B66;&#x6BD5;&#x4E1A;&#x3002;<br>
+My plan is to pay for her tuition on an annual basis until she finishes her secondary education.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x6539;&#x5199;&#x63D0;&#x7EB2;&#x4E09;<br>
+&#x6211;&#x5E0C;&#x671B;&#x628A;&#x6350;&#x6B3E;&#x76F4;&#x63A5;&#x6C47;&#x7ED9;&#x5979;&#x7684;&#x5BB6;&#x4EBA;&#x5728;&#x5F53;&#x5730;&#x5F00;&#x8BBE;&#x7684;&#x94F6;&#x884C;&#x5E10;&#x6237;&#x4E2D;&#x3002;<br>
+&#x60A8;&#x771F;&#x8BDA;&#x7684;&#xFF0C;<br>
+&#x674E;&#x660E;<br>
+I would like to remit my donation directly to a bank account opened by her family in her local<br>
+area. (105 words) Yours truly, Li Ming<br>
+&#x5927;&#x4F5C;&#x6587;&#xFF1A;&#x4EBA;&#x751F;&#x54F2;&#x7406;<br>
+PART TWO<br>
+Directions:<br>
+Study the following set of drawings carefully and write an<br>
+essay in which you should<br>
+1&#x3001;describe the set of drawings, interpret its meaning, and<br>
+2&#x3001;point out its implications in our life.</p>
+<p>&#x7B2C;&#x4E00;&#x6BB5;&#xFF1A;&#x56FE;&#x753B;&#x63CF;&#x8FF0;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x4E0A;&#x8FF0;&#x8FD9;&#x7EC4;&#x56FE;&#x751F;&#x52A8;&#x5730;&#x63CF;&#x8FF0;&#x4E86;&#x4E00;&#x6735;&#x9C9C;&#x82B1;&#x5728;&#x4E0D;&#x540C;&#x73AF;&#x5883;&#x4E2D;&#x7684;&#x547D;&#x8FD0;&#x3002;<br>
+&#xFF08;&#x603B;&#x4F53;&#x63CF;&#x8FF0;&#xFF09;<br>
+The set of drawings above vividly depict the destiny of a<br>
+flower in different circumstances.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x7EC6;&#x8282;&#x63CF;&#x8FF0;&#xFF1A;&#x56FE;&#x4E00;<br>
+&#x5982;&#x7B2C;&#x4E00;&#x5E45;&#x6F2B;&#x753B;&#x6240;&#x793A;&#xFF0C;&#x8FD9;&#x6735;&#x9C9C;&#x82B1;&#x6B63;&#x5728;&#x8212;&#x9002;&#x7684;&#x6E29;&#x5BA4;&#x91CC;&#x5145;&#x5206;&#x7EFD;&#x653E;&#xFF0C;&#x6E29;&#x5BA4;&#x4F7F;<br>
+&#x5B83;&#x514D;&#x4E8E;&#x53EF;&#x6015;&#x7684;&#x95EA;&#x7535;&#x548C;&#x98CE;&#x96E8;&#x7684;&#x4FB5;&#x88AD;&#x3002;<br>
+As is shown in the first cartoon, the flower is growing in full<br>
+bloom in a comfortable greenhouse that shelters it from the<br>
+threatening lightning and storm.<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x7EC6;&#x8282;&#x63CF;&#x8FF0;&#xFF1A;&#x56FE;&#x4E8C;<br>
+&#x76F8;&#x53CD;&#xFF0C;&#x5F53;&#x88AB;&#x642C;&#x51FA;&#x6E29;&#x5BA4;&#x5E76;&#x66B4;&#x9732;&#x5728;&#x98CE;&#x96E8;&#x4E4B;&#x4E2D;&#x65F6;&#xFF0C;&#x9C9C;&#x82B1;&#x5F88;&#x5FEB;&#x5C31;&#x51CB;&#x8C22;&#x67AF;&#x840E;&#x4E86;&#xFF0C;<br>
+&#x82B1;&#x74E3;&#x6563;&#x843D;&#x4E00;&#x5730;&#x3002;<br>
+On the contrary, when removed from the greenhouse and<br>
+exposed to the driving rain, the flower soon fades and withers,<br>
+with its petals scattered on the ground.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x610F;&#x4E49;&#x9610;&#x91CA;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x8BA9;&#x6B65;&#xFF0C;&#x5426;&#x5B9A;&#x8868;&#x5C42;&#x542B;&#x4E49;&#xFF1A;<br>
+&#x9996;&#x5148;&#xFF0C;&#x8FD9;&#x7EC4;&#x56FE;&#x7684;&#x76EE;&#x7684;&#x662F;&#x544A;&#x8BC9;&#x6211;&#x4EEC;&#x6E29;&#x5BA4;&#x82B1;&#x6735;&#x7ECF;&#x4E0D;&#x8D77;&#x98CE;&#x96E8;&#xFF0C;<br>
+To begin with, the purpose of the drawings is to show us<br>
+that the flower growing in the greenhouse cannot withstand<br>
+the test of the storm.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x627F;&#x4E0A;&#x542F;&#x4E0B;&#xFF0C;&#x8FC7;&#x6E21;&#x53E5;<br>
+&#x7136;&#x800C;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x8BA4;&#x771F;&#x770B;&#x5F85;&#x5B83;&#x4EEC;&#x6240;&#x5FAE;&#x5999;&#x4F20;&#x8FBE;&#x7684;&#x8C61;&#x5F81;&#x542B;&#x4E49;&#x3002;<br>
+Yet the symbolic meaning subtly conveyed should be taken<br>
+more seriously.<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x4E3B;&#x9898;&#x53E5;&#xFF08;&#x4E2D;&#x5FC3;&#x601D;&#x60F3;/&#x8C61;&#x5F81;&#x5BD3;&#x610F;&#xFF09;<br>
+&#x8FD9;&#x6735;&#x5A07;&#x5F31;&#x7684;&#x9C9C;&#x82B1;&#x81EA;&#x7136;&#x800C;&#x7136;&#x5730;&#x4F1A;&#x548C;&#x5E74;&#x8F7B;&#x4EBA;&#x8054;&#x7CFB;&#x8D77;&#x6765;&#xFF0C;&#x5177;&#x4F53;&#x800C;&#x8A00;&#xFF0C;&#x5C31;&#x662F;<br>
+&#x5F53;&#x4EE3;&#x793E;&#x4F1A;&#x7684;&#x72EC;&#x751F;&#x5B50;&#x5973;&#x3002;&#x800C;&#x6E29;&#x5BA4;&#x662F;&#x4FDD;&#x62A4;&#x5B69;&#x5B50;&#x514D;&#x53D7;&#x98CE;&#x96E8;&#x7684;&#x7236;&#x6BCD;&#x6EBA;&#x7231;&#x548C;&#x4F18;<br>
+&#x8D8A;&#x7269;&#x8D28;&#x6761;&#x4EF6;&#x7684;&#x7F29;&#x5F71;&#xFF0C;&#x98CE;&#x96E8;&#x5C31;&#x8C61;&#x5F81;&#x7740;&#x4E25;&#x5CFB;&#x7684;&#x73B0;&#x5B9E;&#x3002;<br>
+The delicate flower is naturally associated with young<br>
+people&#x2014;to be specific, the only child in our current society&#x2014;<br>
+while the greenhouse epitomizes parents&#x2019; doting care and<br>
+abundant material supplies that can shield the children from<br>
+the storms, which symbolize the harsh reality.<br>
+&#x7B2C;&#x56DB;&#x53E5;&#xFF1A;&#x5C0F;&#x7ED3;&#xFF1A;&#x8BF4;&#x660E;&#x540E;&#x679C;<br>
+&#x4E00;&#x65E6;&#x4E00;&#x76F4;&#x88AB;&#x5BA0;&#x7231;&#x7684;&#x5E74;&#x8F7B;&#x4EBA;&#x5F00;&#x59CB;&#x5BFB;&#x6C42;&#x72EC;&#x7ACB;&#x5E76;&#x4E14;&#x63A5;&#x53D7;&#x6765;&#x81EA;&#x73B0;&#x5B9E;&#x4E16;&#x754C;&#x7684;&#x6311;<br>
+&#x6218;&#xFF0C;&#x4EBA;&#x4EEC;&#x53D1;&#x73B0;&#x4ED6;&#x4EEC;&#x5DF2;&#x7ECF;&#x88AB;&#x60EF;&#x574F;&#x4E86;&#xFF0C;&#x5728;&#x56F0;&#x96BE;&#x9762;&#x524D;&#x65E0;&#x6CD5;&#x8DB3;&#x591F;&#x575A;&#x5F3A;&#x3002;<br>
+Once the young people who have been doted on begin to<br>
+seek independence and accept challenges from the real<br>
+world, they are found too spoiled to be strong enough in<br>
+the face of difficulties.<br>
+&#x7B2C;&#x4E09;&#x6BB5;&#xFF1A;&#x5EFA;&#x8BAE;&#x63AA;&#x65BD;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x4E3B;&#x9898;&#x53E5;<br>
+&#x603B;&#x4E4B;&#xFF0C;&#x6211;&#x4EEC;&#x5F88;&#x6709;&#x5FC5;&#x8981;&#x4ECE;&#x8FD9;&#x4E9B;&#x53D1;&#x4EBA;&#x6DF1;&#x601D;&#x7684;&#x56FE;&#x753B;&#x4E2D;&#x5F97;&#x51FA;&#x79EF;&#x6781;&#x7684;&#x542B;&#x4E49;&#x3002;<br>
+Accordingly, it is vital for us to derive positive implications<br>
+from these thought-provoking drawings.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x5EFA;&#x8BAE;&#x4E00;<br>
+&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x5B83;&#x4EEC;&#x6765;&#x5E2E;&#x52A9;&#x5E74;&#x8F7B;&#x4EBA;&#x5728;&#x751F;&#x6D3B;&#x4E2D;&#x66F4;&#x52A0;&#x72EC;&#x7ACB;&#x3002;<br>
+On the one hand, we can use them to aid the youth to be<br>
+more independent in life.<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x5EFA;&#x8BAE;&#x4E8C;<br>
+&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x7236;&#x6BCD;&#x4EEC;&#x5E94;&#x8BE5;&#x5145;&#x6EE1;&#x7406;&#x667A;&#xFF0C;&#x7ED9;&#x5B69;&#x5B50;&#x4EEC;&#x66F4;&#x591A;&#x81EA;&#x7531;&#x6765;&#x89E3;&#x51B3;&#x56F0;&#x96BE;&#x548C;<br>
+&#x95EE;&#x9898;&#x3002;<br>
+On the other hand, parents should be sensible enough to<br>
+give their children more freedom to deal with troubles and<br>
+problems.<br>
+&#x7B2C;&#x56DB;&#x53E5;&#xFF1A;&#x5C0F;&#x7ED3;<br>
+&#x53EA;&#x6709;&#x7ECF;&#x5386;&#x66F4;&#x591A;&#x7684;&#x6311;&#x6218;&#x548C;&#x78E8;&#x7EC3;&#xFF0C;&#x5E74;&#x8F7B;&#x4EBA;&#x624D;&#x80FD;&#x57F9;&#x517B;&#x5F3A;&#x5927;&#x7684;&#x4E2A;&#x6027;&#x548C;&#x80FD;&#x529B;&#xFF0C;<br>
+&#x800C;&#x4E14;&#x53EA;&#x6709;&#x8FD9;&#x6837;&#x5728;&#x7ADE;&#x4E89;&#x6FC0;&#x70C8;&#x7684;&#x793E;&#x4F1A;&#x4E2D;&#x4ED6;&#x4EEC;&#x624D;&#x80FD;&#x6210;&#x4E3A;&#x8D62;&#x5BB6;&#x3002;<br>
+Only by undergoing more challenges and toils in adversity<br>
+can young people cultivate strong personalities and<br>
+abilities, and only in this way can they become winners in<br>
+this competitive world. (267 words)<br>
+&#x7B2C;&#x4E09;&#x8282;<br>
+01 &#x5C0F;&#x4F5C;&#x6587;&#xFF1A;&#x9080;&#x8BF7;&#x4FE1;<br>
+02 &#x5927;&#x4F5C;&#x6587;&#xFF1A;&#x4EBA;&#x751F;&#x54F2;&#x7406;<br>
+CONTENTS<br>
+&#x5C0F;&#x4F5C;&#x6587;&#xFF1A;&#x9080;&#x8BF7;&#x4FE1;<br>
+PART ONE</p>
+<p>Directions:<br>
+Write an email to invite a famous professor to give a lecture to the<br>
+students who love English in your university.</p>
+<p>&#x7B2C;&#x4E00;&#x6BB5;&#xFF1A;&#x81EA;&#x6211;&#x4ECB;&#x7ECD;+&#x5199;&#x4F5C;&#x76EE;&#x7684;<br>
+&#x5C0A;&#x656C;&#x7684;&#x4E9A;&#x5386;&#x5C71;&#x5927;&#x6559;&#x6388;&#xFF1A;<br>
+&#x6211;&#x8C28;&#x4EE3;&#x8868;&#x5317;&#x4EAC;&#x5916;&#x56FD;&#x8BED;&#x5927;&#x5B66;&#x5168;&#x4F53;&#x70ED;&#x7231;&#x82F1;&#x8BED;&#x7684;&#x5B66;&#x751F;&#xFF0C;&#x8BDA;&#x631A;&#x5730;&#x9080;&#x8BF7;&#x60A8;&#x7ED9;&#x6211;&#x4EEC;&#x505A;&#x4E00;&#x573A;&#x6F14;&#x8BB2;&#x3002;</p>
+<p>Dear Professor Alexander,<br>
+On behalf of all the students at Beijing Foreign Studies University who<br>
+share a love for the English language, I cordially invite you to give a lecture to us.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x9080;&#x8BF7;&#x539F;&#x56E0;<br>
+&#x7531;&#x4E8D;&#x60A8;&#x662F;&#x5168;&#x4E10;&#x754C;&#x82F1;&#x8BED;&#x8BED;&#x8A00;&#x7814;&#x7A76;&#x65B9;&#x9762;&#x6770;&#x51FA;&#x7684;&#x4E0E;&#x5BB6;&#x4E4B;&#x4E00;&#xFF0C;&#x6211;&#x76F8;&#x4FE1;&#x5B66;&#x751F;&#x4EEC;&#x4E0C;&#x4EC5;&#x80FD;&#x4ECE;&#x60A8;&#x8EAB;&#x4E0A;&#x5B66;&#x5230;&#x5F88;<br>
+&#x591A;&#x77E5;&#x8BC6;&#xFF0C;&#x800C;&#x4E0F;&#x4E5F;&#x80FD;&#x591F;&#x83B7;&#x5F97;&#x5F88;&#x5927;&#x7684;&#x542F;&#x53D1;&#x3002;<br>
+As you are one of the outstanding experts in the English language all over the<br>
+world, I believe that the students will not only be able to learn from you, but to<br>
+be inspired by you as well.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x65F6;&#x95F4;&#x5730;&#x70B9;<br>
+&#x6211;&#x4EEC;&#x671F;&#x5F85;&#x60A8;&#x80FD;&#x62BD;&#x51FA;&#x65F6;&#x95F4;&#x5728;1&#x6708;4&#x65E5;&#x4E0A;&#x5348;10&#x70B9;&#x6765;&#x6211;&#x6821;&#x505A;&#x4E00;&#x573A;&#x6F14;&#x8BB2;&#x3002;<br>
+We are hoping that you will be available for a lecture on our campus at 10&#xFF1A;00<br>
+am on January 4.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x5177;&#x4F53;&#x5B89;&#x6392;<br>
+&#x5176;&#x4E2D;45&#x5206;&#x949F;&#x5C06;&#x662F;&#x60A8;&#x7684;&#x6F14;&#x8BB2;&#x65F6;&#x95F4;&#xFF0C;&#x53E6;&#x5916;15&#x5206;&#x949F;&#x5219;&#x662F;&#x95EE;&#x7B54;&#x73AF;&#x8282;&#x3002;<br>
+There will be 45 minutes allocated for your lecture and 15 minutes for a<br>
+question-and-answer session.<br>
+&#x7B2C;&#x4E09;&#x6BB5;&#xFF1A;&#x671F;&#x5F85;&#x56DE;&#x4FE1;<br>
+&#x5982;&#x679C;&#x60A8;&#x5BF9;&#x6B64;&#x6B21;&#x6765;&#x6211;&#x6821;&#x6F14;&#x8BB2;&#x611F;&#x5174;&#x8DA3;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x7684;&#x90AE;&#x7BB1;&#x5730;&#x5740;&#x7ED9;&#x6211;&#x53D1;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x3002;&#x6211;&#x4EEC;&#x671F;&#x5F85;&#x4E0D;<br>
+&#x60A8;&#x76F8;&#x89C1;&#x3002;<br>
+&#x60A8;&#x771F;&#x8BDA;&#x7684;&#xFF0C;<br>
+&#x674E;&#x660E;<br>
+If you are interested in coming to our university for the lecture, you can email<br>
+me at the address below. We are looking forward to meeting you.<br>
+Yours sincerely,<br>
+Li Ming<br>
+&#x5927;&#x4F5C;&#x6587;&#xFF1A;&#x4EBA;&#x751F;&#x54F2;&#x7406;<br>
+PART TWO<br>
+Directions:<br>
+Write an essay of 160-200 words based on the following drawing. In<br>
+your essay, you should</p>
+<ol>
+<li>describe the drawing briefly.</li>
+<li>explain its intended meaning, and</li>
+<li>give you comments.</li>
+</ol>
+<p>&#x7B2C;&#x4E00;&#x6BB5;&#xFF1A;&#x56FE;&#x753B;&#x63CF;&#x8FF0;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x8FD9;&#x5E45;&#x56FE;&#x753B;&#x63CF;&#x8FF0;&#x4E86;&#x4E00;&#x4E2A;&#x5F3A;&#x58EE;&#x7684;&#x4EBA;&#x6B63;&#x5728;&#x8BD5;&#x56FE;&#x4ECE;&#x4E00;&#x5757;&#x5DE8;&#x77F3;&#x4E2D;&#x627E;&#x51FA;&#x9EC4;&#x91D1;&#x3002;&#xFF08;&#x603B;&#x4F53;&#x63CF;<br>
+&#x8FF0;&#xFF09;<br>
+The cartoon depicts a strong person trying to find gold<br>
+in a huge stone.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x7EC6;&#x8282;&#x63CF;&#x8FF0;&#xFF1A;<br>
+&#x4ED6;&#x7528;&#x575A;&#x5B9A;&#x7684;&#x53CC;&#x624B;&#x4E3E;&#x7740;&#x4E00;&#x628A;&#x65A7;&#x5934;&#xFF0C;&#x8BD5;&#x56FE;&#x4ECE;&#x7EDD;&#x671B;&#x4E4B;&#x77F3;&#x4E2D;&#x5F00;&#x91C7;&#x51FA;&#x5E0C;&#x671B;&#x4E4B;&#x91D1;&#x3002;<br>
+Holding an ax with his firm hands, he is hewing out of<br>
+the stone of despair a piece of precious gold.<br>
+&#xFF08;Martin Luther King: I Have a Dream 8/28/1963)<br>
+Hew out of the mountain of despair a stone of hope<br>
+&#x4ECE;&#x7EDD;&#x671B;&#x4E4B;&#x5D99;&#x5288;&#x51FA;&#x4E00;&#x5757;&#x5E0C;&#x671B;&#x4E4B;&#x77F3;<br>
+Hew out of the mountain of despair a stone of hope and<br>
+you can make your life a splendid one.<br>
+&#x65B0;&#x4E1C;&#x65B9;&#x6821;&#x8BAD;&#xFF1A;&#x4ECE;&#x7EDD;&#x671B;&#x4E2D;&#x5BFB;&#x627E;&#x5E0C;&#x671B;&#xFF0C;&#x4EBA;&#x751F;&#x7EC8;&#x5C06;&#x8F89;&#x714C;&#x3002;<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x6587;&#x5B57;&#x8BF4;&#x660E;<br>
+&#x6587;&#x5B57;&#x8BF4;&#x660E;&#x663E;&#x793A;&#xFF1A;&#x201C;&#x521B;&#x65B0;&#x624D;&#x80FD;&#x53D1;&#x5C55;&#xFF0C;&#x5B88;&#x4E1A;&#x5C31;&#x662F;&#x9000;&#x6B65;&#x3002;<br>
+&#x201D;<br>
+The caption indicates that &#x201C;Only through innovation can<br>
+we make progress; conservatism means regression.&#x201D;<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x610F;&#x4E49;&#x9610;&#x91CA;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x4E3B;&#x9898;&#x53E5;&#xFF08;&#x4E2D;&#x5FC3;&#x601D;&#x60F3;&#xFF0C;&#x56FE;&#x753B;&#x8C61;&#x5F81;&#x5BD3;&#x610F;&#xFF09;<br>
+&#x8FD9;&#x5E45;&#x6F2B;&#x753B;&#x7684;&#x76EE;&#x7684;&#x662F;&#x544A;&#x8BC9;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x5145;&#x5206;&#x91CD;&#x89C6;&#x521B;&#x65B0;&#x3002;<br>
+The purpose of the drawing is to show us that utmost<br>
+importance should be attached to innovation and creativity.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x5206;&#x8BBA;&#x70B9;&#x4E00;<br>
+&#x9996;&#x5148;&#xFF0C;&#x521B;&#x65B0;&#x7684;&#x6001;&#x5EA6;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x79D1;&#x5B66;&#x7814;&#x7A76;&#x7684;&#x4FE1;&#x6761;&#x3002;<br>
+To begin with, innovativeness could be said to be the<br>
+watchword, or motto of science.<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x4E3E;&#x4F8B;&#x8BBA;&#x8BC1;<br>
+&#x60F3;&#x60F3;&#x770B;&#xFF0C;&#x53E7;&#x6709;&#x5728;&#x8FDA;&#x884C;&#x4E86;&#x65E0;&#x6570;&#x6B21;&#x7684;&#x79D1;&#x5B66;&#x5B9E;&#x9A8C;&#x3001;&#x5B9E;&#x9A8C;&#x6D4B;&#x8BD5;&#x548C;&#x6D3B;&#x4F53;&#x8BD5;&#x9A8C;&#x4E4B;<br>
+&#x540E;&#xFF0C;&#x624D;&#x80FD;&#x53D1;&#x660E;&#x51FA;&#x4E00;&#x79CD;&#x65B0;&#x836F;&#x7269;&#x548C;&#x65B0;&#x75AB;&#x82D7;&#x3002;<br>
+Think of all the innumerable times scientific<br>
+experiments must be carried out, all the laboratory tests, all<br>
+the live trials, before a new medicine or vaccine is discovered.<br>
+&#x7B2C;&#x56DB;&#x53E5;&#xFF1A;&#x5206;&#x8BBA;&#x70B9;&#x4E8C;<br>
+&#x5176;&#x6B21;&#xFF0C;&#x521B;&#x65B0;&#x4E5F;&#x662F;&#x5F53;&#x4ECA;&#x8BB8;&#x591A;&#x4F01;&#x4E1A;&#x6210;&#x529F;&#x7684;&#x539F;&#x56E0;&#x3002;<br>
+In addition, many of today&#x2019;s business successes can<br>
+be ascribed to innovation.<br>
+&#x7B2C;&#x4E94;&#x53E5;&#xFF1A;&#x4E3E;&#x4F8B;&#x8BBA;&#x8BC1;<br>
+&#x4F8B;&#x5982;&#xFF0C;&#x6211;&#x672C;&#x4EBA;&#x66FE;&#x5728;&#x4E00;&#x5BB6;&#x516C;&#x53F8;&#x5DE5;&#x4F5C;&#x8FC7;&#x3002;&#x8FD9;&#x5BB6;&#x516C;&#x53F8;&#x66FE;&#x7ECF;&#x5C1D;&#x8BD5;&#x4E86;&#x56DB;&#x79CD;&#x4E0C;&#x540C;<br>
+&#x7684;&#x5546;&#x4E1A;&#x6A21;&#x5F0F;&#xFF0C;&#x5386;&#x7ECF;&#x56DB;&#x5E74;&#x624D;&#x53D6;&#x5F97;&#x6210;&#x529F;&#x3002;&#x540E;&#x6765;&#x8FD9;&#x5BB6;&#x4F01;&#x4E1A;&#x7684;&#x8001;&#x603B;&#x4E5F;&#x6210;&#x4E86;&#x6700;<br>
+&#x5927;&#x4E92;&#x8054;&#x7F51;&#x516C;&#x53F8;&#x4E4B;&#x4E00;&#x7684;&#x8463;&#x4E8B;&#x957F;&#x3002;<br>
+For instance, at the company where I personally worked, it<br>
+was only after four years and four tries of different business<br>
+models that its entrepreneur finally succeeded, and became<br>
+the chairman of one of the largest Internet companies. (38<br>
+words)<br>
+&#x7B2C;&#x4E09;&#x6BB5;&#xFF1A;&#x5F52;&#x7EB3;&#x7ED3;&#x8BBA;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x7ED3;&#x8BBA;&#x53E5;<br>
+&#x603B;&#x4E4B;&#xFF0C;&#x65E0;&#x8BBA;&#x662F;&#x5728;&#x533B;&#x5B66;&#x3001;&#x5DE5;&#x7A0B;&#x8FD8;&#x662F;&#x5546;&#x4E1A;&#x7684;&#x4EFB;&#x4F55;&#x9886;&#x57DF;&#xFF0C;&#x4F3C;&#x4E4E;&#x53E7;&#x6709;&#x91CD;&#x89C6;&#x521B;<br>
+&#x65B0;&#xFF0C;&#x624D;&#x80FD;&#x83B7;&#x5F97;&#x6700;&#x540E;&#x7684;&#x6210;&#x529F;&#x3002;<br>
+To sum up, in any field of endeavor, whether it is in<br>
+medicine, engineering or business, it seems necessary to<br>
+put great emphasis on innovation before one can finally<br>
+become successful. (31 words)<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x5C0F;&#x7ED3;<br>
+&#x5728;&#x6211;&#x4EEC;&#x83B7;&#x5F97;&#x6210;&#x529F;&#x4E4B;&#x524D;&#xFF0C;&#x751F;&#x6D3B;&#x597D;&#x50CF;&#x662F;&#x5728;&#x8003;&#x9A8C;&#x6211;&#x4EEC;&#xFF0C;&#x8003;&#x9A8C;&#x6211;&#x4EEC;&#x7684;&#x521B;&#x65B0;&#x80FD;<br>
+&#x529B;&#xFF0C;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x662F;&#x5426;&#x80FD;&#x4E0E;&#x6CE8;&#x4E0D;&#x81EA;&#x5DF1;&#x7684;&#x7406;&#x60F3;&#x3002;<br>
+It is as if life is testing us, testing our innovation and<br>
+creativity to see if we are really dedicated to our ideals,<br>
+before life finally rewards us with success. &#xFF08;30 words)<br>
+&#x7B2C;&#x56DB;&#x8282;<br>
+01 &#x5C0F;&#x4F5C;&#x6587;&#xFF1A;&#x63A8;&#x8350;&#x4FE1;<br>
+02 &#x5927;&#x4F5C;&#x6587;&#xFF1A;&#x73AF;&#x5883;&#x4FDD;&#x62A4;<br>
+CONTENTS<br>
+&#x5C0F;&#x4F5C;&#x6587;&#xFF1A;&#x63A8;&#x8350;&#x4FE1;<br>
+PART ONE<br>
+Directions:<br>
+Write a letter to a friend of yours to</p>
+<ol>
+<li>recommend one of your favorite movies and</li>
+<li>give reasons for your recommendation.<br>
+&#x7B2C;&#x4E00;&#x6BB5;&#xFF1A;&#x81EA;&#x6211;&#x4ECB;&#x7ECD;+&#x5199;&#x4F5C;&#x76EE;&#x7684;<br>
+&#x8FC8;&#x514B;&#x5C14;&#xFF1A;<br>
+&#x4F5C;&#x4E3A;&#x4F60;&#x6700;&#x597D;&#x7684;&#x4E00;&#x4F4D;&#x670B;&#x53CB;&#xFF0C;&#x6211;&#x5199;&#x8FD9;&#x5C01;&#x4FE1;&#x662F;&#x4E3A;&#x4E86;&#x5411;&#x4F60;&#x63A8;&#x8350;&#x6211;&#x6700;&#x559C;&#x6B22;&#x7684;&#x4E00;&#x90E8;&#x7535;&#x5F71;&#xFF1A;&#x300A;&#x516B;&#x5341;&#x5929;&#x73AF;&#x6E38;&#x5730;&#x7403;&#x300B;&#x3002;<br>
+Dear Michael,<br>
+As one of your closest friend, I&apos;m writing the letter in order to recommend<br>
+one of my favorite movies to you&#x2014;&#x2014; Around the World in Eighty Days.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x4E3B;&#x9898;&#x53E5;&#xFF1A;&#x63A8;&#x8350;&#x4FE1;&#x4E07;&#x80FD;&#x53E5;&#x578B;<br>
+&#x6211;&#x63A8;&#x8350;&#x7684;&#x4E3B;&#x8981;&#x539F;&#x56E0;&#x5982;&#x4E0B;&#x3002;<br>
+The primary factors for my recommendation are as follows.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x5206;&#x8BBA;&#x70B9;&#x4E00;<br>
+&#x9996;&#x5148;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x90E8;&#x79D1;&#x5E7B;&#x7535;&#x5F71;&#xFF0C;&#x8BB2;&#x8FF0;&#x4E86;&#x4E00;&#x4F4D;&#x82F1;&#x56FD;&#x7EC5;&#x58EB;&#x6FC0;&#x52A8;&#x4EBA;&#x5FC3;&#x7684;&#x6545;&#x4E8B;&#x3002;&#x83F2;&#x529B;&#x2022;&#x5F17;&#x683C;&#x5148;&#x751F;&#x8DDF;&#x4ED6;&#x7684;&#x4FF1;&#x4E50;&#x90E8;&#x4F19;&#x4F34;<br>
+&#x53CA;&#x7ECF;&#x7406;&#x6253;&#x8D4C;&#x5728;&#x516B;&#x5341;&#x5929;&#x4E4B;&#x5185;&#x73AF;&#x6E38;&#x5730;&#x7403;&#x3002;<br>
+For one thing, this is a science fiction movie which tells us an exciting story about an<br>
+English gentleman, Mr. Phileas Fogg, who makes a bet with his clubmates and managers to<br>
+travel around the world in eighty days. &#xFF08;39 words)<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x5206;&#x8BBA;&#x70B9;&#x4E8C;<br>
+&#x5176;&#x6B21;&#xFF0C;&#x7535;&#x5F71;&#x751F;&#x52A8;&#x63CF;&#x8FF0;&#x4E86;&#x4ED6;&#x5728;&#x65C5;&#x9014;&#x4E2D;&#x9047;&#x5230;&#x7684;&#x56F0;&#x96BE;&#x548C;&#x53D1;&#x751F;&#x7684;&#x6545;&#x4E8B;&#x3002;<br>
+For another, it gives us a vivid description of the many difficulties and incidents which<br>
+happen on his journey.<br>
+&#x7B2C;&#x4E09;&#x6BB5;&#xFF1A;&#x5199;&#x4F5C;&#x76EE;&#x7684;+&#x671F;&#x5F85;&#x56DE;&#x4FE1;<br>
+&#x5E0C;&#x671B;&#x4F60;&#x89C2;&#x770B;&#x5E76;&#x559C;&#x6B22;&#x8FD9;&#x90E8;&#x7535;&#x5F71;&#x3002;&#x671F;&#x5F85;&#x7740;&#x4F60;&#x7684;&#x56DE;&#x4FE1;&#x3002;<br>
+&#x4F60;&#x771F;&#x8BDA;&#x7684;&#xFF0C;<br>
+&#x674E;&#x660E;<br>
+Hope you watch and enjoy the movie. Looking forward to your reply. (105 words)<br>
+Yours,<br>
+Li Ming<br>
+&#x5927;&#x4F5C;&#x6587;&#xFF1A;&#x73AF;&#x5883;&#x4FDD;&#x62A4;<br>
+PART TWO<br>
+Directions:<br>
+Write an essay of 160-200 words based on the following drawing. In<br>
+your essay, you should</li>
+<li>describe the drawing briefly.</li>
+<li>explain its intended meaning, and</li>
+<li>give you comments.<br>
+&#x65C5;&#x7A0B;&#x4E4B;&#x201C;&#x4F59;&#x201D;</li>
+</ol>
+<p>&#x7B2C;&#x4E00;&#x6BB5;&#xFF1A;&#x56FE;&#x753B;&#x63CF;&#x8FF0;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x6B63;&#x5982;&#x56FE;&#x4E2D;&#x5DE7;&#x5999;&#x5730;&#x63CF;&#x7ED8;&#x7684;&#x90A3;&#x6837;&#xFF0C;&#x4E24;&#x540D;&#x6E38;&#x5BA2;&#x6B63;&#x5728;&#x4E00;&#x8258;&#x5C0F;&#x8239;&#x4E0A;&#x89C2;&#x5149;&#xFF0C;&#x540C;&#x65F6;&#x628A;&#x91CE;<br>
+&#x9910;&#x7684;&#x5269;&#x4F59;&#x5783;&#x573E;&#x968F;&#x610F;&#x4E22;&#x5165;&#x6E56;&#x4E2D;&#x3002;&#xFF08;&#x603B;&#x4F53;&#x63CF;&#x8FF0;&#xFF09;<br>
+As is subtly portrayed in the cartoon, two tourists are sightseeing on a small<br>
+boat while discarding their picnic leftovers casually into a lake.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x7EC6;&#x8282;&#x63CF;&#x8FF0;&#xFF1A;<br>
+&#x4E0D;&#x5E78;&#x7684;&#x662F;&#xFF0C;&#x6E56;&#x4E2D;&#x5DF2;&#x7ECF;&#x5806;&#x6EE1;&#x4E86;&#x6F02;&#x6D6E;&#x7684;&#x5851;&#x6599;&#x76D2;&#x3001;&#x9C7C;&#x9AA8;&#x3001;&#x9999;&#x8549;&#x76AE;&#x3001;&#x897F;&#x74DC;&#x76AE;&#x3001;&#x74F6;&#x5B50;&#x3001;&#x7F50;&#x5934;&#x3001;&#x98DF;&#x54C1;<br>
+&#x5305;&#x88C5;&#x7B49;&#x5404;&#x79CD;&#x5783;&#x573E;&#x3002;<br>
+Unfortunately, the lake is already filled with litter and teaming with flowing<br>
+rubbish like plastic containers, fish-bones, banana peels, watermelon rinds, bottles,<br>
+tins, food wrappings, and so on.<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x6587;&#x5B57;&#x8BF4;&#x660E;<br>
+&#x5728;&#x56FE;&#x753B;&#x4E0B;&#x65B9;&#xFF0C;&#x6709;&#x4E2A;&#x5C0F;&#x6807;&#x9898;&#x5199;&#x7740;&#xFF1A;&#x65C5;&#x7A0B;&#x4E4B;&#x201C;&#x4F59;&#x201D;<br>
+&#x3002;<br>
+And below the drawing, there is a caption which says: &quot;after&quot; the travel or &quot;me&quot;<br>
+in the travel.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x610F;&#x4E49;&#x9610;&#x91CA;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x4E3B;&#x9898;&#x53E5;&#xFF08;&#x4E2D;&#x5FC3;&#x601D;&#x60F3;&#xFF0C;&#x56FE;&#x753B;&#x8C61;&#x5F81;&#x5BD3;&#x610F;&#xFF09;<br>
+&#x4ECE;&#x6F2B;&#x753B;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F97;&#x51FA;&#x7ED3;&#x8BBA;&#xFF0C;&#x753B;&#x5BB6;&#x60F3;&#x8981;&#x8868;&#x8FBE;&#x8FD9;&#x6837;&#x4E00;&#x79CD;&#x4FE1;&#x606F;&#xFF1A;&#x6210;&#x7FA4;&#x7684;&#x6E38;&#x5BA2;&#x6D8C;&#x5165;&#x4F17;<br>
+&#x591A;&#x666F;&#x70B9;&#xFF0C;&#x5236;&#x9020;&#x5E76;&#x7559;&#x4E0B;&#x4E86;&#x5927;&#x91CF;&#x7684;&#x5783;&#x573E;&#xFF0C;&#x7834;&#x574F;&#x4E86;&#x81EA;&#x7136;&#x4E4B;&#x7F8E;&#x3002;<br>
+From the portrayal, we can conclude that the painter wants to convey such a<br>
+message: a good many scenic spots are flooded with visitors, who spoil the beauty<br>
+of nature by creating and leaving behind God-knows-how-much trash.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x6B63;&#x9762;&#x8BBA;&#x8BC1;<br>
+&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x65C5;&#x6E38;&#x4E1A;&#x4F5C;&#x4E3A;&#x4E00;&#x9879;&#x4EA7;&#x503C;&#x6570;&#x5341;&#x4EBF;&#x7F8E;&#x5143;&#x7684;&#x4EA7;&#x4E1A;&#xFF0C;&#x6B63;&#x5728;&#x4E16;&#x754C;&#x5404;&#x5730;&#x8FC5;&#x731B;&#x53D1;&#x5C55;&#x3002;<br>
+On the one hand, tourism, as a multibillion-dollar business, is booming<br>
+everywhere.<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x6B63;&#x9762;&#x8BBA;&#x8BC1;<br>
+&#x6709;&#x4E9B;&#x4EBA;&#x8BA4;&#x4E3A;&#x65C5;&#x6E38;&#x4E1A;&#x662F;&#x7ECF;&#x6D4E;&#x53D1;&#x5C55;&#x7684;&#x5F15;&#x64CE;&#xFF0C;&#x4F3C;&#x4E4E;&#x5FFD;&#x89C6;&#x4E86;&#x5176;&#x5BF9;&#x73AF;&#x5883;&#x7684;&#x8D1F;<br>
+&#x9762;&#x5F71;&#x54CD;&#x3002;<br>
+Some people, under the belief that tourism serves as an engine of economic<br>
+growth, seem to ignore its negative effects on the environment.<br>
+&#x7B2C;&#x56DB;&#x53E5;&#xFF1A;&#x6B63;&#x9762;&#x8BBA;&#x8BC1;<br>
+&#x7136;&#x800C;&#xFF0C;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x5145;&#x5206;&#x5173;&#x6CE8;&#x8FD9;&#x4E00;&#x95EE;&#x9898;&#x3002;<br>
+Nevertheless, these are not concerns that we can shrug off lightly.<br>
+&#x7B2C;&#x4E94;&#x53E5;&#xFF1A;&#x53CD;&#x9762;&#x8BBA;&#x8BC1;<br>
+&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x65C5;&#x6E38;&#x4E1A;&#x5DF2;&#x7ECF;&#x7ED9;&#x6211;&#x4EEC;&#x751F;&#x5B58;&#x7684;&#x73AF;&#x5883;&#x5E26;&#x6765;&#x4E86;&#x5DE8;&#x5927;&#x7684;&#x538B;&#x529B;&#xFF1A;&#x6C34;<br>
+&#x53D7;&#x5230;&#x6C61;&#x67D3;&#xFF0C;&#x751F;&#x6001;&#x5E73;&#x8861;&#x906D;&#x5230;&#x7834;&#x574F;&#xFF0C;&#x81EA;&#x7136;&#x8D44;&#x6E90;&#x88AB;&#x8FC7;&#x5EA6;&#x5F00;&#x53D1;&#x3002;<br>
+On the other hand, tourism has exerted great pressure on the environment<br>
+we are living in: our water is polluted, our ecological system is disturbed, and<br>
+our natural resources have been excessively used.<br>
+&#x7B2C;&#x4E09;&#x6BB5;&#xFF1A;&#x5F52;&#x7EB3;&#x7ED3;&#x8BBA;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x8BA9;&#x6B65;<br>
+&#x6BEB;&#x65E0;&#x7591;&#x95EE;&#xFF0C;&#x7531;&#x4E8E;&#x5BF9;&#x90A3;&#x4E9B;&#x51E0;&#x4E4E;&#x6CA1;&#x6709;&#x5176;&#x4ED6;&#x6536;&#x5165;&#x6765;&#x6E90;&#x7684;&#x5730;&#x533A;&#x800C;&#x8A00;&#xFF0C;&#x65C5;&#x6E38;&#x4E1A;<br>
+&#x786E;&#x5B9E;&#x6709;&#x52A9;&#x4E8E;&#x53D1;&#x5C55;&#x7ECF;&#x6D4E;&#xFF0C;&#x56E0;&#x6B64;&#x4EFB;&#x4F55;&#x56FD;&#x5BB6;&#x90FD;&#x65E0;&#x6CD5;&#x7981;&#x6B62;&#x65C5;&#x6E38;&#x4E1A;&#x3002;<br>
+Undoubtedly, tourism could not be banned in any country as it does help<br>
+to shore up the economy in places which have few sources of income.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x7ED3;&#x8BBA;&#x53E5;<br>
+&#x4F46;&#x91CD;&#x8981;&#x7684;&#x662F;&#xFF0C;&#x65C5;&#x6E38;&#x4E1A;&#x6BEB;&#x65E0;&#x8282;&#x5236;&#x7684;&#x53D1;&#x5C55;&#x53EF;&#x80FD;&#x4F7F;&#x5F97;&#x7ECF;&#x6D4E;&#x53D1;&#x5C55;&#x4E0D;&#x53EF;&#x6301;&#x7EED;&#x3002;<br>
+However, the main point is that the unchecked growth of the travel business<br>
+may render the development of an economy unsustainable.<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x5C0F;&#x7ED3;<br>
+&#x662F;&#x65F6;&#x5019;&#x52A0;&#x5F3A;&#x4EBA;&#x4EEC;&#x7684;&#x610F;&#x8BC6;&#xFF0C;&#x901A;&#x8FC7;&#x591A;&#x52A0;&#x8003;&#x8651;&#x73AF;&#x5883;&#x4FDD;&#x62A4;&#x56E0;&#x7D20;&#x6765;&#x6539;&#x53D8;&#x8FD9;&#x4E00;&#x73B0;<br>
+&#x72B6;&#x4E86;&#x3002;<br>
+It is high time that we enhanced people&apos;s awareness to rectify this by<br>
+taking environmental protection into consideration.<br>
+&#x8868;&#x626C;&#x65F6;&#x95F4;<br>
+PART THREE<br>
+&#x5BF9;&#x4E0B;&#x5217;&#x575A;&#x6301;&#x5B8C;&#x6210;5&#x5468;&#x8303;&#x6587;&#x80CC;&#x8BF5;&#x4EFB;&#x52A1;&#x7684;&#x76F4;&#x901A;&#x8F66;&#x5B66;&#x5458;&#x63D0;&#x51FA;&#x8868;&#x626C;<br>
+&#x5927;&#x5496;A&#x73ED;<br>
+&#x5218;&#x96E8;&#x84D3;<br>
+&#x845B;&#x6668;&#x9633;<br>
+&#x5C01;&#x4E01;&#x7430;<br>
+&#x6768;&#x4E07;&#x7426;<br>
+&#x9648;&#x79C0;&#x667A;<br>
+&#x9A6C;&#x745E;&#x797A;<br>
+&#x5218;&#x745E;&#x6DB5;<br>
+&#x9F50;&#x601D;&#x96E8;<br>
+&#x5B8B;&#x7D2B;&#x5B81;<br>
+&#x5F20;&#x5148;&#x9F99;<br>
+&#x5218;&#x745E;&#x6DB5;<br>
+&#x5468;&#x777F;&#x9E4F;<br>
+&#x6768;&#x6C5F;<br>
+&#x5F20;&#x5B87;&#x5B81;<br>
+&#x90D1;&#x6653;&#x7389;<br>
+&#x738B;&#x65ED;&#x5764;<br>
+&#x8D75;&#x8D62;&#x7855;<br>
+&#x674E;&#x6C76;&#x5353;<br>
+&#x5434;&#x5B50;&#x5065;<br>
+&#x6234;&#x6CFD;&#x4E16;<br>
+&#x77F3;&#x4E39;<br>
+&#x674E;&#x7476;<br>
+&#x8D75;&#x663E;&#x6613;<br>
+&#x53F8;&#x797A;<br>
+&#x6BD5;&#x6653;&#x598D;<br>
+&#x590F;&#x56ED;&#x5A9B;<br>
+&#x738B;&#x5E7F;&#x82D7;<br>
+&#x5EB7;&#x5C27;<br>
+&#x5BD2;&#x5047;&#x73ED;<br>
+&#x90ED;&#x4E00;&#x6770;<br>
+&#x674E;&#x7EAA;&#x5B81;<br>
+&#x738B;&#x632F;&#x7EA2;<br>
+&#x5434;&#x946B;&#x6E90;<br>
+&#x5E38;&#x4E39;&#x4E39;<br>
+&#x5468;&#x777F;&#x601D;<br>
+&#x90ED;&#x82B7;&#x6CE0;<br>
+&#x674E;&#x5FC3;&#x6021;<br>
+&#x502A;&#x91D1;&#x54F2;<br>
+&#x738B;&#x4E39;&#x5F64;<br>
+&#x738B;&#x4E00;&#x6DB5;<br>
+&#x4EFB;&#x65FA;<br>
+&#x5B59;&#x5B81;<br>
+&#x674E;&#x971E;<br>
+&#x9A6C;&#x5E86;&#x5C9A;<br>
+&#x5D14;&#x6653;&#x8363;<br>
+&#x674E;&#x8339;&#x8339;<br>
+&#x65BD;&#x6C81;&#x5B8F;<br>
+&#x5218;&#x946B;<br>
+&#x6768;&#x4E91;&#x98DE;<br>
+&#x674E;&#x60A6;&#x5F64;<br>
+&#x738B;&#x5B66;&#x73CD;<br>
+&#x5F20;&#x742A;<br>
+&#x6625;&#x5B63;&#x73ED;<br>
+&#x738B;&#x6CFD;&#x658C;<br>
+&#x90ED;&#x82F1;&#x7537;<br>
+&#x5F20;&#x8BD7;&#x831C;<br>
+&#x66F9;&#x4F73;<br>
+&#x5C39;&#x70AB;&#x742A;<br>
+&#x738B;&#x96EA;&#x5A77;<br>
+&#x79E6;&#x6C5F;&#x6E90;<br>
+&#x674E;&#x6602;<br>
+&#x738B;&#x65B0;&#x6708;<br>
+&#x7B80;&#x7389;&#x745E;<br>
+&#x5218;&#x534E;&#x6CFD;<br>
+&#x88F4;&#x7433;&#x66FC;<br>
+&#x674E;&#x4E1C;&#x683C;<br>
+&#x60CA;&#x86F0;<br>
+&#x9AD8;&#x4F9D;&#x51E1;<br>
+&#x7126;&#x6D77;&#x5A01;<br>
+&#x6613;&#x5609;&#x5E73;<br>
+&#x7530;&#x6657;<br>
+&#x5F20;&#x8BD7;&#x9E92;<br>
+&#x5468;&#x5E78;<br>
+&#x949F;&#x5FD7;&#x5B89;<br>
+&#x738B;&#x5BB6;&#x4E3D;<br>
+&#x9648;&#x4E39;&#x9633;<br>
+&#x5305;&#x9756;&#x8431;<br>
+&#x91D1;&#x7389;&#x5A77;<br>
+&#x5218;&#x5A67;<br>
+&#x590F;&#x5B63;&#x73ED;<br>
+&#x8D75;&#x6B23;&#x6021;<br>
+&#x674E;&#x6DE6;<br>
+&#x970D;&#x4E00;&#x51E1;<br>
+&#x738B;&#x601D;&#x5B87;<br>
+&#x4E07;&#x4EBF;<br>
+&#x6768;&#x7433;<br>
+&#x6768;&#x96E8;&#x5A77;<br>
+&#x518D;&#x63A5;&#x518D;&#x5389;&#xFF01;<br>
+&#x4E0B;&#x4E00;&#x9636;&#x6BB5;&#x5956;&#x52B1;&#xFF1A;<br>
+&#x575A;&#x6301;10&#x5468;&#xFF0C;&#x53EF;&#x83B7;&#x5F97;&#x9053;&#x957F;&#x5B9A;&#x5236;&#x8D77;&#x5E8A;&#x95F9;&#x949F;&#x94C3;&#x58F0;&#xFF01;&#xFF01;&#xFF01;<br>
+&#xFF08;&#x53C2;&#x4E0E;&#x65B9;&#x5F0F;&#x53CA;&#x7EDF;&#x8BA1;&#x89C4;&#x5219;&#x8BE6;&#x8BE2;&#x73ED;&#x4E3B;&#x4EFB;&#x8001;&#x5E08;&#xFF09;<br>
+&#x7B2C;&#x4E94;&#x8282;<br>
+01 &#x5C0F;&#x4F5C;&#x6587;&#xFF1A;&#x8F9E;&#x804C;&#x4FE1;<br>
+02 &#x5927;&#x4F5C;&#x6587;&#xFF1A;&#x4F20;&#x7EDF;&#x6587;&#x5316;<br>
+CONTENTS<br>
+&#x5C0F;&#x4F5C;&#x6587;&#xFF1A;&#x8F9E;&#x804C;&#x4FE1;<br>
+PART ONE<br>
+Directions:<br>
+Two months ago you got a job as an editor for the magazine Designs<br>
+&#xFF06;Fashions. But now you find that the work is not what you expected.<br>
+You decide to quit. Write a letter to your boss, Mr. Wang, telling him<br>
+your decision, stating your reason(s), and making an apology.<br>
+Write your letter with no less than 100 words. Write it neatly on<br>
+ANSWER SHEET2. Do not sign your own name at the end of the letter;<br>
+use &#x201C;Li Ming&#x201D; instead. You do not need to write the address. (10<br>
+points)<br>
+&#x7B2C;&#x4E00;&#x6BB5;&#xFF1A;&#x8868;&#x793A;&#x611F;&#x8C22;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;<br>
+&#x5C0A;&#x656C;&#x7684;&#x738B;&#x5148;&#x751F;&#xFF1A;<br>
+&#x5341;&#x5206;&#x611F;&#x6FC0;&#x60A8;&#x5728;&#x8FC7;&#x53BB;&#x7684;&#x4E24;&#x4E2A;&#x6708;&#x8058;&#x7528;&#x6211;&#x4E3A;&#x6742;&#x5FD7;&#x300A;&#x8BBE;&#x8BA1;&#x4E0E;&#x65F6;&#x5C1A;&#x300B;&#x7684;&#x7F16;&#x8F91;&#x3002;<br>
+Dear Mr. Wang,<br>
+I am very grateful to have been employed by you for the past two months<br>
+as an editor for your magazine Design &amp; Fashions.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;<br>
+&#x6211;&#x975E;&#x5E38;&#x73CD;&#x60DC;&#x8FD9;&#x4E2A;&#x548C;&#x60A8;&#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x540C;&#x4E8B;&#x5171;&#x4E8B;&#x7684;&#x673A;&#x4F1A;&#x3002;<br>
+I appreciate the opportunity of having worked here with you and my other<br>
+colleagues.<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;<br>
+&#x8FD9;&#x5C06;&#x662F;&#x6211;&#x4E00;&#x751F;&#x4E2D;&#x5F88;&#x96BE;&#x5FD8;&#x7684;&#x7ECF;&#x5386;&#x3002;<br>
+The experiences I had here are ones I will not forget for my entire life.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x6539;&#x5199;&#x63D0;&#x7EB2;&#x4E8C;<br>
+&#x4F46;&#x662F;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x559C;&#x6B22;&#x8BA1;&#x7B97;&#x673A;&#x79D1;&#x5B66;&#x8FDC;&#x591A;&#x4E8E;&#x65F6;&#x5C1A;&#x8BBE;&#x8BA1;&#x7684;&#x5E74;&#x8F7B;&#x4EBA;&#x6765;&#x8BF4;&#xFF0C;&#x6211;&#x53D1;&#x73B0;&#x76EE;&#x524D;&#x7684;&#x5DE5;&#x4F5C;&#x5E76;&#x4E0D;&#x7B26;&#x5408;&#x6211;&#x7684;&#x6559;<br>
+&#x80B2;&#x80CC;&#x666F;&#x4E0E;&#x4E2A;&#x4EBA;&#x5F3A;&#x9879;&#x3002;<br>
+However, as a young man whose primary interest is in computer science rather than<br>
+fashion design, I have found that my present job doesn&apos;t fall in with my previous<br>
+training and strength.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x6539;&#x5199;&#x63D0;&#x7EB2;&#x4E00;&#xFF08;&#x5199;&#x4F5C;&#x76EE;&#x7684;&#xFF09;<br>
+&#x56E0;&#x6B64;&#xFF0C;&#x6211;&#x51B3;&#x5B9A;&#x8F9E;&#x804C;&#xFF0C;&#x627E;&#x4E00;&#x4EFD;&#x4E0E;&#x6211;&#x7684;&#x6559;&#x80B2;&#x80CC;&#x666F;&#x66F4;&#x52A0;&#x76F8;&#x5173;&#x7684;&#x5DE5;&#x4F5C;&#x3002;<br>
+I have therefore decided to quit this job to pursue other opportunities that may<br>
+conform better to my educational background.<br>
+&#x7B2C;&#x4E09;&#x6BB5;&#xFF1A;&#x6539;&#x5199;&#x63D0;&#x7EB2;&#x4E09;<br>
+&#x6211;&#x4E3A;&#x6211;&#x7684;&#x79BB;&#x804C;&#x9020;&#x6210;&#x7684;&#x4E0D;&#x4FBF;&#x6DF1;&#x8868;&#x6B49;&#x610F;&#x3002;<br>
+&#x60A8;&#x771F;&#x8BDA;&#x7684;&#xFF0C;<br>
+&#x674E;&#x660E;<br>
+Please accept my sincere apologies for any inconveniences my leaving may cause.<br>
+Yours truly,<br>
+Li Ming<br>
+&#x5927;&#x4F5C;&#x6587;&#xFF1A;&#x4F20;&#x7EDF;&#x6587;&#x5316;<br>
+PART TWO<br>
+Directions:<br>
+Study the following picture carefully and write an essay<br>
+entitled &#x201C;Cultures---National and International&#x201D;. In the essay<br>
+you should<br>
+1&#xFF09;describe the picture and interpret its meaning, and<br>
+2&#xFF09;give your comments on the phenomenon.<br>
+An American girl in traditional Chinese costume<br>
+&#x7B2C;&#x4E00;&#x6BB5;&#xFF1A;&#x56FE;&#x753B;&#x63CF;&#x8FF0;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x8FD9;&#x5E45;&#x56FE;&#x753B;&#x751F;&#x52A8;&#x63CF;&#x8FF0;&#x4E86;&#x4E00;&#x4F4D;&#x53EF;&#x7231;&#x7684;&#x7F8E;&#x56FD;&#x5C0F;&#x5973;&#x5B69;&#x8EAB;&#x7A7F;&#x4F20;&#x7EDF;&#x7684;&#x4E2D;<br>
+&#x56FD;&#x670D;&#x88C5;&#xFF0C;&#x9762;&#x5E26;&#x751C;&#x871C;&#x7684;&#x5FAE;&#x7B11;&#x3002;&#xFF08;&#x603B;&#x4F53;&#x63CF;&#x8FF0;&#xFF09;<br>
+The picture vividly depicts a lovely American girl in<br>
+traditional Chinese costume with a sweet smile on her face.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x7EC6;&#x8282;&#x63CF;&#x8FF0;<br>
+&#x5979;&#x6234;&#x7740;&#x5177;&#x6709;&#x67D0;&#x4E2A;&#x4E2D;&#x56FD;&#x5C11;&#x6570;&#x6C11;&#x65CF;&#x670D;&#x9970;&#x7279;&#x8272;&#x7684;&#x53D1;&#x5E26;&#x3001;&#x9879;&#x94FE;&#x548C;&#x5176;&#x4ED6;&#x88C5;&#x9970;&#x54C1;&#x3002;<br>
+She wears ribbons, necklaces and other accessories that are<br>
+characteristic of the clothes of a certain Chinese minority<br>
+group.<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x7A7F;&#x7740;&#x6548;&#x679C;<br>
+&#x6BEB;&#x65E0;&#x7591;&#x95EE;&#xFF0C;&#x8FD9;&#x5957;&#x670D;&#x88C5;&#x4E3A;&#x5979;&#x7F8E;&#x4E3D;&#x7684;&#x5916;&#x8868;&#x589E;&#x6DFB;&#x4E86;&#x4E1C;&#x65B9;&#x7684;&#x9B45;&#x529B;&#x3002;<br>
+Undoubtedly, the costume has added oriental charm to her<br>
+beautiful features.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x610F;&#x4E49;&#x9610;&#x91CA;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x8BA9;&#x6B65;&#xFF0C;&#x5426;&#x5B9A;&#x8868;&#x5C42;&#x542B;&#x4E49;&#xFF1A;<br>
+&#x8FD9;&#x5E45;&#x56FE;&#x753B;&#x6240;&#x8868;&#x8FBE;&#x7684;&#x8FDC;&#x8FDC;&#x4E0D;&#x53EA;&#x662F;&#x4E00;&#x79CD;&#x65B0;&#x7684;&#x65F6;&#x5C1A;&#x6F6E;&#x6D41;&#x3002;<br>
+What the picture conveys goes far beyond merely a new<br>
+fashion trend.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x627F;&#x4E0A;&#x542F;&#x4E0B;&#xFF0C;&#x8FC7;&#x6E21;&#x53E5;<br>
+&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x5B83;&#x8FD8;&#x5177;&#x6709;&#x6587;&#x5316;&#x5185;&#x6DB5;&#x3002;<br>
+In fact, it carries cultural implications as well.<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x4E3B;&#x9898;&#x53E5;&#xFF08;&#x4E2D;&#x5FC3;&#x601D;&#x60F3;/&#x8C61;&#x5F81;&#x5BD3;&#x610F;&#xFF09;<br>
+&#x795E;&#x79D8;&#x7684;&#x4E2D;&#x56FD;&#x6587;&#x5316;&#x5438;&#x5F15;&#x4E86;&#x5404;&#x56FD;&#x4EBA;&#x6C11;&#x8FD9;&#x4E00;&#x4E8B;&#x5B9E;&#x8868;&#x660E;&#xFF0C;&#x5728;&#x67D0;&#x79CD;&#x7A0B;&#x5EA6;&#x4E0A;&#x4E00;&#x79CD;<br>
+&#x6587;&#x5316;&#x53EF;&#x4EE5;&#x5728;&#x56FD;&#x9645;&#x8303;&#x56F4;&#x5185;&#x88AB;&#x63A5;&#x53D7;&#x3001;&#x5C0A;&#x91CD;&#x3001;&#x6B23;&#x8D4F;&#x548C;&#x5206;&#x4EAB;&#x3002;<br>
+The fact that people from different countries are attracted to<br>
+mysterious Chinese culture indicates that to some extent a<br>
+culture can be accepted, respected, appreciated and shared<br>
+internationally.<br>
+&#x7B2C;&#x56DB;&#x53E5;&#xFF1A;&#x89E3;&#x91CA;&#x8BBA;&#x8BC1;<br>
+&#x6362;&#x8A00;&#x4E4B;&#xFF0C;&#x4E00;&#x4E2A;&#x6C11;&#x65CF;&#x72EC;&#x7279;&#x7684;&#x6587;&#x5316;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5168;&#x7403;&#x6027;&#x7684;&#x7ECF;&#x6D4E;&#x548C;&#x6587;&#x5316;&#x4EA4;&#x6D41;&#x8D70;<br>
+&#x5411;&#x4E16;&#x754C;&#x3002;<br>
+In other words, a nation&#x2019;s unique culture can become<br>
+international through worldwide economic and cultural<br>
+exchange.<br>
+&#x7B2C;&#x4E94;&#x53E5;&#xFF1A;&#x8BF4;&#x660E;&#x540E;&#x679C;<br>
+&#x7531;&#x4E8E;&#x5168;&#x7403;&#x5316;&#x6F6E;&#x6D41;&#x4E0D;&#x53EF;&#x963B;&#x6321;&#xFF0C;&#x6240;&#x4EE5;&#x56FD;&#x5BB6;&#x95F4;&#x65E5;&#x76CA;&#x9891;&#x7E41;&#x7684;&#x6587;&#x5316;&#x4EA4;&#x6D41;&#x53EF;&#x4EE5;&#x6709;<br>
+&#x6548;&#x589E;&#x8FDB;&#x76F8;&#x4E92;&#x95F4;&#x7684;&#x7406;&#x89E3;&#x548C;&#x53CB;&#x8C0A;&#x3002;<br>
+Since the trend of globalization has become irresistible,<br>
+increasing cultural exchange can effectively improve mutual<br>
+understanding and friendship between countries.<br>
+&#x7B2C;&#x4E09;&#x6BB5;&#xFF1A;&#x5EFA;&#x8BAE;&#x63AA;&#x65BD;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x5EFA;&#x8BAE;&#x4E00;<br>
+&#x5728;&#x6211;&#x770B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x4FDD;&#x5B58;&#x548C;&#x73CD;&#x60DC;&#x4F5C;&#x4E3A;&#x65E0;&#x4EF7;&#x7CBE;&#x795E;&#x8D22;&#x5BCC;&#x7684;&#x6C11;&#x65CF;&#x6587;&#x5316;&#x3002;<br>
+It is my view that national culture should be preserved and<br>
+cherished as a priceless spiritual treasure.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;<br>
+&#x540C;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5F88;&#x6709;&#x5FC5;&#x8981;&#x63A8;&#x5E7F;&#x4E16;&#x754C;&#x6587;&#x5316;&#xFF0C;&#x56E0;&#x4E3A;&#x6765;&#x81EA;&#x5176;&#x4ED6;&#x6587;&#x5316;&#x7684;&#x89C2;&#x70B9;&#xFF0C;&#x5373;<br>
+&#x4F7F;&#x4E4D;&#x770B;&#x8D77;&#x6765;&#x76F8;&#x4E92;&#x77DB;&#x76FE;&#x751A;&#x81F3;&#x5F88;&#x8352;&#x8C2C;&#xFF0C;&#x4F46;&#x4ECE;&#x957F;&#x8FDC;&#x770B;&#x6765;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;&#x6211;&#x4EEC;&#x89C2;&#x5BDF;<br>
+&#x8FD9;&#x4E2A;&#x4E16;&#x754C;&#x63D0;&#x4F9B;&#x4E00;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x89C6;&#x89D2;&#x3002;<br>
+Meanwhile, there are good reasons to advocate for<br>
+internationalized culture, for those ideas from other cultures,<br>
+though controversial or even absurd at first sight, can in the<br>
+long run provide a different perspective for us to observe the<br>
+world.<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x5EFA;&#x8BAE;&#x4E8C;<br>
+&#x7136;&#x800C;&#xFF0C;&#x5728;&#x6211;&#x4EEC;&#x9762;&#x4E34;&#x4E0D;&#x540C;&#x6587;&#x5316;&#x65F6;&#xFF0C;&#x5E94;&#x8BE5;&#x5145;&#x6EE1;&#x7406;&#x667A;&#x5730;&#x53D6;&#x5176;&#x7CBE;&#x534E;&#x3001;&#x53BB;&#x5176;&#x7CDF;<br>
+&#x7C95;&#x3002;<br>
+Nevertheless, when we are confronted with a different<br>
+culture, we should be sensible enough to absorb its virtues<br>
+and to resist its dark side.<br>
+&#x7B2C;&#x56DB;&#x53E5;&#xFF1A;&#x5C0F;&#x7ED3;<br>
+&#x53EA;&#x6709;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x624D;&#x80FD;&#x79EF;&#x6781;&#x53D1;&#x5C55;&#x6C11;&#x65CF;&#x6587;&#x5316;&#xFF0C;&#x5E76;&#x4F7F;&#x6211;&#x4EEC;&#x7684;&#x4E16;&#x754C;&#x4E30;&#x5BCC;&#x591A;&#x5143;&#x3001;<br>
+&#x591A;&#x59FF;&#x591A;&#x5F69;&#x3001;&#x5145;&#x6EE1;&#x6D3B;&#x529B;&#x3002;<br>
+Only in this way can we promote cultural development<br>
+positively and make our world multidimensional, colorful<br>
+and vigorous.<br>
+&#x7B2C;&#x4E09;&#x8282;<br>
+01 &#x5C0F;&#x4F5C;&#x6587;&#xFF1A;&#x9080;&#x8BF7;&#x4FE1;<br>
+02 &#x5927;&#x4F5C;&#x6587;&#xFF1A;&#x4EBA;&#x751F;&#x54F2;&#x7406;<br>
+CONTENTS<br>
+&#x5C0F;&#x4F5C;&#x6587;&#xFF1A;&#x9080;&#x8BF7;&#x4FE1;<br>
+PART ONE</p>
+<p>Directions:<br>
+Write an email to invite a famous professor to give a lecture to the<br>
+students who love English in your university.</p>
+<p>&#x7B2C;&#x4E00;&#x6BB5;&#xFF1A;&#x81EA;&#x6211;&#x4ECB;&#x7ECD;+&#x5199;&#x4F5C;&#x76EE;&#x7684;<br>
+&#x5C0A;&#x656C;&#x7684;&#x4E9A;&#x5386;&#x5C71;&#x5927;&#x6559;&#x6388;&#xFF1A;<br>
+&#x6211;&#x8C28;&#x4EE3;&#x8868;&#x5317;&#x4EAC;&#x5916;&#x56FD;&#x8BED;&#x5927;&#x5B66;&#x5168;&#x4F53;&#x70ED;&#x7231;&#x82F1;&#x8BED;&#x7684;&#x5B66;&#x751F;&#xFF0C;&#x8BDA;&#x631A;&#x5730;&#x9080;&#x8BF7;&#x60A8;&#x7ED9;&#x6211;&#x4EEC;&#x505A;&#x4E00;&#x573A;&#x6F14;&#x8BB2;&#x3002;</p>
+<p>Dear Professor Alexander,<br>
+On behalf of all the students at Beijing Foreign Studies University who<br>
+share a love for the English language, I cordially invite you to give a lecture to us.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x9080;&#x8BF7;&#x539F;&#x56E0;<br>
+&#x7531;&#x4E8D;&#x60A8;&#x662F;&#x5168;&#x4E10;&#x754C;&#x82F1;&#x8BED;&#x8BED;&#x8A00;&#x7814;&#x7A76;&#x65B9;&#x9762;&#x6770;&#x51FA;&#x7684;&#x4E0E;&#x5BB6;&#x4E4B;&#x4E00;&#xFF0C;&#x6211;&#x76F8;&#x4FE1;&#x5B66;&#x751F;&#x4EEC;&#x4E0C;&#x4EC5;&#x80FD;&#x4ECE;&#x60A8;&#x8EAB;&#x4E0A;&#x5B66;&#x5230;&#x5F88;<br>
+&#x591A;&#x77E5;&#x8BC6;&#xFF0C;&#x800C;&#x4E0F;&#x4E5F;&#x80FD;&#x591F;&#x83B7;&#x5F97;&#x5F88;&#x5927;&#x7684;&#x542F;&#x53D1;&#x3002;<br>
+As you are one of the outstanding experts in the English language all over the<br>
+world, I believe that the students will not only be able to learn from you, but to<br>
+be inspired by you as well.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x65F6;&#x95F4;&#x5730;&#x70B9;<br>
+&#x6211;&#x4EEC;&#x671F;&#x5F85;&#x60A8;&#x80FD;&#x62BD;&#x51FA;&#x65F6;&#x95F4;&#x5728;1&#x6708;4&#x65E5;&#x4E0A;&#x5348;10&#x70B9;&#x6765;&#x6211;&#x6821;&#x505A;&#x4E00;&#x573A;&#x6F14;&#x8BB2;&#x3002;<br>
+We are hoping that you will be available for a lecture on our campus at 10&#xFF1A;00<br>
+am on January 4.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x5177;&#x4F53;&#x5B89;&#x6392;<br>
+&#x5176;&#x4E2D;45&#x5206;&#x949F;&#x5C06;&#x662F;&#x60A8;&#x7684;&#x6F14;&#x8BB2;&#x65F6;&#x95F4;&#xFF0C;&#x53E6;&#x5916;15&#x5206;&#x949F;&#x5219;&#x662F;&#x95EE;&#x7B54;&#x73AF;&#x8282;&#x3002;<br>
+There will be 45 minutes allocated for your lecture and 15 minutes for a<br>
+question-and-answer session.<br>
+&#x7B2C;&#x4E09;&#x6BB5;&#xFF1A;&#x671F;&#x5F85;&#x56DE;&#x4FE1;<br>
+&#x5982;&#x679C;&#x60A8;&#x5BF9;&#x6B64;&#x6B21;&#x6765;&#x6211;&#x6821;&#x6F14;&#x8BB2;&#x611F;&#x5174;&#x8DA3;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x7684;&#x90AE;&#x7BB1;&#x5730;&#x5740;&#x7ED9;&#x6211;&#x53D1;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x3002;&#x6211;&#x4EEC;&#x671F;&#x5F85;&#x4E0D;<br>
+&#x60A8;&#x76F8;&#x89C1;&#x3002;<br>
+&#x60A8;&#x771F;&#x8BDA;&#x7684;&#xFF0C;<br>
+&#x674E;&#x660E;<br>
+If you are interested in coming to our university for the lecture, you can email<br>
+me at the address below. We are looking forward to meeting you.<br>
+Yours sincerely,<br>
+Li Ming<br>
+&#x5927;&#x4F5C;&#x6587;&#xFF1A;&#x4EBA;&#x751F;&#x54F2;&#x7406;<br>
+PART TWO<br>
+Directions:<br>
+Write an essay of 160-200 words based on the following drawing. In<br>
+your essay, you should</p>
+<ol>
+<li>describe the drawing briefly.</li>
+<li>explain its intended meaning, and</li>
+<li>give you comments.</li>
+</ol>
+<p>&#x7B2C;&#x4E00;&#x6BB5;&#xFF1A;&#x56FE;&#x753B;&#x63CF;&#x8FF0;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x8FD9;&#x5E45;&#x56FE;&#x753B;&#x63CF;&#x8FF0;&#x4E86;&#x4E00;&#x4E2A;&#x5F3A;&#x58EE;&#x7684;&#x4EBA;&#x6B63;&#x5728;&#x8BD5;&#x56FE;&#x4ECE;&#x4E00;&#x5757;&#x5DE8;&#x77F3;&#x4E2D;&#x627E;&#x51FA;&#x9EC4;&#x91D1;&#x3002;&#xFF08;&#x603B;&#x4F53;&#x63CF;<br>
+&#x8FF0;&#xFF09;<br>
+The cartoon depicts a strong person trying to find gold<br>
+in a huge stone.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x7EC6;&#x8282;&#x63CF;&#x8FF0;&#xFF1A;<br>
+&#x4ED6;&#x7528;&#x575A;&#x5B9A;&#x7684;&#x53CC;&#x624B;&#x4E3E;&#x7740;&#x4E00;&#x628A;&#x65A7;&#x5934;&#xFF0C;&#x8BD5;&#x56FE;&#x4ECE;&#x7EDD;&#x671B;&#x4E4B;&#x77F3;&#x4E2D;&#x5F00;&#x91C7;&#x51FA;&#x5E0C;&#x671B;&#x4E4B;&#x91D1;&#x3002;<br>
+Holding an ax with his firm hands, he is hewing out of<br>
+the stone of despair a piece of precious gold.<br>
+&#xFF08;Martin Luther King: I Have a Dream 8/28/1963)<br>
+Hew out of the mountain of despair a stone of hope<br>
+&#x4ECE;&#x7EDD;&#x671B;&#x4E4B;&#x5D99;&#x5288;&#x51FA;&#x4E00;&#x5757;&#x5E0C;&#x671B;&#x4E4B;&#x77F3;<br>
+Hew out of the mountain of despair a stone of hope and<br>
+you can make your life a splendid one.<br>
+&#x65B0;&#x4E1C;&#x65B9;&#x6821;&#x8BAD;&#xFF1A;&#x4ECE;&#x7EDD;&#x671B;&#x4E2D;&#x5BFB;&#x627E;&#x5E0C;&#x671B;&#xFF0C;&#x4EBA;&#x751F;&#x7EC8;&#x5C06;&#x8F89;&#x714C;&#x3002;<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x6587;&#x5B57;&#x8BF4;&#x660E;<br>
+&#x6587;&#x5B57;&#x8BF4;&#x660E;&#x663E;&#x793A;&#xFF1A;&#x201C;&#x521B;&#x65B0;&#x624D;&#x80FD;&#x53D1;&#x5C55;&#xFF0C;&#x5B88;&#x4E1A;&#x5C31;&#x662F;&#x9000;&#x6B65;&#x3002;<br>
+&#x201D;<br>
+The caption indicates that &#x201C;Only through innovation can<br>
+we make progress; conservatism means regression.&#x201D;<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x610F;&#x4E49;&#x9610;&#x91CA;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x4E3B;&#x9898;&#x53E5;&#xFF08;&#x4E2D;&#x5FC3;&#x601D;&#x60F3;&#xFF0C;&#x56FE;&#x753B;&#x8C61;&#x5F81;&#x5BD3;&#x610F;&#xFF09;<br>
+&#x8FD9;&#x5E45;&#x6F2B;&#x753B;&#x7684;&#x76EE;&#x7684;&#x662F;&#x544A;&#x8BC9;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x5145;&#x5206;&#x91CD;&#x89C6;&#x521B;&#x65B0;&#x3002;<br>
+The purpose of the drawing is to show us that utmost<br>
+importance should be attached to innovation and creativity.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x5206;&#x8BBA;&#x70B9;&#x4E00;<br>
+&#x9996;&#x5148;&#xFF0C;&#x521B;&#x65B0;&#x7684;&#x6001;&#x5EA6;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x79D1;&#x5B66;&#x7814;&#x7A76;&#x7684;&#x4FE1;&#x6761;&#x3002;<br>
+To begin with, innovativeness could be said to be the<br>
+watchword, or motto of science.<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x4E3E;&#x4F8B;&#x8BBA;&#x8BC1;<br>
+&#x60F3;&#x60F3;&#x770B;&#xFF0C;&#x53E7;&#x6709;&#x5728;&#x8FDA;&#x884C;&#x4E86;&#x65E0;&#x6570;&#x6B21;&#x7684;&#x79D1;&#x5B66;&#x5B9E;&#x9A8C;&#x3001;&#x5B9E;&#x9A8C;&#x6D4B;&#x8BD5;&#x548C;&#x6D3B;&#x4F53;&#x8BD5;&#x9A8C;&#x4E4B;<br>
+&#x540E;&#xFF0C;&#x624D;&#x80FD;&#x53D1;&#x660E;&#x51FA;&#x4E00;&#x79CD;&#x65B0;&#x836F;&#x7269;&#x548C;&#x65B0;&#x75AB;&#x82D7;&#x3002;<br>
+Think of all the innumerable times scientific<br>
+experiments must be carried out, all the laboratory tests, all<br>
+the live trials, before a new medicine or vaccine is discovered.<br>
+&#x7B2C;&#x56DB;&#x53E5;&#xFF1A;&#x5206;&#x8BBA;&#x70B9;&#x4E8C;<br>
+&#x5176;&#x6B21;&#xFF0C;&#x521B;&#x65B0;&#x4E5F;&#x662F;&#x5F53;&#x4ECA;&#x8BB8;&#x591A;&#x4F01;&#x4E1A;&#x6210;&#x529F;&#x7684;&#x539F;&#x56E0;&#x3002;<br>
+In addition, many of today&#x2019;s business successes can<br>
+be ascribed to innovation.<br>
+&#x7B2C;&#x4E94;&#x53E5;&#xFF1A;&#x4E3E;&#x4F8B;&#x8BBA;&#x8BC1;<br>
+&#x4F8B;&#x5982;&#xFF0C;&#x6211;&#x672C;&#x4EBA;&#x66FE;&#x5728;&#x4E00;&#x5BB6;&#x516C;&#x53F8;&#x5DE5;&#x4F5C;&#x8FC7;&#x3002;&#x8FD9;&#x5BB6;&#x516C;&#x53F8;&#x66FE;&#x7ECF;&#x5C1D;&#x8BD5;&#x4E86;&#x56DB;&#x79CD;&#x4E0C;&#x540C;<br>
+&#x7684;&#x5546;&#x4E1A;&#x6A21;&#x5F0F;&#xFF0C;&#x5386;&#x7ECF;&#x56DB;&#x5E74;&#x624D;&#x53D6;&#x5F97;&#x6210;&#x529F;&#x3002;&#x540E;&#x6765;&#x8FD9;&#x5BB6;&#x4F01;&#x4E1A;&#x7684;&#x8001;&#x603B;&#x4E5F;&#x6210;&#x4E86;&#x6700;<br>
+&#x5927;&#x4E92;&#x8054;&#x7F51;&#x516C;&#x53F8;&#x4E4B;&#x4E00;&#x7684;&#x8463;&#x4E8B;&#x957F;&#x3002;<br>
+For instance, at the company where I personally worked, it<br>
+was only after four years and four tries of different business<br>
+models that its entrepreneur finally succeeded, and became<br>
+the chairman of one of the largest Internet companies. (38<br>
+words)<br>
+&#x7B2C;&#x4E09;&#x6BB5;&#xFF1A;&#x5F52;&#x7EB3;&#x7ED3;&#x8BBA;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x7ED3;&#x8BBA;&#x53E5;<br>
+&#x603B;&#x4E4B;&#xFF0C;&#x65E0;&#x8BBA;&#x662F;&#x5728;&#x533B;&#x5B66;&#x3001;&#x5DE5;&#x7A0B;&#x8FD8;&#x662F;&#x5546;&#x4E1A;&#x7684;&#x4EFB;&#x4F55;&#x9886;&#x57DF;&#xFF0C;&#x4F3C;&#x4E4E;&#x53E7;&#x6709;&#x91CD;&#x89C6;&#x521B;<br>
+&#x65B0;&#xFF0C;&#x624D;&#x80FD;&#x83B7;&#x5F97;&#x6700;&#x540E;&#x7684;&#x6210;&#x529F;&#x3002;<br>
+To sum up, in any field of endeavor, whether it is in<br>
+medicine, engineering or business, it seems necessary to<br>
+put great emphasis on innovation before one can finally<br>
+become successful. (31 words)<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x5C0F;&#x7ED3;<br>
+&#x5728;&#x6211;&#x4EEC;&#x83B7;&#x5F97;&#x6210;&#x529F;&#x4E4B;&#x524D;&#xFF0C;&#x751F;&#x6D3B;&#x597D;&#x50CF;&#x662F;&#x5728;&#x8003;&#x9A8C;&#x6211;&#x4EEC;&#xFF0C;&#x8003;&#x9A8C;&#x6211;&#x4EEC;&#x7684;&#x521B;&#x65B0;&#x80FD;<br>
+&#x529B;&#xFF0C;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x662F;&#x5426;&#x80FD;&#x4E0E;&#x6CE8;&#x4E0D;&#x81EA;&#x5DF1;&#x7684;&#x7406;&#x60F3;&#x3002;<br>
+It is as if life is testing us, testing our innovation and<br>
+creativity to see if we are really dedicated to our ideals,<br>
+before life finally rewards us with success. &#xFF08;30 words)<br>
+&#x7B2C;&#x4E03;&#x8282;<br>
+01 &#x5C0F;&#x4F5C;&#x6587;&#xFF1A;&#x6295;&#x8BC9;&#x4FE1;<br>
+02 &#x5927;&#x4F5C;&#x6587;&#xFF1A;&#x6559;&#x80B2;<br>
+CONTENTS<br>
+&#x5C0F;&#x4F5C;&#x6587;&#xFF1A;&#x6295;&#x8BC9;&#x4FE1;<br>
+PART ONE<br>
+Directions:<br>
+Write to the head of a train, and complain about its bad service.<br>
+&#x7B2C;&#x4E00;&#x6BB5;&#xFF1A;&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x81EA;&#x6211;&#x4ECB;&#x7ECD;<br>
+&#x5C0A;&#x656C;&#x7684;&#x5148;&#x751F;&#x6216;&#x5973;&#x58EB;&#xFF1A;<br>
+&#x4F5C;&#x4E3A;&#x8D35;&#x5217;&#x8F66;&#x7684;&#x4E00;&#x4F4D;&#x5E38;&#x5BA2;&#xFF0C;&#x6211;&#x5B8C;&#x5168;&#x5931;&#x671B;&#x5730;&#x53D1;&#x73B0;&#x8D35;&#x65B9;&#x63D0;&#x4F9B;&#x7684;&#x670D;&#x52A1;&#x8FDC;&#x8FDC;&#x4E0D;&#x80FD;&#x4EE4;&#x4EBA;&#x6EE1;&#x610F;&#x3002;<br>
+Dear Sir or Madam,<br>
+As a regular passenger of your train, I am severely disappointed to find that the<br>
+service you have recently provided is far from satisfactory.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x5199;&#x4F5C;&#x76EE;&#x7684;<br>
+&#x56E0;&#x6B64;&#xFF0C;&#x6211;&#x5199;&#x8FD9;&#x5C01;&#x4FE1;&#x5E0C;&#x671B;&#x5F15;&#x8D77;&#x60A8;&#x5BF9;&#x8FD9;&#x4E00;&#x95EE;&#x9898;&#x7684;&#x5173;&#x6CE8;&#xFF0C;&#x80FD;&#x591F;&#x5F88;&#x5927;&#x7A0B;&#x5EA6;&#x5730;&#x6539;&#x8FDB;&#x73B0;&#x72B6;&#x3002;<br>
+Therefore, I am writing this letter to draw your attention to the matter in the hope<br>
+that the present situation can be improved.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x6295;&#x8BC9;&#x539F;&#x56E0;<br>
+&#x7B2C;1-2&#x53E5;&#xFF1A;&#x539F;&#x56E0;&#x4E00;<br>
+&#x4F17;&#x6240;&#x5468;&#x77E5;&#xFF0C;&#x51C6;&#x65F6;&#x5BF9;&#x4E8E;&#x94C1;&#x8DEF;&#x670D;&#x52A1;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x8FD9;&#x8D9F;&#x5217;&#x8F66;&#x7ECF;&#x5E38;&#x665A;&#x70B9;&#xFF0C;&#x7ED9;&#x6211;&#x5E26;&#x6765;&#x5F88;&#x591A;&#x7684;&#x9EBB;&#x70E6;&#x548C;&#x4E0D;<br>
+&#x4FBF;&#x3002;<br>
+As we all know, punctuality is essential to the railway service. However, the train has<br>
+been delayed from time to time, which has brought me much trouble and<br>
+inconvenience.<br>
+&#x7B2C;3-4&#x53E5;&#xFF1A;&#x539F;&#x56E0;&#x4E8C;<br>
+&#x66F4;&#x7CDF;&#x7CD5;&#x7684;&#x662F;&#x8D35;&#x5217;&#x8F66;&#x7537;&#x5973;&#x670D;&#x52A1;&#x5458;&#x7CDF;&#x7CD5;&#x7684;&#x6001;&#x5EA6;&#x3002;&#x4ED6;&#x4EEC;&#x7684;&#x670D;&#x52A1;&#x5E76;&#x672A;&#x4F53;&#x73B0;&#xFF1A;&#x201C;&#x987E;&#x5BA2;&#x5C31;&#x662F;&#x4E0A;&#x5E1D;&#x201D;<br>
+&#x3002;<br>
+Even worse are the bad manners of your stewards and stewardesses. Their services<br>
+has not benefited from the saying, &#x201C;The customers is king.&#x201D;<br>
+&#x7B2C;&#x4E09;&#x6BB5;&#xFF1A;&#x5EFA;&#x8BAE;&#x63AA;&#x65BD;<br>
+&#x7B2C;1&#x53E5;&#xFF1A;&#x671F;&#x5F85;&#x56DE;&#x4FE1;<br>
+&#x6211;&#x76F8;&#x4FE1;&#x60A8;&#x4F1A;&#x8BA4;&#x771F;&#x8003;&#x8651;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5E76;&#x5C3D;&#x5FEB;&#x7ED9;&#x51FA;&#x6EE1;&#x610F;&#x7684;&#x7B54;&#x590D;&#x3002;<br>
+I believe you will take this matter into serious consideration and give a satisfactory<br>
+reply as soon as possible.<br>
+&#x7B2C;2-3&#x53E5;&#xFF1A;&#x5199;&#x4F5C;&#x76EE;&#x7684;<br>
+&#x540C;&#x65F6;&#xFF0C;&#x6211;&#x771F;&#x8BDA;&#x5730;&#x5E0C;&#x671B;&#x60A8;&#x80FD;&#x6539;&#x5584;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x3002;&#x6211;&#x5C06;&#x5F88;&#x9AD8;&#x5174;&#x770B;&#x5230;&#x8D35;&#x65B9;&#x5217;&#x8F66;&#x670D;&#x52A1;&#x7684;&#x6539;&#x8FDB;&#x3002;<br>
+&#x60A8;&#x771F;&#x8BDA;&#x7684;&#xFF0C;<br>
+&#x674E;&#x660E;<br>
+At the same time, I sincerely hope that you will review your management system. I<br>
+would be glad to see improvements in your service.<br>
+Yours sincerely,<br>
+Li Ming<br>
+&#x5927;&#x4F5C;&#x6587;&#xFF1A;&#x6559;&#x80B2;<br>
+PART TWO<br>
+Directions:<br>
+Write an essay based on the following chart. In your essay, you<br>
+should<br>
+1&#xFF09;interpret the chart, and<br>
+2&#xFF09;give your comments.<br>
+You should write about 150 words neatly on the ANSWER SHEET.<br>
+(15 points)<br>
+1998-2004&#x5E74;&#x5168;&#x56FD;&#x5DE5;&#x7A0B;&#x7855;&#x58EB;&#x62DB;&#x751F;&#x5F55;&#x53D6;&#x4EBA;&#x6570;<br>
+&#xFF08;&#x5DE5;&#x7A0B;&#x7855;&#x58EB;&#xFF1A;Master of Engineering&#xFF09;</p>
+<p>&#x7B2C;&#x4E00;&#x6BB5;&#xFF1A;&#x56FE;&#x8868;&#x63CF;&#x8FF0;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x4E0A;&#x8FF0;&#x56FE;&#x8868;&#x6E05;&#x695A;&#x5730;&#x63ED;&#x793A;&#x4E86;&#x8FC7;&#x53BB;&#x4E03;&#x5E74;&#x4E2D;&#x56FD;&#x7684;&#x5DE5;&#x7A0B;&#x7855;&#x58EB;&#x62DB;&#x751F;&#x5F55;&#x53D6;<br>
+&#x4EBA;&#x6570;&#x6025;&#x5267;&#x589E;&#x957F;&#x3002;&#xFF08;&#x603B;&#x4F53;&#x63CF;&#x8FF0;&#xFF09;<br>
+The diagram above clearly illustrates that a dramatic increase has<br>
+occurred in the recruitment of Master of Engineering (ME) in China during<br>
+the past seven years.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x6839;&#x636E;&#x4E0A;&#x9762;&#x7ED9;&#x51FA;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F97;&#x51FA;&#x7ED3;&#x8BBA;&#xFF1A;&#x4ECE;1998&#x5230;2004<br>
+&#x5E74;&#xFF0C;&#x5DE5;&#x7A0B;&#x7855;&#x58EB;&#x62DB;&#x751F;&#x5F55;&#x53D6;&#x4EBA;&#x6570;&#x7A33;&#x6B65;&#x589E;&#x957F;&#x3002;&#xFF08;&#x7EC6;&#x8282;&#x63CF;&#x8FF0;&#xFF1A;&#x65F6;&#x95F4;+&#x53D8;&#x5316;&#xFF09;<br>
+According to the statistics given above, we may conclude<br>
+that the recruitment of MEs was on a steady rise from 1998<br>
+to 2004.<br>
+&#x7B2C;&#x4E09;&#x81F3;&#x56DB;&#x53E5;&#xFF1A;1998&#x5E74;&#xFF0C;&#x62DB;&#x751F;&#x4EBA;&#x6570;&#x8F83;&#x5C11;&#xFF0C;&#x53EA;&#x6709;&#x5927;&#x7EA6;2500&#x4EBA;&#x3002;&#x4EE4;&#x4EBA;&#x60CA;&#x8BB6;<br>
+&#x7684;&#x662F;&#xFF0C;&#x5230;2004&#x5E74;&#x62DB;&#x751F;&#x4EBA;&#x6570;&#x5728;&#x4E0D;&#x5230;&#x4E03;&#x5E74;&#x7684;&#x65F6;&#x95F4;&#x91CC;&#x8FBE;&#x5230;3.5&#x4E07;&#x4EBA;&#x4EE5;&#x4E0A;&#x3002;<br>
+&#xFF08;&#x7EC6;&#x8282;&#x63CF;&#x8FF0;&#xFF1A;&#x6570;&#x636E;&#xFF09;<br>
+In 1998, the number was at a low of only about 2,500.<br>
+Surprisingly, it reached more than 35,000 in 2004, within no<br>
+more than seven years.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x539F;&#x56E0;&#x5217;&#x4E3E;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x4E3B;&#x9898;&#x53E5;&#xFF1A;<br>
+&#x4FC3;&#x6210;&#x4E0A;&#x8FF0;&#x53D8;&#x5316;&#x7684;&#x4E00;&#x4E9B;&#x4E3B;&#x8981;&#x539F;&#x56E0;&#x53EF;&#x4EE5;&#x6982;&#x62EC;&#x5982;&#x4E0B;&#x3002;<br>
+Some driving factors that contribute to the abovementioned changes may be summarized as follows.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x539F;&#x56E0;&#x4E00;<br>
+&#x9996;&#x5148;&#xFF0C;&#x4E2D;&#x56FD;&#x5728;&#x5236;&#x9020;&#x4E1A;&#x65B9;&#x9762;&#x53D8;&#x5F97;&#x5F02;&#x5E38;&#x6D3B;&#x8DC3;&#xFF0C;&#x8FD9;&#x4F7F;&#x5F97;&#x5BF9;&#x9AD8;&#x7D20;&#x8D28;&#x5DE5;&#x7A0B;&#x5E08;&#x7684;<br>
+&#x9700;&#x6C42;&#x589E;&#x957F;&#x3002;<br>
+First and foremost, China has become particularly active in<br>
+manufacturing, which has led to an increased demand of<br>
+qualified engineers.<br>
+&#x7B2C;&#x4E09;&#x53E5;&#xFF1A;&#x539F;&#x56E0;&#x4E8C;<br>
+&#x6B64;&#x5916;&#xFF0C;&#x5C31;&#x4E1A;&#x5E02;&#x573A;&#x7684;&#x603B;&#x4F53;&#x53D1;&#x5C55;&#x65E0;&#x6CD5;&#x8DDF;&#x4E0A;&#x5927;&#x5B66;&#x6BD5;&#x4E1A;&#x751F;&#x4EBA;&#x6570;&#x7684;&#x589E;&#x52A0;&#xFF0C;&#x8FD9;&#x4FC3;<br>
+&#x4F7F;&#x5F88;&#x591A;&#x5B66;&#x751F;&#x5728;&#x6821;&#x56ED;&#x91CC;&#x518D;&#x5446;&#x4E09;&#x5E74;&#x65F6;&#x95F4;&#xFF0C;&#x4E3A;&#x5C31;&#x4E1A;&#x505A;&#x66F4;&#x597D;&#x7684;&#x51C6;&#x5907;&#x3002;<br>
+In addition, the development of the job market on the whole cannot<br>
+keep pace with the expansion of college graduates, which has obliged a<br>
+large number of students to stay on campus for another three years to<br>
+get better prepared for their careers. (43 words)<br>
+&#x7B2C;&#x56DB;&#x53E5;&#xFF1A;&#x539F;&#x56E0;&#x4E09;<br>
+&#x6700;&#x540E;&#xFF0C;&#x5DE5;&#x4F5C;&#x538B;&#x529B;&#x662F;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x539F;&#x56E0;&#x3002;<br>
+Last but not least, working pressure is another reason.<br>
+&#x7B2C;&#x4E94;&#x53E5;&#xFF1A;&#x5C0F;&#x7ED3;&#xFF08;&#x9884;&#x6D4B;&#x8D8B;&#x52BF;&#xFF09;<br>
+&#x8003;&#x8651;&#x5230;&#x6240;&#x6709;&#x8FD9;&#x4E9B;&#x56E0;&#x7D20;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x9884;&#x8BA1;&#xFF1A;&#x968F;&#x7740;&#x793E;&#x4F1A;&#x7684;&#x8FC5;&#x901F;&#x53D1;&#x5C55;&#xFF0C;&#x5DE5;&#x7A0B;<br>
+&#x7855;&#x58EB;&#x7684;&#x62DB;&#x751F;&#x4EBA;&#x6570;&#x5728;&#x672A;&#x6765;&#x5341;&#x5E74;&#x5C06;&#x4F1A;&#x7EE7;&#x7EED;&#x589E;&#x52A0;&#x3002;<br>
+Taking all these factors into account, we may predict that<br>
+with the speedy development of our society, the<br>
+recruitment of MEs will keep growing in the forthcoming<br>
+decade.<br>
+&#x7B2C;&#x4E09;&#x6BB5;&#xFF1A;&#x5EFA;&#x8BAE;&#x63AA;&#x65BD;&#xFF1A;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x8BA9;&#x6B65;<br>
+&#x7136;&#x800C;&#xFF0C;&#x95EE;&#x9898;&#x7684;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x8FD9;&#x79CD;&#x8D8B;&#x52BF;&#x53EF;&#x80FD;&#x5E26;&#x6765;&#x5F88;&#x591A;&#x95EE;&#x9898;&#xFF0C;&#x4F8B;&#x5982;&#x4EBA;&#x624D;&#x7684;<br>
+&#x6D6A;&#x8D39;&#x3002;<br>
+On the other side of the coin, however, this tendency may<br>
+bring about a good many problems, such as the waste of<br>
+talent.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x7ED3;&#x8BBA;&#x53E5;<br>
+&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x91C7;&#x53D6;&#x6709;&#x6548;&#x7684;&#x63AA;&#x65BD;&#x786E;&#x4FDD;&#x8FD9;&#x4E00;&#x72B6;&#x51B5;&#x4E0D;&#x4F1A;&#x5931;&#x63A7;&#xFF0C;&#x540C;&#x65F6;&#x9F13;&#x52B1;&#x5B66;&#x751F;&#x9009;<br>
+&#x62E9;&#x90A3;&#x4E9B;&#x5728;&#x5C31;&#x4E1A;&#x5E02;&#x573A;&#x4E0A;&#x9700;&#x8981;&#x7684;&#x65E2;&#x6709;&#x7406;&#x8BBA;&#x77E5;&#x8BC6;&#x53C8;&#x6709;&#x5B9E;&#x8DF5;&#x6280;&#x80FD;&#x7684;&#x4E13;&#x4E1A;&#x3002;<br>
+It is necessary for us to take effective measures to ensure this situation<br>
+doesn&#x2019;t get out of hand, and encourage students to choose majors for<br>
+which both theoretical knowledge and practical skills will be demanded in<br>
+the job market. (252 words)<br>
+&#x7B2C;&#x516B;&#x8282;<br>
+01 &#x5C0F;&#x4F5C;&#x6587;&#xFF1A;&#x611F;&#x8C22;&#x4FE1;<br>
+02 &#x5927;&#x4F5C;&#x6587;&#xFF1A;&#x5065;&#x5EB7;<br>
+CONTENTS<br>
+&#x5C0F;&#x4F5C;&#x6587;&#xFF1A;&#x611F;&#x8C22;&#x4FE1;<br>
+PART ONE<br>
+Directions:<br>
+After being involved in an accident, you were looked after by Mr.<br>
+Shakespeare. Write a special letter to express your thanks.<br>
+&#x7B2C;&#x4E00;&#x6BB5;&#xFF1A;&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x5199;&#x4F5C;&#x76EE;&#x7684;<br>
+&#x5C0A;&#x656C;&#x7684;&#x838E;&#x58EB;&#x6BD4;&#x4E9A;&#x5148;&#x751F;&#xFF1A;<br>
+&#x6211;&#x5199;&#x4FE1;&#x662F;&#x4E3A;&#x4E86;&#x8868;&#x8FBE;&#x6211;&#x8877;&#x5FC3;&#x7684;&#x611F;&#x8C22;&#x3002;<br>
+Dear Mr. Shakespeare,<br>
+I am writing to express my heartfelt gratitude.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x89E3;&#x91CA;&#x60C5;&#x51B5;<br>
+&#x6211;&#x6307;&#x7684;&#x662F;&#x90A3;&#x5929;&#x6211;&#x88AB;&#x4E00;&#x8F86;&#x51FA;&#x79DF;&#x8F66;&#x4ECE;&#x81EA;&#x884C;&#x8F66;&#x4E0A;&#x649E;&#x4E0B;&#x6765;&#x7684;&#x4E0D;&#x5E78;&#x4E8B;&#x4EF6;&#x3002;<br>
+I am referring to that unfortunate accident the other day, when I was knocked off my<br>
+bike by a taxi.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x611F;&#x8C22;&#x539F;&#x56E0;<br>
+&#x7B2C;1&#x53E5;&#xFF1A;<br>
+&#x5982;&#x679C;&#x4E0D;&#x662F;&#x60A8;&#x53CA;&#x65F6;&#x5E2E;&#x6211;&#x8FDB;&#x884C;&#x6025;&#x6551;&#x5904;&#x7406;&#x7684;&#x8BDD;&#xFF0C;&#x6050;&#x6015;&#x540E;&#x679C;&#x4F1A;&#x66F4;&#x4E25;&#x91CD;&#x3002;<br>
+If it had not been for your timely assistance in giving me first aid, I fear that the<br>
+consequences might have been very serious.<br>
+&#x7B2C;2&#x53E5;&#xFF1A;&#x5F3A;&#x8C03;&#x53E5;<br>
+&#x5927;&#x5BB6;&#x90FD;&#x8BA4;&#x4E3A;&#xFF0C;&#x6B63;&#x662F;&#x60A8;&#x5728;&#x90A3;&#x4E2A;&#x7D27;&#x6025;&#x4E8B;&#x4EF6;&#x4E2D;&#x7684;&#x673A;&#x667A;&#x53CD;&#x5E94;&#x624D;&#x4FC3;&#x6210;&#x4E86;&#x8FD9;&#x6837;&#x4EE4;&#x4EBA;&#x6EE1;&#x610F;&#x7684;&#x7ED3;&#x679C;&#x3002;<br>
+Everyone agrees that it is your quick-witted response in that emergency that has led<br>
+to this satisfactory outcome.<br>
+&#x7B2C;&#x4E09;&#x6BB5;&#xFF1A;<br>
+&#x7B2C;1&#x53E5;&#xFF1A;&#x8BA9;&#x6B65;<br>
+&#x5C3D;&#x7BA1;&#x73B0;&#x5728;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x7684;&#x4EBA;&#x8C08;&#x8BBA;&#x5927;&#x516C;&#x65E0;&#x79C1;&#x7684;&#x5FC5;&#x8981;&#x6027;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x5F88;&#x5C11;&#x6709;&#x4EBA;&#x8A00;&#x884C;&#x4E00;&#x81F4;&#x3002;<br>
+Although nowadays people in mounting numbers talk about the need to be unselfish,<br>
+we see very few people practice what they preach.<br>
+&#x7B2C;<br>
+2&#x53E5;&#xFF1A;&#x865A;&#x62DF;&#x8BED;&#x6C14;<br>
+&#x5982;&#x679C;&#x6709;&#x66F4;&#x591A;&#x4EBA;&#x50CF;&#x60A8;&#x4E00;&#x6837;&#x7684;&#x8BDD;<br>
+&#xFF0C;&#x4E16;&#x754C;&#x4F1A;&#x66F4;&#x52A0;&#x7F8E;&#x597D;<br>
+&#x3002;<br>
+&#x60A8;&#x771F;&#x8BDA;&#x7684;<br>
+&#xFF0C;<br>
+&#x674E;&#x660E;<br>
+If there were more people like you, this world would be a much nicer place.<br>
+Yours sincerely,<br>
+Li Ming<br>
+&#x5927;&#x4F5C;&#x6587;&#xFF1A;&#x5065;&#x5EB7;<br>
+PART TWO<br>
+Directions:<br>
+Write an essay of 160-200 words based on the following drawing.<br>
+In your essay, you should<br>
+1&#xFF09;describe the drawing briefly,<br>
+2&#xFF09;explain its intended meaning, and<br>
+3&#xFF09;give your comments.</p>
+<p>&#x7B2C;&#x4E00;&#x6BB5;&#xFF1A;&#x56FE;&#x753B;&#x63CF;&#x8FF0;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x5982;&#x56FE;&#x4E2D;&#x8C61;&#x5F81;&#x6027;&#x63CF;&#x8FF0;&#x7684;&#x90A3;&#x6837;&#xFF0C;&#x4E00;&#x4F4D;&#x533B;&#x751F;&#x7A7F;&#x7740;&#x767D;&#x5927;&#x8902;&#xFF0C;&#x6234;&#x7740;&#x542C;<br>
+&#x8BCA;&#x5668;&#xFF0C;&#x624B;&#x62FF;&#x75C5;&#x5386;&#x6B63;&#x5728;&#x533B;&#x9662;&#x7684;&#x4E00;&#x95F4;&#x75C5;&#x623F;&#x91CC;&#x548C;&#x4ED6;&#x7684;&#x75C5;&#x4EBA;&#x4EA4;&#x8C08;&#x3002;&#xFF08;&#x603B;&#x4F53;&#x63CF;<br>
+&#x8FF0;&#xFF09;<br>
+As is symbolically illustrated in the cartoon, wearing a white gown<br>
+and a stethoscope, a doctor is holding a medical record and speaking to<br>
+his patient in a hospital ward.<br>
+&#x7B2C;&#x4E8C;&#x53E5;&#xFF1A;&#x663E;&#x800C;&#x6613;&#x89C1;&#xFF0C;&#x8FD9;&#x5E45;&#x6F2B;&#x753B;&#x7684;&#x5185;&#x5728;&#x542B;&#x4E49;&#x662F;&#xFF1A;&#x4EBA;&#x4EEC;&#x73B0;&#x5728;&#x7684;&#x8FD0;&#x52A8;&#x91CF;&#x8D8A;<br>
+&#x6765;&#x8D8A;&#x5C11;&#xFF0C;&#x8FD9;&#x5BF9;&#x4E8E;&#x4ED6;&#x4EEC;&#x7684;&#x5065;&#x5EB7;&#x800C;&#x8A00;&#x5E76;&#x4E0D;&#x662F;&#x4EC0;&#x4E48;&#x597D;&#x6D88;&#x606F;&#x3002;&#xFF08;&#x8C61;&#x5F81;&#x5BD3;&#x610F;&#xFF09;<br>
+Apparently, the intended meaning of the drawing is that<br>
+people are doing less and less exercises now, which is not<br>
+good news for their health.<br>
+&#x7B2C;&#x4E8C;&#x6BB5;&#xFF1A;&#x610F;&#x4E49;&#x9610;&#x91CA;<br>
+&#x7B2C;&#x4E00;&#x53E5;&#xFF1A;&#x4E3B;&#x9898;&#x53E5;&#xFF1A;<br>
+&#x4FDD;&#x6301;&#x5065;&#x5EB7;&#x7684;&#x65B9;&#x5F0F;&#x6709;&#x5F88;&#x591A;&#x79CD;&#x3002;<br>
+There are numerous ways of keeping fit.<br>
+&#x7B2C;2-3&#x53E5;&#xFF1A;&#x5206;&#x8BBA;&#x70B9;&#x4E00;<br>
+&#x9996;&#x5148;&#xFF0C;&#x6700;&#x4E3A;&#x6709;&#x6548;&#x7684;&#x5C31;&#x662F;&#x8FDB;&#x884C;&#x4F53;&#x80B2;&#x953B;&#x70BC;&#x3002;&#x4EBA;&#x4EEC;&#x5404;&#x81EA;&#x9009;&#x62E9;&#x6162;&#x8DD1;&#x3001;&#x6253;&#x7BEE;&#x7403;&#x3001;<br>
+&#x6E38;&#x6CF3;&#x3001;&#x6ED1;&#x51B0;&#x3001;&#x722C;&#x5C71;&#x6216;&#x9A91;&#x8F66;&#x4F5C;&#x4E3A;&#x5176;&#x65E5;&#x5E38;&#x953B;&#x70BC;&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x8FD9;&#x4E9B;&#x8FD0;&#x52A8;&#x65E0;&#x4E00;<br>
+&#x4E0D;&#x4F1A;&#x4F7F;&#x6211;&#x4EEC;&#x66F4;&#x5F3A;&#x58EE;&#x3001;&#x66F4;&#x52A0;&#x7CBE;&#x529B;&#x5145;&#x6C9B;&#x3002;<br>
+First and foremost, it is most effective to do physical exercises. People<br>
+variously choose jogging, playing basketball, swimming, skating,<br>
+climbing or riding as their regular exercises, because exercise never fail<br>
+to make us stronger and more energetic.<br>
+&#x7B2C;4-5&#x53E5;&#xFF1A;&#x5206;&#x8BBA;&#x70B9;&#x4E8C;<br>
+&#x6B64;&#x5916;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x91CD;&#x89C6;&#x517B;&#x6210;&#x826F;&#x597D;&#x7684;&#x4E60;&#x60EF;&#x3002;&#x5747;&#x8861;&#x7684;&#x996E;&#x98DF;&#x548C;&#x5145;&#x8DB3;&#x7684;&#x7761;&#x7720;&#x5BF9;<br>
+&#x4E8E;&#x751F;&#x7406;&#x5065;&#x5EB7;&#x800C;&#x8A00;&#x90FD;&#x662F;&#x4E0D;&#x53EF;&#x6216;&#x7F3A;&#x7684;&#x3002;<br>
+Moreover, we should put great emphasis on forming good habits. A<br>
+balanced diet and sufficient sleep are both indispensable to physical<br>
+fitness.<br>
+&#x7B2C;6-7&#x53E5;&#xFF1A;&#x5206;&#x8BBA;&#x70B9;&#x4E09;<br>
+&#x53E6;&#x5916;&#xFF0C;&#x5FC3;&#x7406;&#x5065;&#x5EB7;&#x4E5F;&#x5E94;&#x8BE5;&#x88AB;&#x8BA4;&#x771F;&#x5BF9;&#x5F85;&#x3002;&#x5C24;&#x5176;&#x5728;&#x9006;&#x5883;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4FDD;&#x6301;<br>
+&#x4E00;&#x79CD;&#x4E50;&#x89C2;&#x7684;&#x5FC3;&#x6001;&#x6765;&#x7ECF;&#x5386;&#x4EBA;&#x751F;&#x7684;&#x75DB;&#x82E6;&#x60B2;&#x4F24;&#x3001;&#x8FC2;&#x56DE;&#x66F2;&#x6298;&#x3002;<br>
+What&#x2019;s more, mental health should also be taken seriously.<br>
+Especially in adversity, we need to maintain an optimistic<br>
+mentality to pull through life&#x2019;s pains and sorrows, twists<br>
+and turns.<br>
+&#x7B2C;&#x4E09;&#x6BB5;&#xFF1A;&#x5EFA;&#x8BAE;&#x63AA;&#x65BD;<br>
+&#x7B2C;1-2&#x53E5;&#xFF1A;&#x5EFA;&#x8BAE;&#x4E00;<br>
+&#x5C31;&#x6211;&#x800C;&#x8A00;&#xFF0C;&#x6211;&#x5BF9;&#x745C;&#x4F3D;&#x8FD9;&#x79CD;&#x953B;&#x70BC;&#x5F62;&#x5F0F;&#x6709;&#x7279;&#x6B8A;&#x7684;&#x5174;&#x8DA3;&#x3002;&#x6BCF;&#x5929;&#x4E00;&#x5C0F;&#x65F6;&#x7684;&#x953B;<br>
+&#x70BC;&#x7ECF;&#x5E38;&#x4F7F;&#x6211;&#x611F;&#x5230;&#x66F4;&#x5065;&#x5EB7;&#x800C;&#x4E14;&#x66F4;&#x6709;&#x6D3B;&#x529B;&#x3002;<br>
+As far as I am concerned, I have a peculiar interest in yoga<br>
+as a form of exercise. An hour&#x2019;s exercise every day usually<br>
+makes me feel healthier and more vigorous.<br>
+&#x7B2C;3-4&#x53E5;&#xFF1A;&#x5EFA;&#x8BAE;&#x4E8C;<br>
+&#x6B64;&#x5916;&#xFF0C;&#x6211;&#x4ECE;&#x4E0D;&#x5438;&#x70DF;&#x559D;&#x9152;&#xFF0C;&#x4E5F;&#x4E0D;&#x71AC;&#x591C;&#x3002;&#x76F8;&#x53CD;&#xFF0C;&#x6211;&#x4FDD;&#x6301;&#x5747;&#x8861;&#x996E;&#x98DF;&#xFF0C;&#x800C;&#x4E14;<br>
+&#x665A;&#x4E0A;11&#x70B9;&#x4E4B;&#x524D;&#x4E0A;&#x5E8A;&#x7761;&#x89C9;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x76F8;&#x4FE1;&#x71AC;&#x591C;&#x5BF9;&#x5065;&#x5EB7;&#x6709;&#x5BB3;&#x3002;<br>
+Besides, I never touch any cigarette or wine, nor do I stay up<br>
+late. Instead, I keep balanced diet and go to bed before 11<br>
+o&#x2019;clock at night, because I believe burning the midnight oil<br>
+is harmful to health.<br>
+&#x7B2C;5&#x53E5;&#xFF1A;&#x5EFA;&#x8BAE;&#x4E09;<br>
+&#x66F4;&#x4E3A;&#x91CD;&#x8981;&#x7684;&#x662F;&#xFF0C;&#x5BF9;&#x751F;&#x6D3B;&#x7684;&#x4E50;&#x89C2;&#x6001;&#x5EA6;&#x4F7F;&#x6211;&#x5145;&#x6EE1;&#x81EA;&#x4FE1;&#x800C;&#x4E14;&#x575A;&#x6301;&#x4E0D;&#x61C8;&#x3002;<br>
+More importantly, an optimistic attitude toward life makes me<br>
+confident and persistent.<br>
+&#x603B;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x6240;&#x6709;&#x8FD9;&#x4E9B;&#x52AA;&#x529B;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x6211;&#x4EEC;&#x62E5;&#x6709;&#x5065;&#x5EB7;&#x7684;&#x4F53;&#x9B44;&#x548C;&#x5FEB;&#x4E50;&#x7684;&#x751F;&#x6D3B;&#x3002;<br>
+To sum up, all these practices guarantee a healthy body and a happy life.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
