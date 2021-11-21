@@ -1,3 +1,5 @@
+[简单句](#简单句)
+[谓语动词变化](#谓语动词变化)
 # 简单句
 主语  + 谓语  +  宾语/表语
 
@@ -16,21 +18,21 @@
    
 ### 时态
 
-|时态|过去| 现在| 将来| 过去将来|
-|--|--|--|--|--|--|
-|一般|did|do/dose|will do  am/is/are going to do|would do was/were going to do|     
-|进行|was/were doing|am/is/are doing|will be doing||
-|完成|had done|have/has done|will have done||
-|完成进行|||||
+| 时态     | 过去           | 现在            | 将来                           | 过去将来                      |
+| -------- | -------------- | --------------- | ------------------------------ | ----------------------------- | 
+| 一般     | did            | do/dose         | will do  am/is/are going to do | would do was/were going to do |
+| 进行     | was/were doing | am/is/are doing | will be doing                  |                               |
+| 完成     | had done       | have/has done   | will have done                 |                               |
+| 完成进行 |                |                 |                                |                               |
 
 ### 情态
-|现在时| 过去时|
-|--|--|
-|must | 无|
-|can | could| 
-|will | would| 
-|shall | should|
-|may | might|
+| 现在时 | 过去时 |
+| ----- | ------ |
+| must   | 无     |
+| can    | could  |
+| will   | would  |
+| shall  | should |
+| may    | might  |
 
 ### 语态
 被动：be + done
