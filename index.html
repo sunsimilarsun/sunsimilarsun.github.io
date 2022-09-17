@@ -15,10 +15,10 @@
 <body>
 
     <h1 style="text-align:center">
-        
     </h1>
-    <div  class="search clearfix" id="div1" style="margin-top:29vh;text-align:center;">
-        <input type="text" style="height: 25px;width: 33pc;"  name="q" id="Search" value=""  onfocus="if (value ==''){value =''}" onblur="if (value ==''){value=''}" >
+
+    <div  class="search clearfix" id="div1" >
+        <input type="text"   name="q" id="Search" value=""  onfocus="if (value ==''){value =''}" onblur="if (value ==''){value=''}" >
         <br>
         <button class="search-by" type="submit" onclick="window.open('http://cn.bing.com/search?q='+document.getElementById('Search').value)">Bing</button>
         <button class="search-by" type="submit" onclick="window.open('https://www.zhihu.com/search?type=content&q='+document.getElementById('Search').value)">知乎</button>
@@ -28,7 +28,9 @@
         <button class="search-bd" type="submit" onclick="window.open('https://www.baidu.com/s?wd='+document.getElementById('Search').value)">百度</button>
         <button class="search-tb" type="submit" onclick="window.open('http://ai.taobao.com/search/index.htm?pid=mm_你的淘宝pid&amp;key='+document.getElementById('Search').value)">淘宝</button>               
         <button class="search-by" type="submit" onclick="window.open('https://search.bilibili.com/all?keyword='+document.getElementById('Search').value)">BiliBili</button>
+        <button class="search-by" type="submit" onclick="window.open('https://github.com/search?q='+document.getElementById('Search').value)">GitHub</button>
     </div>
+
     <table  style="text-align:center;margin:0px auto;margin-top:2rem;">
         <tr>
             <td>
