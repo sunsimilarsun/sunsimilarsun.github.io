@@ -13,5 +13,7 @@
 ## Math
 - [Greek](Math/Greek.html)
 - [基本概念](Math/基本概念.html)
+## IT
+- [C](IT/C/C.html)
 ## 其他
 - [总结](https://www.icloud.com.cn/notes/0wF9zqokpn-VOFr5fgh4FpvVw)
