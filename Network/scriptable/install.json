@@ -1,0 +1,29 @@
+{
+    "author": "sunsimilarsun",
+    "scriptable": true,
+    "icon": "https://sunsimilarsun.github.io/images/sun.png",
+    "repo": "https://github.com/sunsimilarsun/collocate",
+    "apps": [
+        {
+            "version": "1.0.0",
+            "description": "无描述",
+            "scriptURL": "https://raw.githubusercontent.com/sunsimilarsun/collocate/master/scriptable/eth.js",
+            "thumb": "https://sunsimilarsun.github.io/images/png/Available_1.png",
+            "name": "Eth",
+            "homepage": "https://github.com/dompling/Scriptable/blob/master/JDWuLiu/README.md",
+            "title": "Eth"
+
+
+        },
+        {
+            "version": "1.0.0",
+            "description": "无描述",
+            "scriptURL": "https://raw.githubusercontent.com/sunsimilarsun/collocate/master/scriptable/倒计时.js",
+            "thumb": "https://sunsimilarsun.github.io/images/png/Available_1.png",
+            "name": "倒计时",
+            "homepage": "https://github.com/dompling/Scriptable/blob/master/JDWuLiu/README.md",
+            "title": "倒计时"            
+
+        }
+    ]
+}
