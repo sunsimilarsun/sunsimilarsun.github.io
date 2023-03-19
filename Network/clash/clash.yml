@@ -1,54 +1,13 @@
-port: 7890
-socks-port: 7891
-allow-lan: true
-mode: Rule
-log-level: info
-external-controller: :9090
-proxies:
-  - {"name":"hk香港","type":"vmess","server":"v2hk5.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2hk5.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2hk5.tutu2.xyz"}},"tls":true}
-  - {"name":"i 线路若不能用请更新订阅 i","type":"vmess","server":"v2hk5.tututu4.one","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2hk5.tututu4.one"},"ws-opts":{"path":"/tu","headers":{"Host":"v2hk5.tututu4.one"}},"tls":true}
-  - {"name":"v2香港原生1","type":"vmess","server":"v2hk3.tututu4.one","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2hk3.tututu4.one"},"ws-opts":{"path":"/tu","headers":{"Host":"v2hk3.tututu4.one"}},"tls":true}
-  - {"name":"v2香港原生2","type":"vmess","server":"v2hk3.tututu4.one","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2hk3.tututu4.one"},"ws-opts":{"path":"/tu","headers":{"Host":"v2hk3.tututu4.one"}},"tls":true}
-  - {"name":"v2香港原生3","type":"vmess","server":"v2hk3.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2hk3.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2hk3.tutu2.xyz"}},"tls":true}
-  - {"name":"v2香港原生4","type":"vmess","server":"v2hk3.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2hk3.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2hk3.tutu2.xyz"}},"tls":true}
-  - {"name":"v2香港原生5","type":"vmess","server":"v2hk5.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2hk5.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2hk5.tutu2.xyz"}},"tls":true}
-  - {"name":"v2香港原生6","type":"vmess","server":"v2hk5.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2hk5.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2hk5.tutu2.xyz"}},"tls":true}
-  - {"name":"v2香港原生7","type":"vmess","server":"v2hk5.tututu4.one","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2hk5.tututu4.one"},"ws-opts":{"path":"/tu","headers":{"Host":"v2hk5.tututu4.one"}},"tls":true}
-  - {"name":"v2香港原生8","type":"vmess","server":"v2hk5.tututu4.one","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2hk5.tututu4.one"},"ws-opts":{"path":"/tu","headers":{"Host":"v2hk5.tututu4.one"}},"tls":true}
-  - {"name":"vn越南·1","type":"vmess","server":"v2vn1.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2vn1.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2vn1.tutu2.xyz"}},"tls":true}
-  - {"name":"vn越南·2","type":"vmess","server":"v2vn1.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2vn1.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2vn1.tutu2.xyz"}},"tls":true}
-  - {"name":"台湾原生·1","type":"vmess","server":"v2tw2.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2tw2.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2tw2.tutu2.xyz"}},"tls":true}
-  - {"name":"台湾原生·2","type":"vmess","server":"v2tw2.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2tw2.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2tw2.tutu2.xyz"}},"tls":true}
-  - {"name":"台湾原生·3","type":"vmess","server":"v2tw2.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2tw2.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2tw2.tutu2.xyz"}},"tls":true}
-  - {"name":"台湾原生·4","type":"vmess","server":"v2tw2.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2tw2.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2tw2.tutu2.xyz"}},"tls":true}
-  - {"name":"台湾原生·5","type":"vmess","server":"v2tw2.tututu4.one","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2tw2.tututu4.one"},"ws-opts":{"path":"/tu","headers":{"Host":"v2tw2.tututu4.one"}},"tls":true}
-  - {"name":"台湾原生·6","type":"vmess","server":"v2tw2.tututu4.one","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2tw2.tututu4.one"},"ws-opts":{"path":"/tu","headers":{"Host":"v2tw2.tututu4.one"}},"tls":true}
-  - {"name":"日本·3","type":"vmess","server":"hkt1.tutu3.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2jp1","ws-headers":{"Host":"hkt1.tutu3.xyz"},"ws-opts":{"path":"/v2jp1","headers":{"Host":"hkt1.tutu3.xyz"}},"tls":true}
-  - {"name":"日本·4","type":"vmess","server":"hkt1.tutu4.one","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2jp2","ws-headers":{"Host":"hkt1.tutu4.one"},"ws-opts":{"path":"/v2jp2","headers":{"Host":"hkt1.tutu4.one"}},"tls":true}
-  - {"name":"日本·5","type":"vmess","server":"hkt1.tutu3.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2jp1","ws-headers":{"Host":"hkt1.tutu3.xyz"},"ws-opts":{"path":"/v2jp1","headers":{"Host":"hkt1.tutu3.xyz"}},"tls":true}
-  - {"name":"日本·6","type":"vmess","server":"hkt1.tutu4.one","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2jp2","ws-headers":{"Host":"hkt1.tutu4.one"},"ws-opts":{"path":"/v2jp2","headers":{"Host":"hkt1.tutu4.one"}},"tls":true}
-  - {"name":"泰国·1","type":"vmess","server":"hkt1.tutu3.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2th1","ws-headers":{"Host":"hkt1.tutu3.xyz"},"ws-opts":{"path":"/v2th1","headers":{"Host":"hkt1.tutu3.xyz"}},"tls":true}
-  - {"name":"泰国·2","type":"vmess","server":"hkt1.tutu4.one","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2th1","ws-headers":{"Host":"hkt1.tutu4.one"},"ws-opts":{"path":"/v2th1","headers":{"Host":"hkt1.tutu4.one"}},"tls":true}
-  - {"name":"美国·1","type":"vmess","server":"hkt1.tutu3.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2us1","ws-headers":{"Host":"hkt1.tutu3.xyz"},"ws-opts":{"path":"/v2us1","headers":{"Host":"hkt1.tutu3.xyz"}},"tls":true}
-  - {"name":"美国·3","type":"vmess","server":"hkt1.tutu4.one","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2us3","ws-headers":{"Host":"hkt1.tutu4.one"},"ws-opts":{"path":"/v2us3","headers":{"Host":"hkt1.tutu4.one"}},"tls":true}
-  - {"name":"美国·原生","type":"vmess","server":"hkt1.tutu3.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2us2","ws-headers":{"Host":"hkt1.tutu3.xyz"},"ws-opts":{"path":"/v2us2","headers":{"Host":"hkt1.tutu3.xyz"}},"tls":true}
-  - {"name":"越南·3","type":"vmess","server":"v2vn1.tututu4.one","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2vn1.tututu4.one"},"ws-opts":{"path":"/tu","headers":{"Host":"v2vn1.tututu4.one"}},"tls":true}
-  - {"name":"越南·4","type":"vmess","server":"v2vn1.tututu4.one","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2vn1.tututu4.one"},"ws-opts":{"path":"/tu","headers":{"Host":"v2vn1.tututu4.one"}},"tls":true}
-  - {"name":"韩国·春川2","type":"vmess","server":"v2kr3.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2kr3.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2kr3.tutu2.xyz"}},"tls":true}
-  - {"name":"韩国·春川3","type":"vmess","server":"v2kr2.tutu4.one","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2kr2.tutu4.one"},"ws-opts":{"path":"/tu","headers":{"Host":"v2kr2.tutu4.one"}},"tls":true}
-  - {"name":"韩国·春川4","type":"vmess","server":"v2kr3.tutu4.one","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2kr3.tutu4.one"},"ws-opts":{"path":"/tu","headers":{"Host":"v2kr3.tutu4.one"}},"tls":true}
-  - {"name":"韩国·首尔1","type":"vmess","server":"v2kr6.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2kr6.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2kr6.tutu2.xyz"}},"tls":true}
-  - {"name":"韩国·首尔2","type":"vmess","server":"v2kr7.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2kr7.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2kr7.tutu2.xyz"}},"tls":true}
-  - {"name":"韩国·首尔3","type":"vmess","server":"v2kr6.tutu4.one","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2kr6.tutu4.one"},"ws-opts":{"path":"/tu","headers":{"Host":"v2kr6.tutu4.one"}},"tls":true}
-  - {"name":"韩国·首尔4","type":"vmess","server":"v2kr7.tutu4.one","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2kr7.tutu4.one"},"ws-opts":{"path":"/tu","headers":{"Host":"v2kr7.tutu4.one"}},"tls":true}
-  - {"name":"香港·1","type":"vmess","server":"v2hk1.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2hk1.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2hk1.tutu2.xyz"}},"tls":true}
-  - {"name":"香港·2","type":"vmess","server":"v2hk1.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2hk1.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2hk1.tutu2.xyz"}},"tls":true}
-  - {"name":"香港·3","type":"vmess","server":"v2hk2.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2hk2.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2hk2.tutu2.xyz"}},"tls":true}
-  - {"name":"香港·4","type":"vmess","server":"v2hk2.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2hk2.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2hk2.tutu2.xyz"}},"tls":true}
-  - {"name":"香港原生·1","type":"vmess","server":"v2hk5.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2hk5.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2hk5.tutu2.xyz"}},"tls":true}
-  - {"name":"香港原生·2","type":"vmess","server":"v2hk5.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2hk5.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2hk5.tutu2.xyz"}},"tls":true}
-  - {"name":"香港原生·3","type":"vmess","server":"v2hk3.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2hk3.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2hk3.tutu2.xyz"}},"tls":true}
-  - {"name":"香港原生·4","type":"vmess","server":"v2hk3.tutu2.xyz","port":443,"uuid":"e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/tu","ws-headers":{"Host":"v2hk3.tutu2.xyz"},"ws-opts":{"path":"/tu","headers":{"Host":"v2hk3.tutu2.xyz"}},"tls":true}
+proxy-providers:
+  jichang1: # provider的名称，后期会用到
+    type: http
+    path: ./profiles/自定义.yml # 保存在本地文件的名字，可以随便取
+    url: https://v3.558844.xyz/link/C78tHRUiylOTVn2L?clash=1  # 机场给你的订阅链接
+    interval: 36000 # 每36000秒更新一次订阅
+    health-check:
+      enable: true  # 是否自动进行latency-test
+      url: http://www.gstatic.com/generate_204
+      interval: 3600
 
 proxy-groups:
   - name: 🚀 节点选择
@@ -56,100 +15,16 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - hk香港
-      - i 线路若不能用请更新订阅 i
-      - v2香港原生1
-      - v2香港原生2
-      - v2香港原生3
-      - v2香港原生4
-      - v2香港原生5
-      - v2香港原生6
-      - v2香港原生7
-      - v2香港原生8
-      - vn越南·1
-      - vn越南·2
-      - 台湾原生·1
-      - 台湾原生·2
-      - 台湾原生·3
-      - 台湾原生·4
-      - 台湾原生·5
-      - 台湾原生·6
-      - 日本·3
-      - 日本·4
-      - 日本·5
-      - 日本·6
-      - 泰国·1
-      - 泰国·2
-      - 美国·1
-      - 美国·3
-      - 美国·原生
-      - 越南·3
-      - 越南·4
-      - 韩国·春川2
-      - 韩国·春川3
-      - 韩国·春川4
-      - 韩国·首尔1
-      - 韩国·首尔2
-      - 韩国·首尔3
-      - 韩国·首尔4
-      - 香港·1
-      - 香港·2
-      - 香港·3
-      - 香港·4
-      - 香港原生·1
-      - 香港原生·2
-      - 香港原生·3
-      - 香港原生·4
+
+      
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    proxies:
-      - hk香港
-      - i 线路若不能用请更新订阅 i
-      - v2香港原生1
-      - v2香港原生2
-      - v2香港原生3
-      - v2香港原生4
-      - v2香港原生5
-      - v2香港原生6
-      - v2香港原生7
-      - v2香港原生8
-      - vn越南·1
-      - vn越南·2
-      - 台湾原生·1
-      - 台湾原生·2
-      - 台湾原生·3
-      - 台湾原生·4
-      - 台湾原生·5
-      - 台湾原生·6
-      - 日本·3
-      - 日本·4
-      - 日本·5
-      - 日本·6
-      - 泰国·1
-      - 泰国·2
-      - 美国·1
-      - 美国·3
-      - 美国·原生
-      - 越南·3
-      - 越南·4
-      - 韩国·春川2
-      - 韩国·春川3
-      - 韩国·春川4
-      - 韩国·首尔1
-      - 韩国·首尔2
-      - 韩国·首尔3
-      - 韩国·首尔4
-      - 香港·1
-      - 香港·2
-      - 香港·3
-      - 香港·4
-      - 香港原生·1
-      - 香港原生·2
-      - 香港原生·3
-      - 香港原生·4
+    use:
+    - jichang1
+
   - name: 🌍 国外媒体
     type: select
     proxies:
