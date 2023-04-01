@@ -41,7 +41,6 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
-      use:
       - tutu
       - DIRECT
 
