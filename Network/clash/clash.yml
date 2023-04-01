@@ -26,7 +26,7 @@ secret: ''
 # 参数应填写配置目录的相对路径或绝对路径。
 # external-ui: folder
 proxy-providers:
-  jichang1: # provider的名称，后期会用到
+  tutu: # provider的名称，后期会用到
     type: http
     path: ./profiles/自定义.yml # 保存在本地文件的名字，可以随便取
     url: https://v3.558844.xyz/link/Mi2mpoQwtGuXExhw?clash=1  # 机场给你的订阅链接
@@ -41,16 +41,17 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
+      use:
+      - tutu
       - DIRECT
 
       
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     use:
-    - jichang1
+    - tutu
 
   - name: 🌍 国外媒体
     type: select
