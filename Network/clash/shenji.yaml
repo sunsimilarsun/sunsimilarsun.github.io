@@ -72,7 +72,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 直连
 
-  - name: 📢 谷歌GFW
+  - name: 📢 谷歌
     type: select
     proxies:
       - 🚀 节点选择
