@@ -2,7 +2,7 @@ proxy-providers:
   jichang1: # provider的名称，后期会用到
     type: http
     path: ./profiles/自定义.yml # 保存在本地文件的名字，可以随便取
-    url: https://v3.558844.xyz/link/Mi2mpoQwtGuXExhw?sub=3  # 机场给你的订阅链接
+    url: https://v3.558844.xyz/link/Mi2mpoQwtGuXExhw?clash=1  # 机场给你的订阅链接
     interval: 36000 # 每36000秒更新一次订阅
     health-check:
       enable: true  # 是否自动进行latency-test
