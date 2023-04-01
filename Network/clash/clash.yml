@@ -44,12 +44,12 @@ proxy-providers:
 
 proxy-groups:
   - name: 🚀 节点选择
-    type: select
-    use:
-    - tutu    
+    type: select  
     proxies:
       - ♻️ 自动选择
       - DIRECT
+    use:
+    - tutu        
 
 
       
@@ -57,7 +57,7 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
-#    url：http://www.google.com
+    url: http://www.google.com
     use:
     - tutu
 
