@@ -55,18 +55,13 @@ proxy-groups:
     use:
     - tutu
 
-  - name: 🌍 国外媒体
+  - name: 🌍 流媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 直连
 
-  - name: 📲 电报信息
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🎯 直连
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -77,7 +72,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 直连
-  - name: 📢 谷歌FCM
+  - name: 📢 谷歌
     type: select
     proxies:
       - 🚀 节点选择
@@ -89,16 +84,6 @@ proxy-groups:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
-  - name: 🛑 全球拦截
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🍃 净化
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
   - name: 🐟 漏网之鱼
     type: select
     proxies:
@@ -220,38 +205,38 @@ rule-providers:
     interval: 86400
 
 rules:
-  - PROCESS-NAME,v2ray,DIRECT
-  - PROCESS-NAME,Surge%203,DIRECT
-  - PROCESS-NAME,ss-local,DIRECT
-  - PROCESS-NAME,privoxy,DIRECT
-  - PROCESS-NAME,trojan,DIRECT
-  - PROCESS-NAME,trojan-go,DIRECT
-  - PROCESS-NAME,naive,DIRECT
-  - PROCESS-NAME,Thunder,DIRECT
-  - PROCESS-NAME,DownloadService,DIRECT
-  - PROCESS-NAME,qBittorrent,DIRECT
-  - PROCESS-NAME,Transmission,DIRECT
-  - PROCESS-NAME,fdm,DIRECT
-  - PROCESS-NAME,aria2c,DIRECT
-  - PROCESS-NAME,Folx,DIRECT
-  - PROCESS-NAME,NetTransport,DIRECT
-  - PROCESS-NAME,uTorrent,DIRECT
-  - PROCESS-NAME,WebTorrent,DIRECT
-  - RULE-SET,lancidr,DIRECT,no-resolve
-  - RULE-SET,cncidr,DIRECT,no-resolve
+  - PROCESS-NAME,v2ray,🎯 直连
+  - PROCESS-NAME,Surge%203,🎯 直连
+  - PROCESS-NAME,ss-local,🎯 直连
+  - PROCESS-NAME,privoxy,🎯 直连
+  - PROCESS-NAME,trojan,🎯 直连
+  - PROCESS-NAME,trojan-go,🎯 直连
+  - PROCESS-NAME,naive,🎯 直连
+  - PROCESS-NAME,Thunder,🎯 直连
+  - PROCESS-NAME,DownloadService,🎯 直连
+  - PROCESS-NAME,qBittorrent,🎯 直连
+  - PROCESS-NAME,Transmission,🎯 直连
+  - PROCESS-NAME,fdm,🎯 直连
+  - PROCESS-NAME,aria2c,🎯 直连
+  - PROCESS-NAME,Folx,🎯 直连
+  - PROCESS-NAME,NetTransport,🎯 直连
+  - PROCESS-NAME,uTorrent,🎯 直连
+  - PROCESS-NAME,WebTorrent,🎯 直连
+  - RULE-SET,lancidr,🎯 直连,no-resolve
+  - RULE-SET,cncidr,🎯 直连,no-resolve
   - RULE-SET,reject,REJECT
-  - RULE-SET,icloud,DIRECT
-  - RULE-SET,apple,DIRECT
-  - RULE-SET,google,GOOGLE
-  - RULE-SET,youtube,YOUTUBE
-  - RULE-SET,netflix,NETFLIX
-  - RULE-SET,netflixcidr,NETFLIX,no-resolve
-  - RULE-SET,gfw,PROXY
-  - RULE-SET,greatfire,PROXY
-  - RULE-SET,tld-not-cn,PROXY
-  - RULE-SET,telegramcidr,PROXY,no-resolve
-  - RULE-SET,tiktok,PROXY
-  - RULE-SET,proxy,PROXY
-  - RULE-SET,direct,DIRECT
-  - GEOIP,CN,DIRECT
-  - MATCH,PROXY
+  - RULE-SET,icloud,🎯 直连
+  - RULE-SET,apple,🎯 直连
+  - RULE-SET,google,📢 谷歌
+  - RULE-SET,youtube,🌍 流媒体
+  - RULE-SET,netflix,🌍 流媒体
+  - RULE-SET,netflixcidr,🌍 流媒体no-resolve
+  - RULE-SET,gfw,🚀 节点选择
+  - RULE-SET,greatfire,🚀 节点选择
+  - RULE-SET,tld-not-cn,🚀 节点选择
+  - RULE-SET,telegramcidr,🚀 节点选择,no-resolve
+  - RULE-SET,tiktok,🚀 节点选择
+  - RULE-SET,proxy,🚀 节点选择
+  - RULE-SET,direct,🎯 直连
+  - GEOIP,CN,🎯 直连
+  - MATCH,🐟 漏网之鱼
