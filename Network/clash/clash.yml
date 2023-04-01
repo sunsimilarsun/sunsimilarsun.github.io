@@ -48,8 +48,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-    ues:
-      - tutu
+
 
       
   - name: ♻️ 自动选择
