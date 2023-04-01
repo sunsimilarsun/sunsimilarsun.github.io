@@ -1,0 +1,257 @@
+# HTTP 代理端口
+port: 7890 
+
+# SOCKS5 代理端口
+socks-port: 7891 
+
+# Linux 和 macOS 的 redir 代理端口
+redir-port: 7892 
+
+# 允许局域网的连接
+allow-lan: true
+
+# 规则模式：Rule（规则） / Global（全局代理）/ Direct（全局直连）
+mode: Rule
+
+# 设置日志输出级别 (默认级别：silent，即不输出任何内容，以避免因日志内容过大而导致程序内存溢出）。
+# 5 个级别：silent / info / warning / error / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启。
+log-level: silent
+# Clash 的 RESTful API
+external-controller: '0.0.0.0:9090'
+
+# RESTful API 的口令
+secret: '' 
+
+# 您可以将静态网页资源（如 clash-dashboard）放置在一个目录中，clash 将会服务于 `RESTful API/ui`
+# 参数应填写配置目录的相对路径或绝对路径。
+# external-ui: folder
+proxy-providers:
+  tutu: # provider的名称，后期会用到
+    type: http
+    path: ./profiles/tutu.yml # 保存在本地文件的名字，可以随便取
+    url: https://v3.558844.xyz/link/Mi2mpoQwtGuXExhw?clash=1  # 机场给你的订阅链接
+    interval: 36000 # 每36000秒更新一次订阅
+    health-check:
+      enable: true  # 是否自动进行latency-test
+      url: http://www.google.com
+      interval: 3600
+
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select  
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+    use:
+    - tutu        
+
+
+      
+  - name: ♻️ 自动选择
+    type: url-test
+    interval: 300
+    tolerance: 50
+    url: http://www.google.com
+    use:
+    - tutu
+
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 直连
+
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 直连
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 直连
+      - 🚀 节点选择
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 直连
+  - name: 📢 谷歌FCM
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 直连
+      - ♻️ 自动选择
+  - name: 🎯 直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 直连
+      - ♻️ 自动选择
+
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/reject.txt"
+    path: ./ruleset/reject.yaml
+    interval: 86400
+
+  icloud:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/icloud.txt"
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+
+  apple:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/apple.txt"
+    path: ./ruleset/apple.yaml
+    interval: 86400
+
+  google:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/google.txt"
+    path: ./ruleset/google.yaml
+    interval: 86400
+
+  proxy:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/proxy.txt"
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+
+  direct:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/direct.txt"
+    path: ./ruleset/direct.yaml
+    interval: 86400
+
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/cncidr.txt"
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/lancidr.txt"
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+
+  youtube:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/youtube.txt"
+    path: ./ruleset/youtube.yaml
+    interval: 86400
+    
+  netflix:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/netflix.txt"
+    path: ./ruleset/netflix.yaml
+    interval: 86400
+    
+  netflixcidr:
+    type: http
+    behavior: ipcidr
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/netflixcidr.txt"
+    path: ./ruleset/netflixcidr.yaml
+    interval: 86400
+
+  gfw:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/gfw.txt"
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+
+  greatfire:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/greatfire.txt"
+    path: ./ruleset/greatfire.yaml
+    interval: 86400
+
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/tld-not-cn.txt"
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/telegramcidr.txt"
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+
+  tiktok:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/tiktok.txt"
+    path: ./ruleset/tiktok.yaml
+    interval: 86400
+
+rules:
+  - PROCESS-NAME,v2ray,DIRECT
+  - PROCESS-NAME,Surge%203,DIRECT
+  - PROCESS-NAME,ss-local,DIRECT
+  - PROCESS-NAME,privoxy,DIRECT
+  - PROCESS-NAME,trojan,DIRECT
+  - PROCESS-NAME,trojan-go,DIRECT
+  - PROCESS-NAME,naive,DIRECT
+  - PROCESS-NAME,Thunder,DIRECT
+  - PROCESS-NAME,DownloadService,DIRECT
+  - PROCESS-NAME,qBittorrent,DIRECT
+  - PROCESS-NAME,Transmission,DIRECT
+  - PROCESS-NAME,fdm,DIRECT
+  - PROCESS-NAME,aria2c,DIRECT
+  - PROCESS-NAME,Folx,DIRECT
+  - PROCESS-NAME,NetTransport,DIRECT
+  - PROCESS-NAME,uTorrent,DIRECT
+  - PROCESS-NAME,WebTorrent,DIRECT
+  - RULE-SET,lancidr,DIRECT,no-resolve
+  - RULE-SET,cncidr,DIRECT,no-resolve
+  - RULE-SET,reject,REJECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,google,GOOGLE
+  - RULE-SET,youtube,YOUTUBE
+  - RULE-SET,netflix,NETFLIX
+  - RULE-SET,netflixcidr,NETFLIX,no-resolve
+  - RULE-SET,gfw,PROXY
+  - RULE-SET,greatfire,PROXY
+  - RULE-SET,tld-not-cn,PROXY
+  - RULE-SET,telegramcidr,PROXY,no-resolve
+  - RULE-SET,tiktok,PROXY
+  - RULE-SET,proxy,PROXY
+  - RULE-SET,direct,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,PROXY
