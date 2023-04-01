@@ -39,12 +39,14 @@ proxy-providers:
     interval: 36000 # 每36000秒更新一次订阅
     health-check:
       enable: true  # 是否自动进行latency-test
-      url: http://www.baidu.com
+#      url: http://www.baidu.com
       interval: 3600
 
 proxy-groups:
   - name: 🚀 节点选择
     type: select
+    use:
+    - tutu    
     proxies:
       - ♻️ 自动选择
       - DIRECT
@@ -55,7 +57,7 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
-    url：http://www.google.com
+#    url：http://www.google.com
     use:
     - tutu
 
