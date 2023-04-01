@@ -53,7 +53,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-    ues：
+    ues:
       - tutu
 
       
