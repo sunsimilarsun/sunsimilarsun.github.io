@@ -44,8 +44,6 @@ proxy-groups:
       - DIRECT
     use:
     - tutu        
-
-
       
   - name: ♻️ 自动选择
     type: url-test
@@ -67,23 +65,39 @@ proxy-groups:
     proxies:
       - 🎯 直连
       - 🚀 节点选择
+
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 直连
-  - name: 📢 谷歌
+
+  - name: 📢 谷歌GFW
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 直连
       - ♻️ 自动选择
+
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 直连
+
   - name: 🎯 直连
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
+
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+
   - name: 🐟 漏网之鱼
     type: select
     proxies:
@@ -204,6 +218,12 @@ rule-providers:
     path: ./ruleset/tiktok.yaml
     interval: 86400
 
+micsoft:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/micsoft.txt"
+    path: ./ruleset/micsoft.yaml
+    interval: 86400
 rules:
   - PROCESS-NAME,v2ray,🎯 直连
   - PROCESS-NAME,Surge%203,🎯 直连
@@ -224,18 +244,19 @@ rules:
   - PROCESS-NAME,WebTorrent,🎯 直连
   - RULE-SET,lancidr,🎯 直连,no-resolve
   - RULE-SET,cncidr,🎯 直连,no-resolve
-  - RULE-SET,reject,REJECT
-  - RULE-SET,icloud,🎯 直连
-  - RULE-SET,apple,🎯 直连
+  - RULE-SET,reject,🛑 全球拦截
+  - RULE-SET,icloud,🍎 苹果服务
+  - RULE-SET,apple,🍎 苹果服务
   - RULE-SET,google,📢 谷歌
+  - RULE-SET,telegramcidr,📲 电报信息,no-resolve
+  - RULE-SET,micsoft,Ⓜ️ 微软服务
   - RULE-SET,youtube,🌍 流媒体
   - RULE-SET,netflix,🌍 流媒体
   - RULE-SET,netflixcidr,🌍 流媒体,Sno-resolve
+  - RULE-SET,tiktok,🌍 流媒体
   - RULE-SET,gfw,🚀 节点选择
   - RULE-SET,greatfire,🚀 节点选择
   - RULE-SET,tld-not-cn,🚀 节点选择
-  - RULE-SET,telegramcidr,🚀 节点选择,no-resolve
-  - RULE-SET,tiktok,🚀 节点选择
   - RULE-SET,proxy,🚀 节点选择
   - RULE-SET,direct,🎯 直连
   - GEOIP,CN,🎯 直连
