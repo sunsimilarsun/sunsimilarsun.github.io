@@ -99,7 +99,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 直连
-  - name: 📢 谷歌
+  - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
