@@ -230,7 +230,7 @@ rules:
   - RULE-SET,google,📢 谷歌
   - RULE-SET,youtube,🌍 流媒体
   - RULE-SET,netflix,🌍 流媒体
-  - RULE-SET,netflixcidr,🌍 流媒体no-resolve
+  - RULE-SET,netflixcidr,🌍 流媒体,Sno-resolve
   - RULE-SET,gfw,🚀 节点选择
   - RULE-SET,greatfire,🚀 节点选择
   - RULE-SET,tld-not-cn,🚀 节点选择
