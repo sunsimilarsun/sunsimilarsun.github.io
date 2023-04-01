@@ -5,10 +5,10 @@ port: 7890
 socks-port: 7891 
 
 # Linux 和 macOS 的 redir 透明代理端口 (重定向 TCP 和 TProxy UDP 流量)
- redir-port: 7892
+redir-port: 7892
 
 # Linux 的透明代理端口（适用于 TProxy TCP 和 TProxy UDP 流量)
- tproxy-port: 7893
+# tproxy-port: 7893
 
 # HTTP(S) and SOCKS5 共用端口
 # mixed-port: 7890
