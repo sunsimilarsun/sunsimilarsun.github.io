@@ -234,7 +234,7 @@ rule-providers:
     path: ./ruleset/tiktok.yaml
     interval: 86400
 
-micsoft:
+  micsoft:
     type: http
     behavior: domain
     url: "https://sunsimilarsun.github.io/Network/list/Clash/micsoft.txt"
