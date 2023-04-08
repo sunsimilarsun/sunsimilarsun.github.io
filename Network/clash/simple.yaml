@@ -51,7 +51,7 @@ proxy-providers:
       enable: true  # 是否自动进行latency-test
       url: http://www.google.com
       interval: 3600
-
+      
 proxy-groups:
   - name: 🚀 节点选择
     type: select  
