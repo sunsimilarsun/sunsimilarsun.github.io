@@ -94,6 +94,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 直连
 
+  - name: 📢 谷歌
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 直连
+      - ♻️ 自动选择      
+
   - name: 🎯 直连
     type: select
     proxies:
