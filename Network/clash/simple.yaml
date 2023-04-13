@@ -222,6 +222,14 @@ rule-providers:
     url: "https://sunsimilarsun.github.io/Network/list/Clash/micsoft.txt"
     path: ./ruleset/micsoft.yaml
     interval: 86400
+
+# 自定义
+  Custom:
+    typy: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/custom.txt"
+    path: ./ruleset/custom.yaml
+    interval: 86400
 rules:
   - RULE-SET,lancidr,🎯 直连,no-resolve
   - RULE-SET,cncidr,🎯 直连,no-resolve
@@ -238,5 +246,6 @@ rules:
   - RULE-SET,gfw,🚀 节点选择
   - RULE-SET,tld-not-cn,🚀 节点选择
   - RULE-SET,proxy,🚀 节点选择
+  - RULE-SET,custom,🚀 节点选择
   - GEOIP,CN,🎯 直连
   - MATCH,🐟 漏网之鱼
