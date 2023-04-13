@@ -225,7 +225,7 @@ rule-providers:
 
 # 自定义
   Custom:
-    typy: http
+    type: http
     behavior: domain
     url: "https://sunsimilarsun.github.io/Network/list/Clash/custom.txt"
     path: ./ruleset/custom.yaml
