@@ -2,3 +2,4 @@ payload:
   - '+.ad.xiaomi.com'
   - '+.pgdt.ugtimg.com'
   - '+.pglstatp-toutiao.com'
+  - '+.sdk.e.qq.com'
