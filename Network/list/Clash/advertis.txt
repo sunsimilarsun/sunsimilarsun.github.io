@@ -3,3 +3,4 @@ payload:
   - '+.pgdt.ugtimg.com'
   - '+.pglstatp-toutiao.com'
   - '+.sdk.e.qq.com'
+  - '+.ad-stat.ksosoft.com'
