@@ -115,6 +115,12 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
 
+  - name: 🍃 净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+
 rule-providers:
 
   icloud:
@@ -230,10 +236,17 @@ rule-providers:
     url: "https://sunsimilarsun.github.io/Network/list/Clash/custom.txt"
     path: ./ruleset/custom.yaml
     interval: 86400
+  advertis:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/advertis.txt"
+    path: ./ruleset/advertis.yaml
+    interval: 86400
 rules:
   - RULE-SET,lancidr,🎯 直连,no-resolve
   - RULE-SET,cncidr,🎯 直连,no-resolve
   - RULE-SET,direct,🎯 直连
+  - RULE-SET,advertis,🍃 净化
   - RULE-SET,micsoft,Ⓜ️ 微软服务
   - RULE-SET,icloud,🍎 苹果服务
   - RULE-SET,apple,🍎 苹果服务
