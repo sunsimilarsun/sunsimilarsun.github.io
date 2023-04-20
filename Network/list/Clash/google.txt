@@ -1,4 +1,5 @@
 payload:
+  _ '+.googleapis.cn'
   - '+.kh.google.com'
   - '+.khm.google.com'
   - '+.khm.googleapis.com'
