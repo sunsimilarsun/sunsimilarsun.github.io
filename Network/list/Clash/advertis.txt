@@ -5,4 +5,4 @@ payload:
   - '+.sdk.e.qq.com'
   - '+.ad-stat.ksosoft.com'
   - '+.pangolin-sdk-toutiao.com'
-  - '+.mi.gdt.qq.com'
+  - '+.gdt.qq.com'
