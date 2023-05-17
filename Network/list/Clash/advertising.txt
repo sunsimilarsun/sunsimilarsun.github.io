@@ -10,5 +10,5 @@ payload:
   - '+.pangolin-sdk-toutiao.com'
   - '+.gdt.qq.com'
   - '+.ksc-bj.ag.kdocs.cn'
-  - '+.mssdk-bu.bytedance.com  
+  - '+.mssdk-bu.bytedance.com'  
   - '+.adres.wpscdn.cn'
