@@ -236,11 +236,12 @@ rule-providers:
     url: "https://sunsimilarsun.github.io/Network/list/Clash/custom.txt"
     path: ./ruleset/custom.yaml
     interval: 86400
-  advertis:
+
+  advertising:
     type: http
     behavior: domain
-    url: "https://sunsimilarsun.github.io/Network/list/Clash/advertis.txt"
-    path: ./ruleset/advertis.yaml
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/advertising.txt"
+    path: ./ruleset/advertising.yaml
     interval: 86400
 rules:
   - RULE-SET,lancidr,🎯 直连,no-resolve
