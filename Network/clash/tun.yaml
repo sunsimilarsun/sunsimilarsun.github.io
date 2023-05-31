@@ -25,9 +25,49 @@ secret: ''
 # 您可以将静态网页资源（如 clash-dashboard）放置在一个目录中，clash 将会服务于 `RESTful API/ui`
 # 参数应填写配置目录的相对路径或绝对路径。
 # external-ui: folder
+dns:
+  enable: true
+  ipv6: false
+  listen: 127.0.0.1:5450
+  enhanced-mode: fake-ip
+  default-nameserver:
+    - 119.29.29.29
+    - 119.28.28.28
+    - 1.0.0.1
+    - 208.67.222.222
+    - 1.2.4.8
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://1.1.1.1/dns-query
+    - tls://dns.adguard.com:853
+  fallback:
+    - https://1.0.0.1/dns-query
+    - https://public.dns.iij.jp/dns-query
+    - https://dns.twnic.tw/dns-query
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+      - 127.0.0.1/32
+    domain:
+      - +.google.com
+      - +.twitter.com
+      - +.youtube.com
+      - +.xn--ngstr-lra8j.com
+      - +.google.cn
+      - +.googleapis.cn
+      - +.gvt1.com
+tun: 
+    enable: true
+    stack: gvisor
+    dns-hijack:
+      - 198.18.0.2:53
+    macOS-auto-route: true
+    macOS-auto-detect-interface: true # 自动检测出口网卡\
 
 proxy-providers:
-  leiting: # provider的名称，后期会用到
+  tutu: # provider的名称，后期会用到
     type: file #file/http
     path: ./profiles/1685533323097.yml # 保存在本地文件的名字
     url:  ./profiles/1685533323097.yml # 机场给你的订阅链接接
@@ -44,7 +84,7 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
     use:
-    - leiting        
+    - tutu        
       
   - name: ♻️ 自动选择
     type: url-test
@@ -52,7 +92,7 @@ proxy-groups:
     tolerance: 50
     url: http://www.google.com
     use:
-    - leiting
+    - tutu
 
   - name: 🌍 流媒体
     type: select
