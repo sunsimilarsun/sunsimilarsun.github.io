@@ -40,11 +40,36 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://1.1.1.1/dns-query
     - tls://dns.adguard.com:853
+  fallback:
+    - https://1.0.0.1/dns-query
+    - https://public.dns.iij.jp/dns-query
+    - https://dns.twnic.tw/dns-query
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+      - 127.0.0.1/32
+    domain:
+      - +.google.com
+      - +.twitter.com
+      - +.youtube.com
+      - +.xn--ngstr-lra8j.com
+      - +.google.cn
+      - +.googleapis.cn
+      - +.gvt1.com
+tun: 
+    enable: true
+    stack: gvisor
+    dns-hijack:
+      - 198.18.0.2:53
+    macOS-auto-route: true
+    macOS-auto-detect-interface: true # 自动检测出口网卡\
 
 proxy-providers:
   tutu: # provider的名称，后期会用到
-    type: http
-    path: ./profiles/tutu.yml # 保存在本地文件的名字，可以随便取
+    type: file #file/http
+    path: ./profiles/tutu.yml # 保存在本地文件的名字
     url:   # 机场给你的订阅链接
     interval: 36000 # 每36000秒更新一次订阅
     health-check:
@@ -247,7 +272,7 @@ rules:
   - RULE-SET,lancidr,🎯 直连,no-resolve
   - RULE-SET,cncidr,🎯 直连,no-resolve
   - RULE-SET,direct,🎯 直连
-  - RULE-SET,advertis,🍃 净化
+  - RULE-SET,advertising,🍃 净化
   - RULE-SET,micsoft,Ⓜ️ 微软服务
   - RULE-SET,icloud,🍎 苹果服务
   - RULE-SET,apple,🍎 苹果服务
