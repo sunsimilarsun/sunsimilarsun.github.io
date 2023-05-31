@@ -69,8 +69,8 @@ tun:
 proxy-providers:
   tutu: # provider的名称，后期会用到
     type: file #file/http
-    path: ./profiles/tutu.yml # 保存在本地文件的名字
-    url:   # 机场给你的订阅链接
+    path: ./profiles/1685533323097.yml # 保存在本地文件的名字
+    url:  ./profiles/1685533323097.yml # 机场给你的订阅链接接
     interval: 36000 # 每36000秒更新一次订阅
     health-check:
       enable: true  # 是否自动进行latency-test
