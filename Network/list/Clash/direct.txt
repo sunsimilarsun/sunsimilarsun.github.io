@@ -1,6 +1,4 @@
 payload:
-  - '+.googleapis.com'
-  - '+.googleapis.cn'
   - '+.0-100.com'
   - '+.0-6.com'
   - '+.0-gold.net'
