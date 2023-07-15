@@ -58,6 +58,8 @@ dns:
       - +.google.cn
       - +.googleapis.cn
       - +.gvt1.com
+    nameserver-policy:
+      'www.msftconnecttest.com': '8.8.8.8'
 tun: 
     enable: true
     stack: gvisor
