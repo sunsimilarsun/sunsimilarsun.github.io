@@ -99,11 +99,13 @@ proxy-groups:
     use:
     - tutu
 
-  - name: "土耳其节点"
+  - name: steam
     type: select
-    filter: "(土耳其)"  #正则过滤后本组仅含HK节点
-    use:
-      - dog
+    proxies:
+      - 土耳其节点
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 直连
 
   - name: 🌍 流媒体
     type: select
@@ -156,6 +158,12 @@ proxy-groups:
     proxies:
       - REJECT
       - DIRECT
+
+  - name: "土耳其节点"
+    type: select
+    filter: "(土耳其)"  #正则过滤后本组仅含HK节点
+    use:
+      - dog
 
 rule-providers:
 
@@ -270,7 +278,13 @@ rule-providers:
     behavior: classical
     url: "https://sunsimilarsun.github.io/Network/list/Clash/steam.txt"
     path: ./ruleset/steam.yaml
-    interval: 86400     
+    interval: 86400
+  steamcidr:
+    type: http
+    behavior: ipcidr
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/steamcidr.txt"
+    path: ./ruleset/steamcidr.yaml
+    interval: 86400      
 # 自定义
   Custom:
     type: http
@@ -287,7 +301,9 @@ rule-providers:
     interval: 86400
 rules:
   - RULE-SET,lancidr,🎯 直连,no-resolve
-  - PROCESS-NAME,steam,土耳其节点
+  - RULE-SET,steam,steam
+  - RULE-SET,steamcidr,steam,no-resolve   
+  - PROCESS-NAME,steam,steam
   - RULE-SET,google,📢 谷歌
   - RULE-SET,cncidr,🎯 直连,no-resolve
   - RULE-SET,direct,🎯 直连
