@@ -278,5 +278,5 @@ rules:
   - RULE-SET,tld-not-cn,🚀 节点选择
   - RULE-SET,Custom,🚀 节点选择
   - RULE-SET,proxy,🚀 节点选择
-  - GEOIP,CN,🎯 直连
+  - GEOIP,CN,🎯 直连,no-resolve
   - MATCH,🐟 漏网之鱼

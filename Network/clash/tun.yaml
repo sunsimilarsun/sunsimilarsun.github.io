@@ -30,6 +30,10 @@ dns:
   ipv6: false
   listen: 127.0.0.1:5450
   enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16          #dns假ip字段范围
+  fake-ip-filter:                      #返回真实ip的网址
+    - 'www.msftconnecttest.com'
+    - '*.msftncsi.com'
   default-nameserver:
     - 119.29.29.29
     - 119.28.28.28
@@ -40,7 +44,7 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://1.1.1.1/dns-query
     - tls://dns.adguard.com:853
-  fallback:
+  fallback:         #放不会被污染的DNS服务器
     - https://1.0.0.1/dns-query
     - https://public.dns.iij.jp/dns-query
     - https://dns.twnic.tw/dns-query
@@ -58,8 +62,7 @@ dns:
       - +.google.cn
       - +.googleapis.cn
       - +.gvt1.com
-    nameserver-policy:
-      'www.msftconnecttest.com': '8.8.8.8' # 过win联网测试
+
 tun: 
     enable: true
     stack: gvisor
@@ -95,6 +98,12 @@ proxy-groups:
     url: http://www.google.com
     use:
     - tutu
+
+  - name: "土耳其节点"
+    type: select
+    filter: "(土耳其)"  #正则过滤后本组仅含HK节点
+    use:
+      - dog
 
   - name: 🌍 流媒体
     type: select
@@ -255,7 +264,13 @@ rule-providers:
     url: "https://sunsimilarsun.github.io/Network/list/Clash/micsoft.txt"
     path: ./ruleset/micsoft.yaml
     interval: 86400
-
+# Steam
+  steam:
+    type: http
+    behavior: classical
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/steam.txt"
+    path: ./ruleset/steam.yaml
+    interval: 86400     
 # 自定义
   Custom:
     type: http
@@ -272,13 +287,14 @@ rule-providers:
     interval: 86400
 rules:
   - RULE-SET,lancidr,🎯 直连,no-resolve
+  - PROCESS-NAME,steam,土耳其节点
+  - RULE-SET,google,📢 谷歌
   - RULE-SET,cncidr,🎯 直连,no-resolve
   - RULE-SET,direct,🎯 直连
   - RULE-SET,advertising,🍃 净化
   - RULE-SET,micsoft,Ⓜ️ 微软服务
   - RULE-SET,icloud,🍎 苹果服务
   - RULE-SET,apple,🍎 苹果服务
-  - RULE-SET,google,📢 谷歌
   - RULE-SET,telegramcidr,📲 电报信息,no-resolve
   - RULE-SET,youtube,🌍 流媒体
 #  - RULE-SET,netflix,🌍 流媒体
@@ -288,5 +304,5 @@ rules:
   - RULE-SET,tld-not-cn,🚀 节点选择
   - RULE-SET,Custom,🚀 节点选择
   - RULE-SET,proxy,🚀 节点选择
-  - GEOIP,CN,🎯 直连
+  - GEOIP,CN,🎯 直连,no-resolve
   - MATCH,🐟 漏网之鱼
