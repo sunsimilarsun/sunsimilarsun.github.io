@@ -15254,7 +15254,10 @@ payload:
   - '+.ooyala.com'
   - '+.op.gg'
   - '+.open'
+# OpenAI（chatGPT）  
   - '+.openai.com'
+  - '+.statsig.com'
+  
   - '+.openaked.com'
   - '+.openallweb.com'
   - '+.openamt.com'
