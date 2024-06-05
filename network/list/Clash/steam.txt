@@ -1,0 +1,4 @@
+payload:
+    - 'api.steampowered.com'
+    - '+.cm.steampowered.com'
+    - '+.steamserver.net'
