@@ -1,5 +1,7 @@
 payload:
   - '+.0-100.com'
+  - '+.zhihu.com'
+  - '+.pjnoeru.top'
   - '+.0-6.com'
   - '+.0-gold.net'
   - '+.00.net'
