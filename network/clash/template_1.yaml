@@ -1,0 +1,282 @@
+# HTTP 代理端口
+port: 7890 
+
+# SOCKS5 代理端口
+socks-port: 7891 
+
+# Linux 和 macOS 的 redir 代理端口
+redir-port: 7892 
+
+# 允许局域网的连接
+allow-lan: true
+
+# 规则模式：Rule（规则） / Global（全局代理）/ Direct（全局直连）
+mode: Rule
+
+# 设置日志输出级别 (默认级别：silent，即不输出任何内容，以避免因日志内容过大而导致程序内存溢出）。
+# 5 个级别：silent / info / warning / error / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启。
+log-level: info
+# Clash 的 RESTful API
+external-controller: '0.0.0.0:9090'
+
+# RESTful API 的口令
+secret: '' 
+
+# 您可以将静态网页资源（如 clash-dashboard）放置在一个目录中，clash 将会服务于 `RESTful API/ui`
+# 参数应填写配置目录的相对路径或绝对路径。
+# external-ui: folder
+dns:
+  enable: true
+  ipv6: false
+  listen: 127.0.0.1:5450
+  enhanced-mode: fake-ip
+  default-nameserver:
+    - 119.29.29.29
+    - 119.28.28.28
+    - 1.0.0.1
+    - 208.67.222.222
+    - 1.2.4.8
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://1.1.1.1/dns-query
+    - tls://dns.adguard.com:853
+  fallback:
+    - https://1.0.0.1/dns-query
+    - https://public.dns.iij.jp/dns-query
+    - https://dns.twnic.tw/dns-query
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+      - 127.0.0.1/32
+    domain:
+      - +.google.com
+      - +.twitter.com
+      - +.youtube.com
+      - +.xn--ngstr-lra8j.com
+      - +.google.cn
+      - +.googleapis.cn
+      - +.gvt1.com
+    nameserver-policy:
+      'www.msftconnecttest.com': '8.8.8.8'
+tun: 
+    enable: true
+    stack: gvisor
+    dns-hijack:
+      - 198.18.0.2:53
+    macOS-auto-route: true
+    macOS-auto-detect-interface: true # 自动检测出口网卡\
+
+proxies:[]
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select  
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - *
+
+  - name: ♻️ 自动选择
+    type: url-test
+    interval: 300
+    tolerance: 50
+    url: http://www.google.com
+    proxies:
+      - *    
+
+
+  - name: 🌍 流媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 直连
+
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 直连
+      - 🚀 节点选择
+
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 直连
+
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 直连
+
+  - name: 📢 谷歌
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 直连
+      - ♻️ 自动选择      
+
+  - name: 🎯 直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🎯 直连
+      - 🚀 节点选择
+      - ♻️ 自动选择
+
+  - name: 🍃 净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+
+rule-providers:
+
+  icloud:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/icloud.txt"
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+
+  apple:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/apple.txt"
+    path: ./ruleset/apple.yaml
+    interval: 86400
+
+  google:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/google.txt"
+    path: ./ruleset/google.yaml
+    interval: 86400
+
+  proxy:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/proxy.txt"
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+
+  direct:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/direct.txt"
+    path: ./ruleset/direct.yaml
+    interval: 86400
+
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/cncidr.txt"
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/lancidr.txt"
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+
+  youtube:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/youtube.txt"
+    path: ./ruleset/youtube.yaml
+    interval: 86400
+    
+  netflix:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/netflix.txt"
+    path: ./ruleset/netflix.yaml
+    interval: 86400
+    
+  netflixcidr:
+    type: http
+    behavior: ipcidr
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/netflixcidr.txt"
+    path: ./ruleset/netflixcidr.yaml
+    interval: 86400
+
+# 长城防火墙
+  gfw:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/gfw.txt"
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/tld-not-cn.txt"
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/telegramcidr.txt"
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+
+  tiktok:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/tiktok.txt"
+    path: ./ruleset/tiktok.yaml
+    interval: 86400
+
+  micsoft:
+    type: http
+    behavior: classical
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/micsoft.txt"
+    path: ./ruleset/micsoft.yaml
+    interval: 86400
+
+# 自定义
+  Custom:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/custom.txt"
+    path: ./ruleset/custom.yaml
+    interval: 86400
+
+  advertising:
+    type: http
+    behavior: domain
+    url: "https://sunsimilarsun.github.io/Network/list/Clash/advertising.txt"
+    path: ./ruleset/advertising.yaml
+    interval: 86400
+rules:
+  - RULE-SET,lancidr,🎯 直连,no-resolve
+  - RULE-SET,cncidr,🎯 直连,no-resolve
+  - RULE-SET,direct,🎯 直连
+  - RULE-SET,advertising,🍃 净化
+  - RULE-SET,micsoft,Ⓜ️ 微软服务
+  - RULE-SET,icloud,🍎 苹果服务
+  - RULE-SET,apple,🍎 苹果服务
+  - RULE-SET,google,📢 谷歌
+  - RULE-SET,telegramcidr,📲 电报信息,no-resolve
+  - RULE-SET,youtube,🌍 流媒体
+#  - RULE-SET,netflix,🌍 流媒体
+#  - RULE-SET,netflixcidr,🌍 流媒体,Sno-resolve
+  - RULE-SET,tiktok,🌍 流媒体
+  - RULE-SET,gfw,🚀 节点选择
+  - RULE-SET,tld-not-cn,🚀 节点选择
+  - RULE-SET,Custom,🚀 节点选择
+  - RULE-SET,proxy,🚀 节点选择
+  - GEOIP,CN,🎯 直连,no-resolve
+  - MATCH,🐟 漏网之鱼
