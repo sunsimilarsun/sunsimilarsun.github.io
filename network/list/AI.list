@@ -1,218 +1,101 @@
-# 3rd part AI router
+payload:
+  # === 3rd part AI router ===
+  - DOMAIN-SUFFIX,cerebras.ai
 
-DOMAIN-SUFFIX,cerebras.ai
+  # === OpenAI / ChatGPT ===
+  - DOMAIN-KEYWORD,openai
+  - DOMAIN-KEYWORD,chatgpt
+  - DOMAIN-KEYWORD,datadoghq
+  - DOMAIN-SUFFIX,auth0.com
+  - DOMAIN-SUFFIX,client-api.arkoselabs.com
+  - DOMAIN-SUFFIX,events.statsigapi.net
+  - DOMAIN-SUFFIX,featuregates.org
+  - DOMAIN-SUFFIX,identrust.com
+  - DOMAIN-SUFFIX,intercom.io
+  - DOMAIN-SUFFIX,intercomcdn.com
+  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+  - DOMAIN-SUFFIX,sentry.io
+  - DOMAIN-SUFFIX,chatgpt.com
+  - DOMAIN-SUFFIX,oaistatic.com
+  - DOMAIN-SUFFIX,oaiusercontent.com
+  - DOMAIN-SUFFIX,sora.com
+  - DOMAIN-SUFFIX,a.nel.cloudflare.com
+  - DOMAIN-SUFFIX,challenges.cloudflare.com
+  - DOMAIN-SUFFIX,browser-intake-datadoghq.com
+  - DOMAIN-SUFFIX,ab.chatgpt.com
 
-# 内容：OpenAi,claude,recraft,poe,bing,gemini,perplexity
+  # === Claude / Anthropic ===
+  - DOMAIN-KEYWORD,anthropic
+  - DOMAIN-KEYWORD,claude
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-SUFFIX,claude.com
+  - DOMAIN-SUFFIX,console.anthropic.com
+  - DOMAIN-SUFFIX,claudeusercontent.com
+  - DOMAIN-SUFFIX,usefathom.com
+  - PROCESS-NAME,Claude
+  - PROCESS-NAME,Claude Helper
+  - PROCESS-NAME,Claude Helper (Renderer)
 
-DOMAIN-KEYWORD,openai
-DOMAIN-KEYWORD,chatgpt
-DOMAIN-KEYWORD,datadoghq
-DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,client-api.arkoselabs.com
-DOMAIN-SUFFIX,events.statsigapi.net
-DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,identrust.com
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,sora.com
-DOMAIN-SUFFIX,a.nel.cloudflare.com
-DOMAIN-SUFFIX,challenges.cloudflare.com
-DOMAIN-SUFFIX,browser-intake-datadoghq.com
-DOMAIN-SUFFIX,ab.chatgpt.com
+  # === Google Gemini / DeepMind ===
+  - DOMAIN-KEYWORD,colab
+  - DOMAIN-KEYWORD,developerprofiles
+  - DOMAIN-KEYWORD,generativelanguage
+  - DOMAIN,alkalimakersuite-pa.clients6.google.com
+  - DOMAIN,makersuite.google.com
+  - DOMAIN-SUFFIX,ai.google.dev
+  - DOMAIN-SUFFIX,ai.google
+  - DOMAIN-SUFFIX,bard.google.com
+  - DOMAIN-SUFFIX,gemini.google.com
+  - DOMAIN-SUFFIX,waa-pa.clients6.google.com
+  - DOMAIN-SUFFIX,aistudio.google.com
+  - DOMAIN-SUFFIX,generativelanguage.googleapis.com
+  - DOMAIN-SUFFIX,people-pa.clients6.google.com
+  - DOMAIN-SUFFIX,deepmind.com
+  - DOMAIN-SUFFIX,deepmind.google
+  - DOMAIN-SUFFIX,generativeai.google
+  - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+  - DOMAIN-SUFFIX,apis.google.com
+  - DOMAIN-SUFFIX,clients6.google.com
 
-#claude
-DOMAIN-KEYWORD,anthropic
-PROCESS-NAME,Claude
-PROCESS-NAME,Claude Helper
-PROCESS-NAME,Claude Helper (Renderer)
-DOMAIN-KEYWORD,claude
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,usefathom.com
-DOMAIN-SUFFIX,console.anthropic.com
-DOMAIN-SUFFIX,claude.com
-DOMAIN-SUFFIX,claudeusercontent.com
+  # === Microsoft Bing / Copilot ===
+  - DOMAIN-KEYWORD,bing
+  - DOMAIN-KEYWORD,copilot
+  - DOMAIN-KEYWORD,edgeassetservice
+  - DOMAIN-SUFFIX,edgeservices.bing.com
+  - DOMAIN-SUFFIX,sydney.bing.com
+  - DOMAIN-SUFFIX,bing.com
+  - DOMAIN-SUFFIX,bing.net
+  - DOMAIN-SUFFIX,bingapis.com
+  - DOMAIN-SUFFIX,copilot.microsoft.com
+  - DOMAIN-SUFFIX,bingstatic.com
+  - DOMAIN-SUFFIX,designerapp.officeapps.live.com
 
-#recraft
-DOMAIN-SUFFIX,recraft.ai
+  # === Grok / X.AI ===
+  - DOMAIN-KEYWORD,grok
+  - DOMAIN-SUFFIX,x.ai
+  - DOMAIN-SUFFIX,grok.com
+  - PROCESS-NAME,grok
 
-#poe
-DOMAIN-SUFFIX,poe.com
+  # === Perplexity ===
+  - DOMAIN-SUFFIX,perplexity.ai
 
-#aitools
-PROCESS-NAME,LM Studio
-DOMAIN-SUFFIX,lmsudio.ai
+  # === Github Copilot / VS Code AI ===
+  - DOMAIN-SUFFIX,githubcopilot.com
+  - DOMAIN-SUFFIX,api.githubcopilot.com
+  - PROCESS-NAME,Code Helper
+  - PROCESS-NAME,Code Helper (Plugin)
 
-#grok
-PROCESS-NAME,grok
-DOMAIN-KEYWORD,grok
-DOMAIN-SUFFIX,x.ai
-DOMAIN-SUFFIX,grok.com
+  # === Recraft & Others ===
+  - DOMAIN-SUFFIX,recraft.ai
+  - DOMAIN-SUFFIX,poe.com
+  - DOMAIN-SUFFIX,lmsudio.ai
+  - PROCESS-NAME,LM Studio
 
-#perplexity.ai
-DOMAIN-SUFFIX,perplexity.ai
-
-#VS CODE AI chat
-PROCESS-NAME,Code Helper
-PROCESS-NAME,Code Helper (Plugin)
-DOMAIN-SUFFIX,githubcopilot.com
-DOMAIN-SUFFIX,api.githubcopilot.com
-DOMAIN-SUFFIX,api.github.com
-DOMAIN-SUFFIX,github.gallery.vsassets.io
-DOMAIN-SUFFIX,github.gallerycdn.vsassets.io
-DOMAIN-SUFFIX,applicationinsights.azure.com
-
-
-#bing chat
-DOMAIN-KEYWORD,bing
-DOMAIN-KEYWORD,copilot
-DOMAIN-KEYWORD,edgeassetservice
-DOMAIN-SUFFIX,edgeservices.bing.com
-DOMAIN-SUFFIX,sydney.bing.com
-DOMAIN-SUFFIX,bing.com
-DOMAIN-SUFFIX,bing.net
-DOMAIN-SUFFIX,bingapis.com
-DOMAIN-SUFFIX,azurewebsites.net
-DOMAIN-SUFFIX,azureedge.net
-DOMAIN-SUFFIX,edge.microsoft.com
-DOMAIN-SUFFIX,copilot.microsoft.com
-DOMAIN-SUFFIX,www.bing.com
-DOMAIN-SUFFIX,www.bingapis.com
-DOMAIN-SUFFIX,nav-edge.smartscreen.microsoft.com
-DOMAIN-SUFFIX,bat.bing.com
-DOMAIN-SUFFIX,designerapp.officeapps.live.com
-DOMAIN-SUFFIX,cdn.designerapp.osi.office.net
-DOMAIN-SUFFIX,live.com
-DOMAIN-SUFFIX,azureedge.net
-DOMAIN-SUFFIX,virtualearth.net
-DOMAIN-SUFFIX,windows.net
-DOMAIN-SUFFIX,onenote
-DOMAIN-SUFFIX,hexun.com
-DOMAIN-SUFFIX,dict.bing.com.cn
-DOMAIN-SUFFIX,msn.com
-DOMAIN-SUFFIX,variflight.com
-DOMAIN-SUFFIX,bing.net
-DOMAIN-SUFFIX,msftoffers.com
-DOMAIN-SUFFIX,chinacloudapp.cn
-DOMAIN-SUFFIX,cbsnews.com
-DOMAIN-SUFFIX,swx.cdn.skype.com
-DOMAIN-SUFFIX,swc.cdn.skype.com
-DOMAIN-SUFFIX,latest-swx.cdn.skype.com
-DOMAIN-SUFFIX,a.config.skype.com
-DOMAIN-SUFFIX,b.config.skype.com
-DOMAIN-SUFFIX,platform.bing.com
-DOMAIN-SUFFIX,microsofttranslator.com
-DOMAIN-SUFFIX,facebook.net
-DOMAIN-SUFFIX,delve.office.com
-DOMAIN-SUFFIX,uservoice.com
-DOMAIN-SUFFIX,cdn.office.net
-DOMAIN-SUFFIX,platform.twitter.com
-DOMAIN-SUFFIX,cdn.syndication.twimg.com
-DOMAIN-SUFFIX,spoprod-a.akamaihd.net
-DOMAIN-SUFFIX,bingstatic.com
-DOMAIN-SUFFIX,yahoo.co.jp
-DOMAIN-SUFFIX,youtube.com
-DOMAIN-SUFFIX,ytimg.com
-DOMAIN-SUFFIX,r.msftstatic.com
-DOMAIN-SUFFIX,rafd.bing.com
-DOMAIN-SUFFIX,rafd.staging-bing-int.com
-DOMAIN-SUFFIX,raka.bing.com
-DOMAIN-SUFFIX,r.bing.com
-DOMAIN-SUFFIX,r.staging-bing-int.com
-DOMAIN-SUFFIX,raka.staging-bing-int.com
-DOMAIN-SUFFIX,rcf.staging-bing-int.com
-DOMAIN-SUFFIX,rcf.bing.com
-DOMAIN-SUFFIX,s.cn.bing.net
-DOMAIN-SUFFIX,xpaycdn-int.azureedge.net
-DOMAIN-SUFFIX,xpaycdn.azureedge.net
-DOMAIN-SUFFIX,ssl.kaptcha.com
-DOMAIN-SUFFIX,tst.kaptcha.com
-DOMAIN-SUFFIX,snrproxy.binginternal.com
-DOMAIN-SUFFIX,snrproxyeast.binginternal.com
-DOMAIN-SUFFIX,snrproxync.binginternal.com
-DOMAIN-SUFFIX,snrproxysc.binginternal.com
-DOMAIN-SUFFIX,snrproxywest.binginternal.com
-DOMAIN-SUFFIX,cetonc.binginternal.com
-DOMAIN-SUFFIX,cetosc.binginternal.com
-DOMAIN-SUFFIX,cetoeast.binginternal.com
-DOMAIN-SUFFIX,cetowest.binginternal.com
-DOMAIN-SUFFIX,akam.bing.com
-DOMAIN-SUFFIX,akam.staging-bing-int.com
-DOMAIN-SUFFIX,ewlmaakam.staging-bing-int.com
-DOMAIN-SUFFIX,akamproxyeast.staging-bing-int.com
-DOMAIN-SUFFIX,akamproxync.staging-bing-int.com
-DOMAIN-SUFFIX,akamproxysc.staging-bing-int.com
-DOMAIN-SUFFIX,akamproxywest.staging-bing-int.com
-DOMAIN-SUFFIX,cjfdbemmaeeohgibnhdhlakiahifjjcf
-DOMAIN-SUFFIX,ewlmaakam.staging-bing-int.com
-DOMAIN-SUFFIX,bngpiglbalmenaabohcooocpnljgfemj
-DOMAIN-SUFFIX,rwww.bing.com
-
-
-#Google Gemini 
-DOMAIN-KEYWORD,colab
-DOMAIN-KEYWORD,developerprofiles
-DOMAIN-KEYWORD,generativelanguage
-DOMAIN,alkalimakersuite-pa.clients6.google.com
-DOMAIN,makersuite.google.com
-DOMAIN-SUFFIX,ai.google.dev
-DOMAIN-SUFFIX,ai.google
-DOMAIN-SUFFIX,gstatic.com
-DOMAIN-SUFFIX,bard.google.com
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,waa-pa.clients6.google.com
-DOMAIN-SUFFIX,aistudio.google.com
-DOMAIN-SUFFIX,generativelanguage.googleapis.com
-DOMAIN-SUFFIX,people-pa.clients6.google.com
-DOMAIN-SUFFIX,deepmind.com
-DOMAIN-SUFFIX,deepmind.google
-DOMAIN-SUFFIX,generativeai.google
-DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
-DOMAIN-SUFFIX,apis.google.com
-DOMAIN-SUFFIX,clients6.google.com
-
-# 内容：Google
-# 数量：24条
-DOMAIN-KEYWORD,gmail
-DOMAIN-KEYWORD,google
-DOMAIN-SUFFIX,1e100.net
-DOMAIN-SUFFIX,2mdn.net
-DOMAIN-SUFFIX,app-measurement.net
-DOMAIN-SUFFIX,c.gle
-DOMAIN-SUFFIX,g.co
-DOMAIN-SUFFIX,ggpht.com
-DOMAIN-SUFFIX,goo.gl
-DOMAIN-SUFFIX,googleapis.cn
-DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,gstatic.cn
-DOMAIN-SUFFIX,gstatic.com
-DOMAIN-SUFFIX,gvt0.com
-DOMAIN-SUFFIX,gvt1.com
-DOMAIN-SUFFIX,gvt2.com
-DOMAIN-SUFFIX,gvt3.com
-DOMAIN-SUFFIX,xn--ngstr-lra8j.com
-DOMAIN-SUFFIX,youtu.be
-DOMAIN-SUFFIX,youtube-nocookie.com
-DOMAIN-SUFFIX,youtube.com
-DOMAIN-SUFFIX,yt.be
-DOMAIN-SUFFIX,ytimg.com
-IP-CIDR,74.125.0.0/16,no-resolve
-IP-CIDR,173.194.0.0/16,no-resolve
-DOMAIN-KEYWORD,goog
-DOMAIN-SUFFIX,fp-us-tmobile.rcs.telephony.goog
-
-# Antigravity
-DOMAIN-SUFFIX,antigravity-unleash.goog
-DOMAIN-SUFFIX,antigravity.google
-DOMAIN-KEYWORD,antigravity
-PROCESS-NAME,Antigravity Helper
-PROCESS-NAME,Antigravity Helper (Renderer)
-PROCESS-NAME,Antigravity Helper (GPU)
-PROCESS-NAME,Antigravity Helper (Plugin)
-DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
+  # === Antigravity / CloudCode ===
+  - DOMAIN-SUFFIX,antigravity-unleash.goog
+  - DOMAIN-SUFFIX,antigravity.google
+  - DOMAIN-KEYWORD,antigravity
+  - DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
+  - PROCESS-NAME,Antigravity Helper
